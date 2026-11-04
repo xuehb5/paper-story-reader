@@ -56,3 +56,9 @@ Complete builds require actual evidence records. `--draft` explicitly marks an u
 Run `python -m unittest discover -s tests -v`. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Original code, skill instructions and project documentation are MIT licensed. Article/SI/figure materials in the hydrogel example retain their original CC BY 3.0 license. See [third-party notices](THIRD_PARTY_NOTICES.md). No affiliation with the paper authors, publisher or Agent platforms is implied.
+
+## Contact
+
+- Email: [2430112282@qq.com](mailto:2430112282@qq.com)
+- - WeChat: `XHB18085285748`
+  - 
