@@ -113,3 +113,8 @@ python -m unittest discover -s tests -v
 ## 许可证
 
 原创代码、Skill 指令和项目说明采用 [MIT](LICENSE)。水凝胶示例中的论文、SI、原图与摘录按原始 **CC BY 3.0** 授权，不被 MIT 重新授权；详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。本项目独立维护，不代表论文作者、期刊或任何 Agent 平台。
+
+## 联系作者
+
+- 邮箱：[2430112282@qq.com](mailto:2430112282@qq.com)
+- 微信：`XHB18085285748`
