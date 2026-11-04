@@ -14,6 +14,10 @@ python -X utf8 <skill>/scripts/render_reader.py reader-input.json --review evide
 
 ## 内容数据契约
 
+### 静态网页托管
+
+默认输出将图像嵌入HTML，保留单页便携性。发布到GitHub Pages等静态托管时，可在同一生成命令加`--link-assets`：图像改为输出目录内的相对路径，整个目录一起发布。正文、脑图、画布、CSS和交互脚本共用同一个生成器；页面先启动脑图和镜头，再按需加载图片。此模式同样可将完整目录下载到本地使用，不依赖第三方CDN；不能只拿走其中一个HTML文件。
+
 顶层是`case`、`assets`、`sources`三对象，可另附`navigation`。路径相对于JSON文件，不写本机固定桌面路径。案例、章节、图证ID限英文字母开头及字母/数字/下划线/连字符。章节标题和数量由论文论证决定。
 
 `case`有字符串`id, short, title, category, paper_title, doi, citation, thesis, audience, coverage`；`source_ids`数组；`sections`数组、`figures`对象和`research_graph`。

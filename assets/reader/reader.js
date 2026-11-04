@@ -1,6 +1,6 @@
 'use strict';
-document.documentElement.classList.add('reader-enhanced');
 const config=JSON.parse(document.getElementById('reader-data').textContent);
+document.documentElement.classList.add('reader-enhanced');
 const route=document.getElementById('route'),sidebar=document.querySelector('.sidebar'),reading=document.getElementById('reading');
 if(matchMedia('(max-width:1250px)').matches){route.open=false;if(document.getElementById('panel-nav'))document.getElementById('panel-nav').open=false;}
 const viewport=document.getElementById('paper-viewport'),world=document.getElementById('paper-world'),trunk=document.getElementById('paper-trunk');
@@ -329,9 +329,10 @@ window.addEventListener('resize',requestTreeLayout);window.addEventListener('pop
 matchMedia('(max-width:1250px)').addEventListener('change',event=>{route.open=!event.matches;if(event.matches)if(document.getElementById('panel-nav'))document.getElementById('panel-nav').open=false;requestTreeLayout();});
 reading.addEventListener('load',requestTreeLayout,true);reading.addEventListener('toggle',requestTreeLayout,true);
 new ResizeObserver(requestTreeLayout).observe(viewport);
-world.querySelectorAll('img').forEach(image=>image.loading='eager');
+if(config.assetMode!=='linked')world.querySelectorAll('img').forEach(image=>image.loading='eager');
 renderReadingMap();layoutPaper();if(location.hash)revealHash(false);else requestScrollSync();
-Promise.all([...world.querySelectorAll('img')].map(image=>image.decode().catch(()=>{}))).then(()=>requestAnimationFrame(()=>{layoutPaper();restoreReadingPosition();}));
+if(config.assetMode==='linked')requestAnimationFrame(()=>{layoutPaper();restoreReadingPosition();});
+else Promise.all([...world.querySelectorAll('img')].map(image=>image.decode().catch(()=>{}))).then(()=>requestAnimationFrame(()=>{layoutPaper();restoreReadingPosition();}));
 
 /* The reading map and paper geometry share config.readingGraph. */
 function mapSvgElement(tag,attributes={},text=''){
@@ -460,3 +461,5 @@ document.getElementById('modal-whole').onclick=()=>{mode='whole';zoom=1;displayI
 document.getElementById('modal-page').onclick=()=>{mode='page';zoom=1;displayImage();};
 document.getElementById('modal-plus').onclick=()=>{zoom=Math.min(3,zoom+.25);displayImage(false);};
 document.getElementById('modal-minus').onclick=()=>{zoom=Math.max(.5,zoom-.25);displayImage(false);};
+document.documentElement.dataset.readerReady='true';
+document.documentElement.classList.remove('reader-booting');

@@ -11,10 +11,10 @@
   "shared_reading_nodes": 18,
   "shared_reading_edges": 17,
   "original_pages": 9,
-  "html_bytes": 12389926,
-  "html_sha256": "ee3bc786a1349692398aaa733012838023b00e4516b5311f9c561b47543e8d12",
+  "html_bytes": 179385,
+  "html_sha256": "18d78325430742ca16495909fdfb7b89bfe77e69959294225999be55962ac476",
   "all_navigation_targets_valid": true,
-  "renderer_version": "v0.20.1",
+  "renderer_version": "v0.20.2",
   "input_sha256": "cafa9d06b7597c5fd9699992bcab302d1cf64ada2c7f74f207b25f9305d66ecf",
   "source_hashes_verified": true,
   "images_hashes": {
@@ -44,6 +44,7 @@
     "hybrid-i": "ee63cab5c8ac559a68f534551274a307ed59247e7b199d37fcbdf568f63c8a3c",
     "hybrid-full-frequency": "98a739a8c4951c587abcd5cc04b3efc70c0f07b932e302d84184a78b6a71ca48"
   },
+  "asset_mode": "linked",
   "external_runtime_dependencies": 0,
   "scientific_sufficiency_automatically_judged": false,
   "content_review_status": "review_record_complete",

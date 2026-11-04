@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": [
+    "index opens the actual interactive reader",
+    "synthesis figure, local reading tasks and substantial branches are present",
+    "all 11 branches navigate and return with map synchronization and unchanged canvas coordinates",
+    "branch relation view works directly from reading",
+    "actual prose text remains selectable",
+    "local scientific figure opens, complete composite restores context, Escape closes",
+    "SI explanation and complete original PDF page remain linked",
+    "canvas zoom and return to reading scale",
+    "blank-space drag moves the paper",
+    "wheel reading updates a current map location",
+    "keyboard zoom changes the actual camera scale",
+    "scientific argument graph navigates to the right explanation",
+    "430px layout has no document overflow",
+    "no runtime errors or automatic external network requests"
+  ],
+  "errors": [],
+  "requests": [],
+  "branches": 11,
+  "notice": "Actual native browser events on this worked example, not a human comprehension or all-browser guarantee."
+}

@@ -6,12 +6,15 @@ import html
 import json
 
 ROOT = None
+LINK_ASSETS = False
 SCRIPTS = Path(__file__).resolve().parent
 assets, sources, cases = {}, {}, []
 esc = lambda s: html.escape(str(s), quote=True)
 
 
 def data_uri(path):
+    if LINK_ASSETS:
+        return Path(path).as_posix()
     import mimetypes
     return 'data:'+(mimetypes.guess_type(str(path))[0] or 'image/jpeg')+';base64,' + base64.b64encode((ROOT / path).read_bytes()).decode('ascii')
 
@@ -221,7 +224,7 @@ def render(case):
     graph_edges.extend({'from':b['section'],'to':b['id'],'origin':b['origin'],'kind':'branch','label':'SI补证' if b['kind']=='si' else '就近细讲'} for b in question_branches)
     assert len({n['id'] for n in graph_nodes})==len(graph_nodes)
     assert all(n['target'] in ({s['id'] for s in case['sections']}|paragraphs|{b['id'] for b in question_branches}) for n in graph_nodes)
-    config = {'figures': {}, 'pages': {}, 'composites': {},'researchGraph':{'nodes':case['nodes'],'edges':case['edges']},'readingGraph':{'nodes':graph_nodes,'edges':graph_edges}}
+    config = {'assetMode':'linked' if LINK_ASSETS else 'embedded','figures': {}, 'pages': {}, 'composites': {},'researchGraph':{'nodes':case['nodes'],'edges':case['edges']},'readingGraph':{'nodes':graph_nodes,'edges':graph_edges}}
     identity={'id':case['id'],'title':case['title'],'sections':case['sections'],'figures':case['figures'],'sources':{sid:sources[sid]['sha256'] for sid in case['source_ids']}}
     config['readerIdentity']=hashlib.sha256(json.dumps(identity,ensure_ascii=False,sort_keys=True).encode('utf-8')).hexdigest()[:24]
     (ROOT/'graphs').mkdir(exist_ok=True)
@@ -256,7 +259,7 @@ def render(case):
     source_list = ''.join('<li>'+esc(sources[sid].get('description') or '原始来源')+' · <a href="'+esc(sources[sid]['local_href'])+'">打开本地原件</a></li>' for sid in case['source_ids'])
     draft_notice = ('<p class="paper-tip" role="status">'+esc(case["draft_notice"])+'</p>') if case.get("draft_notice") else ""
     if case.get("draft_notice"):md[0:0]=[case["draft_notice"], ""]
-    doc = f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(case['title'])} · PaperStory</title><style>{(SCRIPTS/'reader.css').read_text(encoding='utf-8')}</style></head><body class="paper-reader">
+    doc = f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(case['title'])} · PaperStory</title><script>document.documentElement.classList.add('reader-booting');window.addEventListener('error',function(e){{if(!e.message||document.documentElement.dataset.readerReady==='true')return;document.documentElement.classList.remove('reader-booting','reader-enhanced');document.documentElement.classList.add('reader-failed');var status=document.getElementById('reader-loading');if(status)status.textContent='交互画布未能启动，当前显示文字备用视图。请刷新重试，或下载离线读本。';}});</script><style>{(SCRIPTS/'reader.css').read_text(encoding='utf-8')}</style></head><body class="paper-reader"><div id="reader-loading" role="status" aria-live="polite">正在准备交互脑图与论文画布……</div>
 <a class="skip" href="#reading">跳到导读正文</a>
 <header class="topbar"><a class="brand" href="{esc(case.get('home_href','index.html'))}">PaperStory<small>材料与化学 · 离线伴读</small></a><nav class="case-tabs" aria-label="切换样品">{tabs}</nav></header>
 <main class="layout"><aside class="sidebar" aria-label="论文问题导航"><details class="route-card" id="route"{route_open}><summary>{route_summary}<small id="route-current"></small></summary><p>与主视图使用相同标题和编号；点击节点，镜头移到对应位置。</p><p class="current-location" id="current-location" aria-live="polite">正在读：文章开头</p><div class="map-actions"><button id="map-expand-all" aria-pressed="false">展开全部侧枝</button><span>当前阶段自动展开</span></div><div class="flow-wrap"><svg class="flow reading-map" id="reading-map" role="group" aria-label="与主画布一致的阅读脉络"></svg><nav class="map-fallback">{''.join(f'<a href="#{esc(n["target"])}">{esc(n["code"])} · {esc(n["title"])}</a>' for n in graph_nodes)}</nav></div><p class="current-finding" id="current-finding" hidden></p><div class="route-foot">竖向：阅读顺序　左右：对应细讲<a href="#reading">镜头移回文章开头 ↑</a></div><details class="paper-overview" id="paper-overview"><summary>画布位置 · 可点击移动</summary><svg id="paper-mini-map" role="group" aria-label="实际纸面位置与当前镜头范围"></svg><p>边框表示当前视窗；点击内容块可移近阅读。</p></details>{research_map_panel(case)}</details>{panel_outline}<p id="reader-status" class="sr-only" role="status" aria-live="polite"></p></aside>

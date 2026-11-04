@@ -4,7 +4,7 @@ from pathlib import Path
 
 SKILL=Path(__file__).resolve().parents[1]
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
-def build(input_file,output,review_file=None,draft=False,context_file=None):
+def build(input_file,output,review_file=None,draft=False,context_file=None,link_assets=False):
     input_file=Path(input_file).resolve();base=input_file.parent
     data=json.loads(input_file.read_text(encoding='utf-8'));case=copy.deepcopy(data['case'])
     assets=copy.deepcopy(data['assets']);sources=copy.deepcopy(data['sources']);output=Path(output).resolve()
@@ -140,19 +140,20 @@ def build(input_file,output,review_file=None,draft=False,context_file=None):
             src=Path(a[key]);dest=output/'assets'/(digest(src)[:20]+src.suffix.lower())
             if src!=dest:shutil.copy2(src,dest)
             a[key]=dest.relative_to(output).as_posix()
-    core.ROOT=output;core.assets=assets;core.sources=sources;core.cases=navigation.get('papers') or [case]
+    core.ROOT=output;core.assets=assets;core.sources=sources;core.cases=navigation.get('papers') or [case];core.LINK_ASSETS=link_assets
     report=core.render(case)
-    (output/'index.html').write_text('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url='+case['id']+'.html"><title>PaperStory · '+html.escape(case['title'])+'</title><a href="'+case['id']+'.html">打开交互读本：'+html.escape(case['title'])+'</a></html>',encoding='utf-8')
-    report.update({'renderer_version':'v0.20.1','input_sha256':digest(input_file),'source_hashes_verified':True,'images_hashes':{fid:digest(output/a['image']) for fid,a in assets.items() if fid in used},'external_runtime_dependencies':0,'scientific_sufficiency_automatically_judged':False,'content_review_status':'draft_unreviewed' if draft else 'review_record_complete','source_review':review_result,'context_review':release_result})
+    entry=case['id']+'.html'+('?v=0.20.2' if link_assets else '')
+    (output/'index.html').write_text('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url='+entry+'"><title>PaperStory · '+html.escape(case['title'])+'</title><a href="'+entry+'">打开交互读本：'+html.escape(case['title'])+'</a></html>',encoding='utf-8')
+    report.update({'renderer_version':'v0.20.2','input_sha256':digest(input_file),'source_hashes_verified':True,'images_hashes':{fid:digest(output/a['image']) for fid,a in assets.items() if fid in used},'asset_mode':'linked' if link_assets else 'embedded','external_runtime_dependencies':0,'scientific_sufficiency_automatically_judged':False,'content_review_status':'draft_unreviewed' if draft else 'review_record_complete','source_review':review_result,'context_review':release_result})
     (output/'build-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     spec=importlib.util.spec_from_file_location('verify_delivery',SKILL/'scripts/verify_delivery.py');delivery=importlib.util.module_from_spec(spec);spec.loader.exec_module(delivery)
     encoding=delivery.verify([output/(case['id']+'.html'),output/(case['id']+'.md')],case.get('language','zh'))
     if not encoding['passed']:raise ValueError('generated delivery encoding invalid: '+'; '.join(encoding['errors']))
     files={p.relative_to(output).as_posix():digest(p) for p in output.rglob('*') if p.is_file() and p.name!='delivery-manifest.json'}
-    (output/'delivery-manifest.json').write_text(json.dumps({'renderer_version':'v0.20.1','input_sha256':digest(input_file),'files':files,'notice':'Any later byte change requires regeneration and renewed review for content changes. Hashes verify bytes, not scientific truth.'},ensure_ascii=False,indent=2)+'\n','utf-8')
+    (output/'delivery-manifest.json').write_text(json.dumps({'renderer_version':'v0.20.2','input_sha256':digest(input_file),'files':files,'notice':'Any later byte change requires regeneration and renewed review for content changes. Hashes verify bytes, not scientific truth.'},ensure_ascii=False,indent=2)+'\n','utf-8')
     return report
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('input');p.add_argument('--output',required=True);p.add_argument('--review');p.add_argument('--context-audit');p.add_argument('--draft',action='store_true');a=p.parse_args()
-    try:print(json.dumps(build(a.input,a.output,a.review,a.draft,a.context_audit),ensure_ascii=False));return 0
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('input');p.add_argument('--output',required=True);p.add_argument('--review');p.add_argument('--context-audit');p.add_argument('--draft',action='store_true');p.add_argument('--link-assets',action='store_true',help='Use local relative image files for static web hosting; keep the generated directory together. The reader UI is unchanged.');a=p.parse_args()
+    try:print(json.dumps(build(a.input,a.output,a.review,a.draft,a.context_audit,a.link_assets),ensure_ascii=False));return 0
     except (ValueError,KeyError,TypeError,AttributeError,OSError,AssertionError) as e:print(json.dumps({'passed':False,'error':str(e)},ensure_ascii=False));return 1
 if __name__=='__main__':raise SystemExit(main())

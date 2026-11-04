@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "ready_without_images_ms": 590,
+  "checks": [
+    "SVG mind map and canvas ready with every image blocked",
+    "fallback hidden after initialization",
+    "branch camera navigation without image downloads",
+    "saved branch restores before all images load",
+    "linked local figure and complete composite decode",
+    "same renderer, reviewed prose and graphs as embedded output"
+  ],
+  "errors": []
+}

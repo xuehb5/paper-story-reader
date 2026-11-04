@@ -37,6 +37,22 @@ class ReaderContracts(unittest.TestCase):
         out=self.root/'reader';self.build(out)
         p=out/'A.md';p.write_text(p.read_text('utf-8')+'\nchanged\n','utf-8')
         self.assertFalse(delivery.verify([p],manifest=out/'delivery-manifest.json')['passed'])
+    def test_hosted_reader_uses_same_prose_graphs_and_renderer_without_embedded_images(self):
+        import re
+        embedded=self.root/'embedded';linked=self.root/'linked'
+        a=self.build(embedded);b=self.build(linked,link_assets=True)
+        original=(embedded/'A.html').read_text('utf-8');hosted=(linked/'A.html').read_text('utf-8')
+        def config(text):return json.loads(re.search(r'<script type="application/json" id="reader-data">(.*?)</script>',text,re.S)[1])
+        x,y=config(original),config(hosted)
+        for key in ['figures','readingGraph','researchGraph','readerIdentity']:self.assertEqual(x[key],y[key])
+        self.assertEqual(re.findall(r'<p class="prose".*?</p>',original,re.S),re.findall(r'<p class="prose".*?</p>',hosted,re.S))
+        for key in ['sections','figures','question_branches','optional_panel_explanations','composites']:self.assertEqual(a[key],b[key])
+        self.assertNotIn('data:image',hosted)
+        self.assertLess(len(hosted.encode('utf-8')),350000)
+        for path in y['pages'].values():self.assertTrue((linked/path).is_file())
+        self.assertIn((ROOT/'assets/reader/reader.js').read_text('utf-8'),hosted)
+        self.assertIn((ROOT/'assets/reader/reader.css').read_text('utf-8'),hosted)
+        self.assertTrue(delivery.verify([linked/'A.html'],manifest=linked/'delivery-manifest.json')['passed'])
     def test_missing_review_cannot_be_published_as_reviewed(self):
         with self.assertRaisesRegex(ValueError,'source review required'):
             renderer.build(EXAMPLE/'reader-input.json',self.root/'reader',self.root/'absent.json')

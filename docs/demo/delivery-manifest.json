@@ -1,11 +1,11 @@
 {
-  "renderer_version": "v0.20.1",
+  "renderer_version": "v0.20.2",
   "input_sha256": "cafa9d06b7597c5fd9699992bcab302d1cf64ada2c7f74f207b25f9305d66ecf",
   "files": {
-    "A.html": "ee3bc786a1349692398aaa733012838023b00e4516b5311f9c561b47543e8d12",
+    "A.html": "18d78325430742ca16495909fdfb7b89bfe77e69959294225999be55962ac476",
     "A.md": "7e61465e4eca4740ff528ad89c26e2cbff5b994119296590d45bb2b50fa92da2",
-    "build-report.json": "c41537bdf432763f2f3f852818b932cdb2faa147d3f078706fd537a4b77ffa2c",
-    "index.html": "40de3c764c749f8018a4032214c3ead08b3e01a4661f8cc0b8bfbf8ba6fd6333",
+    "build-report.json": "f22260b0ae5ec0758a8024f8180c646bb293a86d20f7aa0b974f4eddfca87c90",
+    "index.html": "4709e47f2ca9efd7d9e5ee78f552e2dc5ba8f9178953cc190a8cdab1248e6bfc",
     "assets/07f56b10ebc290cbc195.jpg": "07f56b10ebc290cbc195f515c2e111d65c069e432286ef13b5eac034398e772d",
     "assets/093dc22760ca04b2795f.svg": "093dc22760ca04b2795f331e2d23936cc6e92e6c5c720b83d0a805c5bc19ccbc",
     "assets/0d1e7b5755d6c764ddc0.svg": "0d1e7b5755d6c764ddc0d6fb9e7284c876a1e9c3e9e01ed333d3feca7331f89d",

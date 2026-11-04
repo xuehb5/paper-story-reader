@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.20.2 — 2026-11-04
+
+- Serve the public demo with relative local images instead of a huge base64 HTML stream; reuse the exact same reader template, CSS, JavaScript, graphs and reviewed prose as the offline reader.
+- Initialize the mind map and canvas without waiting for all scientific images; retain standalone embedded-image output as the default.
+- Show an explicit loading state and label the text fallback if initialization fails.
+- Add a screenshot tour explaining the story trunk, SI branches, scientific argument graph and original-figure context.
+
 ## 0.20.1 — 2026-11-04
 
 - Rebuild the public worked reader around the original reading design: a complete story trunk, substantial left/right explanation branches, local figure-reading tasks and original-composite context.
