@@ -54,7 +54,8 @@ def validate(inp,review,context):
         metrics=' '.join(panel.get('metrics',[])).replace('′',"'").replace('″',"''")
         if "G'" in metrics and "G''" not in metrics:
             for p in ptrs:
-                if re.search(r'G\s*[″]|G\s*\'\'|G[′\']\s*[/、与和]\s*G?[″]',u[p]):flag(p,'panel metric map conflicts with explanation of both moduli')
+                for match in re.finditer(r'G\s*[″]|G\s*\'\'|G[′\']\s*[/、与和]\s*G?[″]',u[p]):
+                    if not negated(u[p],match.start()):flag(p,'panel metric map conflicts with explanation of both moduli')
     if covered!=set(d['case'].get('figures',{})):err('context panel map does not cover displayed figure evidence')
     for scope in a.get('scopes',[]):
         if scope.get('claim_id') not in claims or not scope.get('stage'):err('scope needs canonical claim and actual stage')

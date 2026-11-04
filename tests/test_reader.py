@@ -11,6 +11,7 @@ def load(name,path):
 
 renderer=load('reader_under_test',ROOT/'scripts/render_reader.py')
 delivery=load('delivery_under_test',ROOT/'scripts/verify_delivery.py')
+release=load('release_under_test',ROOT/'scripts/validate_release.py')
 
 class ReaderContracts(unittest.TestCase):
     def setUp(self):
@@ -23,7 +24,9 @@ class ReaderContracts(unittest.TestCase):
         self.assertTrue(report['source_review']['passed'])
         self.assertTrue(report['context_review']['passed'])
         self.assertEqual(report['sections'],7)
-        self.assertEqual(report['figures'],9)
+        self.assertEqual(report['figures'],25)
+        self.assertGreater(report['optional_panel_explanations'],0)
+        self.assertGreater(report['composites'],0)
         self.assertTrue(report['all_navigation_targets_valid'])
         self.assertTrue(delivery.verify([out/'A.html',out/'A.md'],manifest=out/'delivery-manifest.json')['passed'])
         html=(out/'A.html').read_text('utf-8')
@@ -37,6 +40,25 @@ class ReaderContracts(unittest.TestCase):
     def test_missing_review_cannot_be_published_as_reviewed(self):
         with self.assertRaisesRegex(ValueError,'source review required'):
             renderer.build(EXAMPLE/'reader-input.json',self.root/'reader',self.root/'absent.json')
+    def context_with_caption(self,caption):
+        data=json.loads((EXAMPLE/'reader-input.json').read_text('utf-8'))
+        review=json.loads((EXAMPLE/'evidence-review.json').read_text('utf-8'))
+        context=json.loads((EXAMPLE/'context-audit.json').read_text('utf-8'))
+        data['case']['figures']['hybrid-i']['caption']=caption
+        unit=next(u for u in review['units'] if u['pointer']=='/case/figures/hybrid-i/caption')
+        unit['text_sha256']=release.E.text_sha(caption)
+        inp=self.root/'input.json';inp.write_text(json.dumps(data,ensure_ascii=False),'utf-8')
+        review['input_sha256']=release.sha(inp)
+        rev=self.root/'review.json';rev.write_text(json.dumps(review,ensure_ascii=False),'utf-8')
+        context['input_sha256']=release.sha(inp);context['review_sha256']=release.sha(rev)
+        ctx=self.root/'context.json';ctx.write_text(json.dumps(context,ensure_ascii=False),'utf-8')
+        return release.validate(inp,rev,ctx)
+    def test_gprime_only_panel_accepts_explicit_missing_gdoubleprime(self):
+        result=self.context_with_caption('两种符号对应两个体系的G′；没有G″曲线。')
+        self.assertTrue(result['passed'],result['errors'])
+    def test_gprime_only_panel_rejects_invented_second_modulus(self):
+        result=self.context_with_caption('两种符号同时给出G′和G″曲线。')
+        self.assertTrue(any('panel metric map conflicts' in e for e in result['errors']))
     def test_explicit_draft_is_visibly_marked(self):
         out=self.root/'draft';r=renderer.build(EXAMPLE/'reader-input.json',out,draft=True)
         self.assertEqual(r['content_review_status'],'draft_unreviewed')

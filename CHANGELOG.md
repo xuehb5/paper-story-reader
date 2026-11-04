@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.20.1 — 2026-11-04
+
+- Rebuild the public worked reader around the original reading design: a complete story trunk, substantial left/right explanation branches, local figure-reading tasks and original-composite context.
+- Put synthesis figures in the synthesis stage; read rheology and biohybrid figures by the questions they answer, together with relevant SI.
+- Add source-preserving SVG viewports and repeat source-first review for the new explanations and figure mappings.
+- Require reading-design review separately from evidence integrity and UI checks in the Skill instructions.
+- Correct the G-prime-only panel check so an explicit statement that G-double-prime is absent is accepted; invented additional moduli remain blocked.
+- Open the generated interactive reader directly from its index entry.
+
 ## 0.20.0 — 2026-11-04
 
 First standalone open-source distribution.

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "input_sha256": "957fa978d09f69491c980e4804f045489fa574ee8085db5a1334b8a447ae335e",
-  "review_sha256": "ae01cc9453a129d5a0ec90daad0b6f39be2681d8a172a11c6fdfb3626bb6b80e",
+  "input_sha256": "cafa9d06b7597c5fd9699992bcab302d1cf64ada2c7f74f207b25f9305d66ecf",
+  "review_sha256": "67d389574851044d903b33323fba691b6389b81ce3e8f3d81539f060393f94f6",
   "comparisons": [
     {
       "id": "vial",
@@ -116,7 +116,7 @@
     {
       "id": "cross_formula",
       "pointers": [
-        "/case/sections/3/blocks/3"
+        "/case/sections/3/blocks/4"
       ],
       "groups": [
         {
@@ -149,7 +149,7 @@
         "C7"
       ],
       "qualification": {
-        "pointer": "/case/sections/3/blocks/3",
+        "pointer": "/case/sections/3/blocks/4",
         "quote": "跨 c/d 时 TA 数和聚合物质量浓度同时变化"
       }
     },
@@ -190,7 +190,7 @@
     {
       "id": "hybrid_concentration",
       "pointers": [
-        "/case/sections/5/blocks/5"
+        "/case/sections/5/blocks/7"
       ],
       "groups": [
         {
@@ -238,7 +238,7 @@
     {
       "id": "BSM_concentration",
       "pointers": [
-        "/case/sections/5/blocks/5"
+        "/case/sections/5/blocks/7"
       ],
       "groups": [
         {
@@ -286,7 +286,7 @@
     {
       "id": "time_hybrid",
       "pointers": [
-        "/case/sections/5/blocks/6"
+        "/case/sections/5/blocks/9"
       ],
       "groups": [
         {
@@ -337,7 +337,7 @@
       "claim_id": "C3",
       "stage": "最终lPGS-nTA光交联，而非前体合成",
       "visible_scope": {
-        "pointer": "/case/sections/1/blocks/2",
+        "pointer": "/case/sections/1/blocks/4",
         "quote": "“无需另加光引发剂或氧化剂”指最终 lPGS-nTA 的光交联成胶"
       }
     },
@@ -345,7 +345,7 @@
       "claim_id": "C8",
       "stage": "干燥SEM与湿态力学分别评价",
       "visible_scope": {
-        "pointer": "/case/sections/3/blocks/4",
+        "pointer": "/case/sections/3/blocks/7",
         "quote": "它们与湿态流变互补，不能直接显示水凝胶工作时的孔网"
       }
     },
@@ -360,234 +360,319 @@
   ],
   "panels": [
     {
-      "asset": "scheme",
-      "panel": "a/b/c",
-      "subject_state": "天然黏蛋白示意、合成骨架示意、TA开环/交联设计图",
-      "metrics": [],
-      "conditions": "设计而非实际中间体测量",
-      "source_locator": "正文Scheme1",
-      "pointers": [
-        "/case/sections/0/blocks/1",
-        "/case/sections/0/blocks/3"
-      ]
-    },
-    {
-      "asset": "f1",
-      "panel": "a",
-      "subject_state": "TA-NHS偶联侧基结构",
-      "metrics": [],
-      "conditions": "DMF:H2O、Et3N、室温24h",
-      "source_locator": "Fig1a",
-      "pointers": [
-        "/case/sections/1/blocks/0"
-      ]
-    },
-    {
-      "asset": "f1",
-      "panel": "b/c/d",
-      "subject_state": "b15TA5%照5min；c3TA10%照60min；d系列趋势",
-      "metrics": [],
-      "conditions": "pH7.4、370nm25mW/cm²、25°C；各配方条件不同",
-      "source_locator": "Fig1b–d",
-      "pointers": [
-        "/case/sections/2/blocks/0",
-        "/case/sections/2/blocks/5"
-      ]
-    },
-    {
-      "asset": "s5a",
-      "panel": "S5a",
-      "subject_state": "3%15TA不同照时NMR",
-      "metrics": [
-        "化学位移ppm"
-      ],
-      "conditions": "0/2/4/5/8/10min",
-      "source_locator": "SI物理p9下部",
-      "pointers": [
-        "/case/sections/2/blocks/2"
-      ]
-    },
-    {
-      "asset": "s5bc",
-      "panel": "S5b/c",
-      "subject_state": "6%15TA和10%3TA不同照时NMR",
-      "metrics": [
-        "化学位移ppm"
-      ],
-      "conditions": "b0/2/4/6/8/10min；c0/3/6/10min",
-      "source_locator": "SI物理p10",
-      "pointers": [
-        "/case/sections/2/blocks/2",
-        "/case/sections/2/blocks/6/detail/paragraphs/0"
-      ]
-    },
-    {
-      "asset": "f2",
+      "asset": "design-ab",
       "panel": "a/b",
-      "subject_state": "6TA及15TA浓度系列、光照后湿态流变",
-      "metrics": [
-        "G' Pa",
-        "G'' Pa",
-        "ω Hz"
-      ],
-      "conditions": "5minUV、370nm25mW/cm²、1%应变",
-      "source_locator": "Fig2a/b",
-      "pointers": [
-        "/case/sections/3/blocks/0",
-        "/case/sections/3/blocks/2"
-      ]
-    },
-    {
-      "asset": "f2",
-      "panel": "c/d",
-      "subject_state": "6TA8%、15TA5%独立样瓶照时系列",
-      "metrics": [
-        "G' Pa",
-        "G'' Pa",
-        "UV time min"
-      ],
-      "conditions": "1Hz、1%应变、0–10min",
-      "source_locator": "Fig2c/d",
-      "pointers": [
-        "/case/sections/3/blocks/3"
-      ]
-    },
-    {
-      "asset": "f2",
-      "panel": "e/f",
-      "subject_state": "15TA5%、6TA8%照前照后的干燥样品",
-      "metrics": [
-        "干态形貌，标尺50μm"
-      ],
-      "conditions": "0/5minUV，冻干/高真空干燥及镀金",
-      "source_locator": "Fig2e/f；SI方法p2",
-      "pointers": [
-        "/case/sections/3/blocks/4"
-      ]
-    },
-    {
-      "asset": "f3",
-      "panel": "a/b/c/d",
-      "subject_state": "掩膜装置示意、局部成胶照片",
+      "subject_state": "天然黏液与黏蛋白、拟构建的模型",
       "metrics": [],
-      "conditions": "4%15TA、370nm25mW/cm²5min、照后亚甲基蓝",
-      "source_locator": "Fig3a–d",
+      "conditions": "引言讨论天然黏液的来源、纯化与动态网络",
+      "source_locator": "正文 JATS · Scheme 1（d4sc08284b-s1）",
       "pointers": [
-        "/case/sections/4/blocks/0"
+        "/case/figures/design-ab/caption"
       ]
     },
     {
-      "asset": "f3",
-      "panel": "e/f",
-      "subject_state": "局部取出与均匀成胶样品",
-      "metrics": [
-        "G' Pa",
-        "G'' Pa",
-        "ω Hz"
-      ],
-      "conditions": "4%15TA，5minUV，e/f三次重复",
-      "source_locator": "Fig3e/f",
+      "asset": "design-c",
+      "panel": "c",
+      "subject_state": "光照前的 lPGS-nTA 大分子",
+      "metrics": [],
+      "conditions": "370 nm 光触发端点成胶；TA 数 n=3、5、6、15",
+      "source_locator": "正文 JATS · Scheme 1（d4sc08284b-s1）",
       "pointers": [
-        "/case/sections/4/blocks/2"
+        "/case/figures/design-c/caption"
       ]
     },
     {
-      "asset": "f4",
+      "asset": "synthesis-a",
       "panel": "a",
-      "subject_state": "4%BSM母液、8%15TA母液、2%+4%混合液及其照后样",
+      "subject_state": "光照前的 lPGS-nTA 大分子",
       "metrics": [],
-      "conditions": "母液与混合后的浓度分开；最终5minUV",
-      "source_locator": "Fig4a，实际放大view-f4a.png",
+      "conditions": "370 nm 光触发端点成胶；TA 数 n=3、5、6、15",
+      "source_locator": "正文 JATS · Fig. 1（d4sc08284b-f1）",
       "pointers": [
-        "/case/sections/5/blocks/0"
+        "/case/figures/synthesis-a/caption"
       ]
     },
     {
-      "asset": "f4",
+      "asset": "s4-identity",
+      "panel": "S4d及S4图注",
+      "subject_state": "光照成胶前的lPGS-nTA构件",
+      "metrics": [],
+      "conditions": "Fig.1a合成阶段及SI中D2O核磁；参照骨架邻硫酸基亚甲基",
+      "source_locator": "SI PDF 物理 p9 · Fig. S4d 与整组图注",
+      "pointers": [
+        "/case/figures/s4-identity/caption"
+      ]
+    },
+    {
+      "asset": "gel-vials",
+      "panel": "b/c",
+      "subject_state": "lPGS-15TA 5% 与 lPGS-3TA 10%；补充5TA/6TA",
+      "metrics": [],
+      "conditions": "pH7.4、10 mM PBS；370 nm、25 mW/cm²、25°C；不同时间",
+      "source_locator": "正文 JATS · Fig. 1（d4sc08284b-f1）",
+      "pointers": [
+        "/case/figures/gel-vials/caption"
+      ]
+    },
+    {
+      "asset": "gel-series",
+      "panel": "d",
+      "subject_state": "lPGS-15TA 5% 与 lPGS-3TA 10%；补充5TA/6TA",
+      "metrics": [],
+      "conditions": "pH7.4、10 mM PBS；370 nm、25 mW/cm²、25°C；不同时间",
+      "source_locator": "正文 JATS · Fig. 1（d4sc08284b-f1）",
+      "pointers": [
+        "/case/figures/gel-series/caption"
+      ]
+    },
+    {
+      "asset": "nmr-low",
+      "panel": "a",
+      "subject_state": "15TA 3%/6%，3TA 10% 的照前照后NMR；对应宏观状态",
+      "metrics": [
+        "chemical shift (ppm)"
+      ],
+      "conditions": "Fig.S5 0–10 min；正文另报告3TA 60min不成胶",
+      "source_locator": "SI PDF 物理 p9 · Fig. S5a",
+      "pointers": [
+        "/case/figures/nmr-low/caption"
+      ]
+    },
+    {
+      "asset": "nmr-comparison",
+      "panel": "b/c",
+      "subject_state": "15TA 3%/6%，3TA 10% 的照前照后NMR；对应宏观状态",
+      "metrics": [
+        "chemical shift (ppm)"
+      ],
+      "conditions": "Fig.S5 0–10 min；正文另报告3TA 60min不成胶",
+      "source_locator": "SI PDF 物理 p10 · Fig. S5b/c",
+      "pointers": [
+        "/case/figures/nmr-comparison/caption"
+      ]
+    },
+    {
+      "asset": "nmr-3ta",
+      "panel": "c",
+      "subject_state": "15TA 3%/6%，3TA 10% 的照前照后NMR；对应宏观状态",
+      "metrics": [
+        "chemical shift (ppm)"
+      ],
+      "conditions": "Fig.S5 0–10 min；正文另报告3TA 60min不成胶",
+      "source_locator": "SI PDF 物理 p10 · Fig. S5b/c",
+      "pointers": [
+        "/case/figures/nmr-3ta/caption"
+      ]
+    },
+    {
+      "asset": "rheology-ab",
+      "panel": "a/b",
+      "subject_state": "6TA/15TA 不同浓度光照后湿态样品",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "370nm、25mW/cm²；1%应变；横轴ω标Hz；主要比较1Hz",
+      "source_locator": "正文 JATS · Fig. 2（d4sc08284b-f2）",
+      "pointers": [
+        "/case/figures/rheology-ab/caption"
+      ]
+    },
+    {
+      "asset": "rheology-cd",
+      "panel": "c/d",
+      "subject_state": "6TA8%、15TA5%分别照射后取样流变",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "各瓶独立照射；1Hz、1%应变；0–10min",
+      "source_locator": "正文 JATS · Fig. 2（d4sc08284b-f2）",
+      "pointers": [
+        "/case/figures/rheology-cd/caption"
+      ]
+    },
+    {
+      "asset": "rheology-read",
+      "panel": "a/b",
+      "subject_state": "6TA/15TA 不同浓度光照后湿态样品",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "370nm、25mW/cm²；1%应变；横轴ω标Hz；主要比较1Hz",
+      "source_locator": "正文 JATS · Fig. 2（d4sc08284b-f2）",
+      "pointers": [
+        "/case/figures/rheology-read/caption"
+      ]
+    },
+    {
+      "asset": "rheology-time",
+      "panel": "c/d",
+      "subject_state": "6TA8%、15TA5%分别照射后取样流变",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "各瓶独立照射；1Hz、1%应变；0–10min",
+      "source_locator": "正文 JATS · Fig. 2（d4sc08284b-f2）",
+      "pointers": [
+        "/case/figures/rheology-time/caption"
+      ]
+    },
+    {
+      "asset": "morphology-ef",
+      "panel": "e/f",
+      "subject_state": "Fig2e/f、Fig4c–f及S10 干燥样品",
+      "metrics": [],
+      "conditions": "正文图2注称冻干；SI p2记高真空干燥、镀金5nm",
+      "source_locator": "正文 JATS · Fig. 2（d4sc08284b-f2）",
+      "pointers": [
+        "/case/figures/morphology-ef/caption"
+      ]
+    },
+    {
+      "asset": "local-ab",
+      "panel": "a/b",
+      "subject_state": "35mm培养皿中的4%15TA；掩膜孔直径8mm",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "370nm、25mW/cm²、5min；照后加亚甲基蓝；与均匀凝胶比较",
+      "source_locator": "正文 JATS · Fig. 3（d4sc08284b-f3）",
+      "pointers": [
+        "/case/figures/local-ab/caption"
+      ]
+    },
+    {
+      "asset": "local-cd",
+      "panel": "c/d",
+      "subject_state": "35mm培养皿中的4%15TA；掩膜孔直径8mm",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "370nm、25mW/cm²、5min；照后加亚甲基蓝；与均匀凝胶比较",
+      "source_locator": "正文 JATS · Fig. 3（d4sc08284b-f3）",
+      "pointers": [
+        "/case/figures/local-cd/caption"
+      ]
+    },
+    {
+      "asset": "local-ef",
+      "panel": "e/f",
+      "subject_state": "35mm培养皿中的4%15TA；掩膜孔直径8mm",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "370nm、25mW/cm²、5min；照后加亚甲基蓝；与均匀凝胶比较",
+      "source_locator": "正文 JATS · Fig. 3（d4sc08284b-f3）",
+      "pointers": [
+        "/case/figures/local-ef/caption"
+      ]
+    },
+    {
+      "asset": "hybrid-a",
+      "panel": "a",
+      "subject_state": "BSM母液、15TA母液、混合液、光照后混合物",
+      "metrics": [],
+      "conditions": "图4a标签；pH7.4最终照射370nm25mW/cm²5min",
+      "source_locator": "正文 JATS · Fig. 4（d4sc08284b-f4）",
+      "pointers": [
+        "/case/figures/hybrid-a/caption"
+      ]
+    },
+    {
+      "asset": "hybrid-b",
       "panel": "b",
-      "subject_state": "2%BSM、4%15TA及其混合物光照后",
+      "subject_state": "15TA4%、BSM2%、二者混合，照前/照后分别比较",
       "metrics": [
-        "G' Pa",
-        "G'' Pa",
-        "ω Hz"
+        "G' (Pa)",
+        "G'' (Pa)"
       ],
-      "conditions": "5minUV、370nm25mW/cm²、1%应变",
-      "source_locator": "Fig4b",
+      "conditions": "1%应变；5minUV；Fig4b为照后，S9为照前；1Hz取点",
+      "source_locator": "正文 JATS · Fig. 4（d4sc08284b-f4）",
       "pointers": [
-        "/case/sections/5/blocks/2"
+        "/case/figures/hybrid-b/caption"
       ]
     },
     {
-      "asset": "f4",
-      "panel": "c/d/e/f",
-      "subject_state": "无光聚合物/BSM/混合物与照后混合物的干燥样品",
+      "asset": "hybrid-dark",
+      "panel": "a/b/c",
+      "subject_state": "15TA4%、BSM2%、二者混合，照前/照后分别比较",
       "metrics": [
-        "干态SEM形貌"
+        "G' (Pa)",
+        "G'' (Pa)"
       ],
-      "conditions": "c/d50μm、e100μm、f30μm标尺；f照5min",
-      "source_locator": "Fig4c–f",
+      "conditions": "1%应变；5minUV；Fig4b为照后，S9为照前；1Hz取点",
+      "source_locator": "SI PDF 物理 p13 · Fig. S9a–c",
       "pointers": [
-        "/case/sections/5/blocks/4"
+        "/case/figures/hybrid-dark/caption"
       ]
     },
     {
-      "asset": "f4",
+      "asset": "hybrid-c",
+      "panel": "c",
+      "subject_state": "Fig2e/f、Fig4c–f及S10 干燥样品",
+      "metrics": [],
+      "conditions": "正文图2注称冻干；SI p2记高真空干燥、镀金5nm",
+      "source_locator": "正文 JATS · Fig. 4（d4sc08284b-f4）",
+      "pointers": [
+        "/case/figures/hybrid-c/caption"
+      ]
+    },
+    {
+      "asset": "hybrid-def",
+      "panel": "d/e/f",
+      "subject_state": "Fig2e/f、Fig4c–f及S10 干燥样品",
+      "metrics": [],
+      "conditions": "正文图2注称冻干；SI p2记高真空干燥、镀金5nm",
+      "source_locator": "正文 JATS · Fig. 4（d4sc08284b-f4）",
+      "pointers": [
+        "/case/figures/hybrid-def/caption"
+      ]
+    },
+    {
+      "asset": "hybrid-gh",
       "panel": "g/h",
-      "subject_state": "固定一组分改变另一组分的独立浓度系列",
+      "subject_state": "图4g固定BSM2%；图4h固定15TA4%",
       "metrics": [
-        "G' Pa",
-        "G'' Pa",
-        "% w/v"
+        "G' (Pa)",
+        "G'' (Pa)"
       ],
-      "conditions": "gBSM2%；h15TA4%；5minUV、1Hz",
-      "source_locator": "Fig4g/h",
+      "conditions": "g聚合物4/4.5/5%；h BSM0.5/1/2%；5minUV；1Hz",
+      "source_locator": "正文 JATS · Fig. 4（d4sc08284b-f4）",
       "pointers": [
-        "/case/sections/5/blocks/5"
+        "/case/figures/hybrid-gh/caption"
       ]
     },
     {
-      "asset": "f4",
+      "asset": "hybrid-i",
       "panel": "i",
-      "subject_state": "4%15TA与4%15TA+2%BSM两体系",
+      "subject_state": "4%15TA及4%15TA+2%BSM",
       "metrics": [
-        "G' Pa",
-        "UV time min"
+        "G' (Pa)"
       ],
-      "conditions": "3/5/8minUV、1Hz；只画G′",
-      "source_locator": "Fig4i，实际图例核对",
+      "conditions": "3/5/8minUV；Fig4i取1Hz；S13给全频率双模量",
+      "source_locator": "正文 JATS · Fig. 4（d4sc08284b-f4）",
       "pointers": [
-        "/case/sections/5/blocks/6"
+        "/case/figures/hybrid-i/caption"
       ]
     },
     {
-      "asset": "s9",
-      "panel": "S9a/b/c",
-      "subject_state": "4/4.5/5%15TA与2%BSM及混合物照前",
+      "asset": "hybrid-full-frequency",
+      "panel": "a/b",
+      "subject_state": "4%15TA及4%15TA+2%BSM",
       "metrics": [
-        "G' Pa",
-        "G'' Pa",
-        "ω Hz"
+        "G' (Pa)",
+        "G'' (Pa)"
       ],
-      "conditions": "无光，1%应变，三次重复",
-      "source_locator": "SI物理p13上部",
+      "conditions": "3/5/8minUV；Fig4i取1Hz；S13给全频率双模量",
+      "source_locator": "SI PDF 物理 p14 · Fig. S13a/b",
       "pointers": [
-        "/case/sections/5/blocks/2"
-      ]
-    },
-    {
-      "asset": "s13",
-      "panel": "S13a/b",
-      "subject_state": "4%15TA和4%15TA+2%BSM在不同光时后",
-      "metrics": [
-        "G' Pa",
-        "G'' Pa",
-        "ω Hz"
-      ],
-      "conditions": "黑/红/蓝3/5/8min；实/空为两模量",
-      "source_locator": "SI物理p14下部；放大view-S13.png",
-      "pointers": [
-        "/case/sections/5/blocks/7",
-        "/case/sections/5/blocks/8/detail/paragraphs/0"
+        "/case/figures/hybrid-full-frequency/caption"
       ]
     }
   ],
@@ -607,16 +692,17 @@
       "C11",
       "C12",
       "C13",
-      "C14"
+      "C14",
+      "C15"
     ],
-    "summary": "按正文P1–20科学内容、全部主图和SI相关方法/对照回源再核对。特别检查Fig4a母液身份、Fig4i实际指标、c/d跨配方比较及干燥形貌边界；审阅为同一代理第二遍，未冒充独立审查。",
+    "summary": "回读原JATS引言、合成、NMR、流变、空间成胶和BSM结果/图注，以及SI物理p5、p9、p10、p13、p14；实际查看全部原图及新版SVG联系表。原主干保持，新增138项可见表述另行对照来源。视觉检查发现Fig4b图例裁切和相邻面板残片，已改为保留b/c同带、拆开S5b/c并修正边界。此为同代理第二遍，不是独立审稿或真人效果试验。",
     "findings": [
       {
         "id": "metric-caption",
         "issue": "Fig4集合图注称G′/G″，而i实际仅G′，需保留面板口径。",
         "resolution": "retained_qualified",
         "visible_resolution": {
-          "pointer": "/case/sections/5/blocks/7",
+          "pointer": "/case/sections/5/blocks/11",
           "quote": "Fig.4i 实际只画 G′"
         },
         "evidence_claim_ids": [
@@ -633,6 +719,18 @@
         },
         "evidence_claim_ids": [
           "C10"
+        ]
+      },
+      {
+        "id": "figure-band-legend",
+        "issue": "初版矩形窗口会截掉Fig4b右端图例，且整页S5b/c过小。",
+        "resolution": "revised",
+        "visible_resolution": {
+          "pointer": "/case/figures/hybrid-b/caption",
+          "quote": "保留同带右侧c，使b的完整图例可相互核对"
+        },
+        "evidence_claim_ids": [
+          "C11"
         ]
       }
     ]

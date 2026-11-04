@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "input_sha256": "957fa978d09f69491c980e4804f045489fa574ee8085db5a1334b8a447ae335e",
+  "input_sha256": "cafa9d06b7597c5fd9699992bcab302d1cf64ada2c7f74f207b25f9305d66ecf",
   "claims": [
     {
       "id": "C1",
@@ -32,6 +32,15 @@
           "legend": "a 天然黏蛋白；b 合成聚甘油；c TA 开环/交联示意",
           "conditions": "设计示意；非直接观测中间体",
           "observation": "a 末端硫醇/二硫键连接；b 硫酸化链与光敏单元；c 环状二硫键、自由基式及交联结构以可逆箭头相接"
+        },
+        {
+          "kind": "figure",
+          "asset": "design-ab",
+          "panels": "a/b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "a 的天然黏蛋白连接与 b 的合成骨架并排保留；蓝色五边形和粉色连接标记按原图解释。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "a以端部二硫键连接天然黏蛋白；b以带光敏单元的合成链呈现连接和成胶设计。"
         }
       ]
     },
@@ -65,6 +74,33 @@
           "legend": "lPGS-NH2、TA-NHS、lPGS-nTA；n=3,5,6,15",
           "conditions": "DMF:H2O；Et3N；RT；24 h",
           "observation": "TA-NHS 与侧基胺形成酰胺连接，TA 的五元二硫环保留于产物侧基"
+        },
+        {
+          "kind": "figure",
+          "asset": "design-ab",
+          "panels": "a/b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "a 的天然黏蛋白连接与 b 的合成骨架并排保留；蓝色五边形和粉色连接标记按原图解释。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "a以端部二硫键连接天然黏蛋白；b以带光敏单元的合成链呈现连接和成胶设计。"
+        },
+        {
+          "kind": "figure",
+          "asset": "design-c",
+          "panels": "c",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "保留整条化学示意及可逆箭头；这里展示作者的设计图景。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "左侧TA环状二硫键，中间含自由基式，右侧画出连接结构；箭头为作者机制示意。"
+        },
+        {
+          "kind": "figure",
+          "asset": "synthesis-a",
+          "panels": "a",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "完整保留反应物、箭头条件及产物标注；这一局部用于制备阶段。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "左为lPGS-NH2，中为TA活化酯；右侧聚合物上增加含环状二硫键的酰胺侧基，n标3、5、6、15。"
         }
       ]
     },
@@ -110,6 +146,15 @@
           "source": "A-main",
           "locator": "Results P6，合成路线",
           "quote": "First, we synthesized a linear polyglycerol backbone by anionic ring-opening polymerization of ethoxyethyl glycidyl ether and allyl glycidyl ether, followed by deprotection in slightly acidic media. 43  Next, the polymer was sulfated by following a reported protocol. 46  The allyl glycidyl units on the backbone were then functionalized with cysteamine through thiol–ene chemistry and characterized by NMR (Scheme S1 and Fig. S1–S3 † ). 43"
+        },
+        {
+          "kind": "figure",
+          "asset": "synthesis-a",
+          "panels": "a",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "完整保留反应物、箭头条件及产物标注；这一局部用于制备阶段。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "左为lPGS-NH2，中为TA活化酯；右侧聚合物上增加含环状二硫键的酰胺侧基，n标3、5、6、15。"
         }
       ]
     },
@@ -155,6 +200,24 @@
           "legend": "b 15TA；c 3TA；d 3/5/6/15TA系列",
           "conditions": "b 5%、5min；c10%、60min；370nm 25mW/cm² pH7.4 25°C",
           "observation": "b照后不沿瓶流动，c照后仍聚于下侧；d楔形箭头概括TA增多、用量/照时降低趋势，不是数值曲线"
+        },
+        {
+          "kind": "figure",
+          "asset": "gel-vials",
+          "panels": "b/c",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "b/c的照片、照时和光条件共同保留；具体配方见相邻正文。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "b的15TA5%在5min后不再自由流动，c的3TA10%在60min后仍流动。"
+        },
+        {
+          "kind": "figure",
+          "asset": "gel-series",
+          "panels": "d",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "d是对系列的归纳示意，实际成功/失败配方还需结合正文与Table S1。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "四种nTA材料并列；蓝色TA数量、橙色照时及绿色所需用量以楔形变化概括关系。"
         }
       ]
     },
@@ -197,6 +260,42 @@
           "legend": "b 15TA 6%：0、2、4、6、8、10min；c 3TA10%：0、3、6、10min",
           "conditions": "光照时间按各面板独立标签",
           "observation": "两面板黄色标区峰降低、蓝区分裂变得不清；c时间至10min，不能将其当60min谱"
+        },
+        {
+          "kind": "figure",
+          "asset": "gel-series",
+          "panels": "d",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "d是对系列的归纳示意，实际成功/失败配方还需结合正文与Table S1。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "四种nTA材料并列；蓝色TA数量、橙色照时及绿色所需用量以楔形变化概括关系。"
+        },
+        {
+          "kind": "figure",
+          "asset": "nmr-low",
+          "panels": "a",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "3% lPGS-15TA；时间从下方0min向上增加，保留化学位移与原标区。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "黄色和蓝色区域的特征谱随照时减弱或并合；该配方正文报告不成胶。"
+        },
+        {
+          "kind": "figure",
+          "asset": "nmr-comparison",
+          "panels": "b/c",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "SI物理p10的b；保留完整化学位移轴、时间标注与原标区，图注可在原页回看。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "6%15TA和10%3TA均有照时相关谱变化，正文报告两者宏观成胶结果不同。"
+        },
+        {
+          "kind": "figure",
+          "asset": "nmr-3ta",
+          "panels": "c",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "SI物理p10的c；0、3、6、10min时间标注与化学位移轴完整保留。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "10%3TA的局部谱随照时发生变化，正文报告该配方仍不成胶。"
         }
       ]
     },
@@ -236,6 +335,24 @@
           "legend": "实心G′/空心G″；a 7/7.5/8/10%；b3.5/4/4.5/5%",
           "conditions": "5minUV；370nm25mW/cm²；1%应变",
           "observation": "低频红色阈值组G′明显高于G″；更高浓度两模量提高；高频上扬；不是全频率常数"
+        },
+        {
+          "kind": "figure",
+          "asset": "rheology-ab",
+          "panels": "a/b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "成对保留a/b的坐标、浓度与实心/空心图例；光照5min，1%应变。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "6TA7→7.5%、15TA3.5→4%时低频G′占优，G′和G″用成对实心/空心符号区分。"
+        },
+        {
+          "kind": "figure",
+          "asset": "rheology-read",
+          "panels": "a/b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "与主干使用同一组数据；这里专门说明坐标、配对符号和比较顺序。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "相同颜色与符号形状的实心/空心标记构成同一浓度的G′/G″配对。"
         }
       ]
     },
@@ -269,6 +386,24 @@
           "legend": "c6TA8%、d15TA5%；黑方块G′，红点G″",
           "conditions": "1Hz、1%应变，各瓶独立照时",
           "observation": "G′明显上升、G″贴近底部；d总体高于c；后段趋缓但d10min仍比中段高，避免绝对恒定"
+        },
+        {
+          "kind": "figure",
+          "asset": "rheology-cd",
+          "panels": "c/d",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "c为6TA8%，d为15TA5%；保留两张纵轴范围、照时轴和误差棒。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "两组G′随照时增加再趋缓，G″较低；配方质量浓度不同，不能作单因素归因。"
+        },
+        {
+          "kind": "figure",
+          "asset": "rheology-time",
+          "panels": "c/d",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "每点是独立照射的样品；跨图时配方和纵轴范围一起核对。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "c约3min后明显增大，d约2min起增大，晚期增长趋缓；两图y轴量程不同。"
         }
       ]
     },
@@ -312,6 +447,33 @@
           "legend": "c4%15TA无UV；d2%BSM无UV；e混合无UV；f混合5minUV",
           "conditions": "干燥、镀金SEM；不同图倍率/标尺不同",
           "observation": "c片状不规则；d纤维；e不规则混合结构；f多孔网状；四幅不是同一溶液连续时间轨迹"
+        },
+        {
+          "kind": "figure",
+          "asset": "morphology-ef",
+          "panels": "e/f",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "各行保留照前、照后及50μm标尺；样品按图注经过冻干。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "e/f各自照前与照后形貌发生变化；15TA一行照后纤维网络更致密，不能据图直接读湿态孔径或键型。"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-c",
+          "panels": "c",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "本步读右侧c的聚合物形貌及50μm标尺；左侧b是相邻流变面板。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "未照光4%聚合物的干态形貌，配对阅读需回到其样品身份。"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-def",
+          "panels": "d/e/f",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "d为BSM，e为无光混合物，f为照后混合物；三个标尺分别保留。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "照后混合样品出现多孔形貌；d/e/f不是同一份样品的等比例连续时间录像。"
         }
       ]
     },
@@ -345,6 +507,33 @@
           "legend": "e局部；f均匀；黑方块G′，红点G″",
           "conditions": "4%15TA；UV370nm25mW/cm²5min；e/f三次重复",
           "observation": "b圆形透明区；c双圆；d圆/矩形/三角；e/f低频G′高于G″，约十Pa量级且高频上扬"
+        },
+        {
+          "kind": "figure",
+          "asset": "local-ab",
+          "panels": "a/b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "保留装置示意、实际培养皿与掩膜照片；b为局部照射后的显示。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "a中央8mm孔限定照射，b中央透明凝胶区与掩膜开孔对应。"
+        },
+        {
+          "kind": "figure",
+          "asset": "local-cd",
+          "panels": "c/d",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "圆孔、矩形和三角形掩膜及对应凝胶区同框保留。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "不同掩膜开孔与培养皿中的凝胶区域在几何上对应；蓝色水相用作显示。"
+        },
+        {
+          "kind": "figure",
+          "asset": "local-ef",
+          "panels": "e/f",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "e为局部取出的凝胶，f为均匀形成样品；保留各自坐标与模量图例。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "两组中黑方块G′高于红点G″；这是与局部形状照片互补的流变信息。"
         }
       ]
     },
@@ -384,6 +573,15 @@
           "source": "A-main",
           "locator": "Results P16，文献高浓度背景",
           "quote": "It has been shown that BSM only begins to exhibit viscoelasticity comparable to healthy sputum at a concentration range of 10–14% (w/v)."
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-a",
+          "panels": "a",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "保留示意中的4%BSM、8%聚合物，以及混合后2%BSM+4%聚合物标注。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "最左两份是母液，第三份为混合液，第四份为同配方照后凝胶；不把母液标签当作最终配方。"
         }
       ]
     },
@@ -420,6 +618,33 @@
           "legend": "a聚合物4%；b4.5%；c5%；各与2%BSM及混合对照",
           "conditions": "照前；三次重复，误差棒省略",
           "observation": "低频各组模量较低；没有光后混合物高的G′平台；不能以高频上扬代替低频判断"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-b",
+          "panels": "b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "本步先读左侧b的三组曲线；保留同带右侧c，使b的完整图例可相互核对。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "三组同受光照后，混合组低频G′高于对应单组分；实心/空心表示G′/G″。"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-dark",
+          "panels": "a/b/c",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "SI物理p13；a/b/c分别对应4%、4.5%、5%聚合物与固定2%BSM的无光对照。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "无光下三组的G′/G″均较低，未出现照后混合物那样的高弹性平台。"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-def",
+          "panels": "d/e/f",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "d为BSM，e为无光混合物，f为照后混合物；三个标尺分别保留。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "照后混合样品出现多孔形貌；d/e/f不是同一份样品的等比例连续时间录像。"
         }
       ]
     },
@@ -456,6 +681,24 @@
           "legend": "a4%15TA；b4%15TA+2%BSM；黑/红/蓝为3/5/8min，实/空分两模量",
           "conditions": "各体系独立照3/5/8min；三次重复，误差棒省略",
           "observation": "a低频G′随照时改变较小；b各时G′均高于相应G″并随照时上移；包含图4i未画的G″"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-i",
+          "panels": "i",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "这里两种符号对应两个体系的G′；没有G″曲线。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "红圆点混合体系G′随照时显著提高，黑方块聚合物单独变化较小。"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-full-frequency",
+          "panels": "a/b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "SI物理p14；a为聚合物，b为混合体系；实心/空心区分G′/G″。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "3、5、8min在两体系中的频率曲线；混合体系随照时的G′变化显著，补足Fig.4i未显示的指标与频率维度。"
         }
       ]
     },
@@ -483,6 +726,15 @@
           "legend": "黑方G′；红点G″；两个独立配方系列",
           "conditions": "1Hz、5minUV；g固定BSM2%；h固定15TA4%",
           "observation": "g黑方上升；h黑方上升，红点较低变化小；g/h纵轴量程不同"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-gh",
+          "panels": "g/h",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "g改变聚合物、固定BSM；h改变BSM、固定聚合物，各自y轴范围不同。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "两组G′均随所改变组分浓度提高而增加，h中的G″变化较小。"
         }
       ]
     },
@@ -507,6 +759,49 @@
           "source": "A-main",
           "locator": "Results，P19",
           "quote": "It is a challenging task for a single synthetic building block to capture all of these structural features along with functional macroscopic properties such as viscoelasticity."
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "statement": "作者通过TA-NHS与胺化lPGS偶联构建nTA系列，并以可归属的NMR积分支持TA接枝。",
+      "level": "derived",
+      "subject": "光照成胶前的lPGS-nTA构件",
+      "conditions": "Fig.1a合成阶段及SI中D2O核磁；参照骨架邻硫酸基亚甲基",
+      "scope": "构件制备与系列身份，不是单链接枝数分布的独立测定",
+      "support": "主文给出偶联路线和nTA系列，S4图注说明参照积分和特征质子归属",
+      "limit": "部分烷基峰与溶剂或骨架重叠，不能以任意单峰独立定量每条链",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results：构件合成",
+          "quote": "by linking different numbers of TA units within the backbone in a controlled way"
+        },
+        {
+          "kind": "text",
+          "source": "A-si",
+          "page": 9,
+          "locator": "SI物理p9，Fig.S4图注",
+          "quote": "The integral of protons from -CH2- group adjacent to the -OSO3- on the backbone (a) was used as a reference."
+        },
+        {
+          "kind": "figure",
+          "asset": "synthesis-a",
+          "panels": "a",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "完整保留反应物、箭头条件及产物标注；这一局部用于制备阶段。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "左为lPGS-NH2，中为TA活化酯；右侧聚合物上增加含环状二硫键的酰胺侧基，n标3、5、6、15。"
+        },
+        {
+          "kind": "figure",
+          "asset": "s4-identity",
+          "panels": "S4d及S4图注",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "物理p9中的15TA谱及整组图注；未把单幅谱写成全部系列。",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "图中给出15TA的结构字母、化学位移和积分；图注说明以骨架邻硫酸基亚甲基作参照，部分峰受重叠影响。"
         }
       ]
     }
@@ -595,25 +890,53 @@
     },
     {
       "pointer": "/case/sections/0/blocks/4/detail/title",
-      "text_sha256": "9761f0f3fe9013467f0e16e7c0dfe70a2245ddf3c9b483d274e6429a8fc9f282",
+      "text_sha256": "1ca9bcc7d776b42e3d59164cee455994e68fea5b26ba42d3710e799ec6ddb399",
       "kind": "factual",
       "claim_ids": [
-        "C2",
-        "C14"
+        "C2"
       ],
-      "verdict": "qualified",
-      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+      "verdict": "aligned",
+      "reason": "实际查看Scheme1a–c及主文设计段：保留光响应构件与作者化学图景的层次，未把自由基式或可逆箭头写成中间体实测和循环验证。"
     },
     {
-      "pointer": "/case/sections/0/blocks/4/detail/paragraphs/0",
-      "text_sha256": "c61688c93708200c5428a7742f343757c047f2ec1b1fead88864c6fcfb93adf9",
+      "pointer": "/case/sections/0/blocks/4/detail/blocks/0/walkthrough/title",
+      "text_sha256": "e936f87825ffde0744040c9dc68ae271ee7dbf036a64ab483ed37535c992f3ab",
       "kind": "factual",
       "claim_ids": [
-        "C2",
-        "C14"
+        "C2"
       ],
-      "verdict": "qualified",
-      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+      "verdict": "aligned",
+      "reason": "实际查看Scheme1a–c及主文设计段：保留光响应构件与作者化学图景的层次，未把自由基式或可逆箭头写成中间体实测和循环验证。"
+    },
+    {
+      "pointer": "/case/sections/0/blocks/4/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "ed5adaee0a02dd304f31da1307a6ccd750c4a1e50aeb212c74de4081a03382b5",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Scheme1a–c及主文设计段：保留光响应构件与作者化学图景的层次，未把自由基式或可逆箭头写成中间体实测和循环验证。"
+    },
+    {
+      "pointer": "/case/sections/0/blocks/4/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "65c550e0dcc968ffaeda7e02345d897c38cf3dc655faafb3412eaa044fcb24ee",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Scheme1a–c及主文设计段：保留光响应构件与作者化学图景的层次，未把自由基式或可逆箭头写成中间体实测和循环验证。"
+    },
+    {
+      "pointer": "/case/sections/0/blocks/4/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "897d80a36afb8e0b5dc752e74f40a99bef83380d5771a3c00d8816d26621779c",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Scheme1a–c及主文设计段：保留光响应构件与作者化学图景的层次，未把自由基式或可逆箭头写成中间体实测和循环验证。"
     },
     {
       "pointer": "/case/sections/1/title",
@@ -638,7 +961,7 @@
       "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 逐查SI p5引发剂、p6偶联及p9积分参照；优势限定末端交联，不扩成全路线或逐链分布。"
     },
     {
-      "pointer": "/case/sections/1/blocks/1",
+      "pointer": "/case/sections/1/blocks/2",
       "text_sha256": "94e895cfc2a8ac3725e83933cbfd7c6686a49096c4e6f9336abcd620bfe13de1",
       "kind": "factual",
       "claim_ids": [
@@ -648,7 +971,57 @@
       "reason": "逐查SI p5引发剂、p6偶联及p9积分参照；优势限定末端交联，不扩成全路线或逐链分布。"
     },
     {
-      "pointer": "/case/sections/1/blocks/2",
+      "pointer": "/case/sections/1/blocks/3/detail/title",
+      "text_sha256": "5d39d5b5a057ac6b186d6685df4095be7ac0d1305e2bbba2ed1bf163ca5b6ce3",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文构件合成、Fig1a及SI物理p9的S4d/整组图注，核对参照积分、字母归属和残余溶剂星号；单幅15TA谱不冒充全部系列或单链接枝分布测定。"
+    },
+    {
+      "pointer": "/case/sections/1/blocks/3/detail/blocks/0/walkthrough/title",
+      "text_sha256": "bdfabb5364263ec4e85cf248c15ac3a00b877a9d580a3bb813d374cee3e414b3",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文构件合成、Fig1a及SI物理p9的S4d/整组图注，核对参照积分、字母归属和残余溶剂星号；单幅15TA谱不冒充全部系列或单链接枝分布测定。"
+    },
+    {
+      "pointer": "/case/sections/1/blocks/3/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "6277c7d5158258f9f92006854ca91c00e77bb266c2b6bb97e908d302768e56ad",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文构件合成、Fig1a及SI物理p9的S4d/整组图注，核对参照积分、字母归属和残余溶剂星号；单幅15TA谱不冒充全部系列或单链接枝分布测定。"
+    },
+    {
+      "pointer": "/case/sections/1/blocks/3/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "8390e63e51acee39aa4c2a2b648a9ccdab7e29c0ad1bc952bce37962b0db3ba1",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文构件合成、Fig1a及SI物理p9的S4d/整组图注，核对参照积分、字母归属和残余溶剂星号；单幅15TA谱不冒充全部系列或单链接枝分布测定。"
+    },
+    {
+      "pointer": "/case/sections/1/blocks/3/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "2420d2716302edb24f39b8c8ebd8a46627292b6aee962bd9519cdc37018ee8db",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文构件合成、Fig1a及SI物理p9的S4d/整组图注，核对参照积分、字母归属和残余溶剂星号；单幅15TA谱不冒充全部系列或单链接枝分布测定。"
+    },
+    {
+      "pointer": "/case/sections/1/blocks/4",
       "text_sha256": "1ec1f7586d9692ce3d88b57fe7218623f5f3ee787b23483546122b65b57ae2a8",
       "kind": "factual",
       "claim_ids": [
@@ -691,7 +1064,117 @@
       "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
     },
     {
-      "pointer": "/case/sections/2/blocks/5",
+      "pointer": "/case/sections/2/blocks/3/detail/title",
+      "text_sha256": "74b651d2f52695d2e0a8a955dae0b0bb05c63a50bf50bb486fcc1570b82f0a8c",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/0/walkthrough/title",
+      "text_sha256": "c79ebf0ba1e324fc21c6759a4fdc9f142cd85087585e7a1b57a4b2fce3e1c0c8",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "48b9bc118301e10d71d965cc05fbb6353d33a2c23084dc72c1229fbe0d0d4222",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "6707a3cc7d88c4883053a2d0d198ccc857e913a32222ddaa84319d5e2c892d17",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "02be9aee4e95b2b279142f637d12b02778c9b1c6b32da6126f0bfd7b1faf86d8",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/1/walkthrough/title",
+      "text_sha256": "c7e0ee6c2227035e94d3d6b08b6eceb6ebad6da0f84a8e07cd11b1fd9fd5f764",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/1/walkthrough/lead",
+      "text_sha256": "2152fae4b45c00ec18c0a214841af191c6764838fa868eeb9237493fe21c2429",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/1/walkthrough/paragraphs/0",
+      "text_sha256": "372ad30db020d80a31b57aad2dc371a53bd23319ac26dc2332a6153b9f79ffec",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/2/walkthrough/title",
+      "text_sha256": "119b67e28b3db4d4236a87a962041e24f9192c46f24ad5bf88f6b01401de15f4",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/2/walkthrough/lead",
+      "text_sha256": "51f4ec110b6cff0e7f8de8d613bcff99158a474348df935baf33882de7186466",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/2/walkthrough/paragraphs/0",
+      "text_sha256": "849bf018b7626bea382f5913b944a723637430b0787cb60bc1ad6fc879aef284",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/4",
       "text_sha256": "a18b6ac46494930ace9e7fb7d8f15ae8403abb616d7750a8a971f1452d845e22",
       "kind": "factual",
       "claim_ids": [
@@ -703,26 +1186,59 @@
       "reason": "Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。 回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。"
     },
     {
-      "pointer": "/case/sections/2/blocks/6/detail/title",
-      "text_sha256": "dc434d369e6f55d8ad7a7aacdf9386e4627d82212e08dee6e501f011a6051c47",
+      "pointer": "/case/sections/2/blocks/5/detail/title",
+      "text_sha256": "58a00b8204e5049e350d6873bfd09048ac2a3e3bba17abba62fa80cc6a0c196f",
       "kind": "factual",
       "claim_ids": [
-        "C5",
-        "C4"
+        "C4",
+        "C5"
       ],
-      "verdict": "qualified",
-      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
+      "verdict": "aligned",
+      "reason": "核对Fig1a–d照片、原图标签与正文成功/失败配方；同时保留接枝量、浓度与照时变化，不作单变量归因。；回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
     },
     {
-      "pointer": "/case/sections/2/blocks/6/detail/paragraphs/0",
-      "text_sha256": "2239a6d084c3d3f351c3b6c8f7117c5f7ceb1994c6c82e0f5c5a187a9a4ea9df",
+      "pointer": "/case/sections/2/blocks/5/detail/blocks/0/walkthrough/title",
+      "text_sha256": "3033f9f6f017b61b16b008f8c5be4f2bf3bc7b98db5fbf8e9606da3eb16ab028",
       "kind": "factual",
       "claim_ids": [
-        "C5",
-        "C4"
+        "C4",
+        "C5"
       ],
-      "verdict": "qualified",
-      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
+      "verdict": "aligned",
+      "reason": "核对Fig1a–d照片、原图标签与正文成功/失败配方；同时保留接枝量、浓度与照时变化，不作单变量归因。；回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/5/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "ecf1632cc6493c0b5cd82bf77dcb2476ab03dbec8a2342c001b03752a76349bf",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig1a–d照片、原图标签与正文成功/失败配方；同时保留接枝量、浓度与照时变化，不作单变量归因。；回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/5/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "c9c9f28369503afc3350e4ba205f30a288f77111b2ac8987965fa50c0e02c7b8",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig1a–d照片、原图标签与正文成功/失败配方；同时保留接枝量、浓度与照时变化，不作单变量归因。；回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/5/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "978503c4196a6f04be6c9c9bcd6c486bdf41ff31867d325d475250df0c57f28e",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig1a–d照片、原图标签与正文成功/失败配方；同时保留接枝量、浓度与照时变化，不作单变量归因。；回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
     },
     {
       "pointer": "/case/sections/3/title",
@@ -758,7 +1274,57 @@
       "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
     },
     {
-      "pointer": "/case/sections/3/blocks/3",
+      "pointer": "/case/sections/3/blocks/3/detail/title",
+      "text_sha256": "c6f0ff34cb2323acaac16a7b869b5ed08254a592c22e685a15cceca1368b06af",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/3/detail/blocks/0/walkthrough/title",
+      "text_sha256": "9536131e9ae9118366a0ad8b4455bd60f237fa6f9df79c667f310c02a2af6477",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/3/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "cbc23c3013a64b45a3b62e6d6f7ff98edbec0c6df5a3462b808ef91247c2ad65",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/3/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "04aa25f2cabb0e8ba034a417bd55da971f63e2cc03556f5432dd68e942609ccb",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/3/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "9f3a72801b4b5b6cb38430bf6258afb0f2770f3a2ab74b45ee3f3692dcf498e5",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/4",
       "text_sha256": "68f93b57bb9683d18268122ff0ebd0d00b5497b4912ed0dafdea11e6585c4a81",
       "kind": "factual",
       "claim_ids": [
@@ -768,7 +1334,62 @@
       "reason": "核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。"
     },
     {
-      "pointer": "/case/sections/3/blocks/4",
+      "pointer": "/case/sections/3/blocks/6/detail/title",
+      "text_sha256": "21dbd3022cd1195fd0e12abc9fa2d0f658bbdaa1a0e8d873f448540521c2e913",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。；回读固定配方独立照射实验及Fig2c/d；c为8%6TA、d为5%15TA，时间响应和跨配方比较分开，未把趋缓写成反应完全。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/6/detail/blocks/0/walkthrough/title",
+      "text_sha256": "1291c593254f417a09635aeb82ca0e731bfa30fd2cb977860c50c11e4c226848",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。；回读固定配方独立照射实验及Fig2c/d；c为8%6TA、d为5%15TA，时间响应和跨配方比较分开，未把趋缓写成反应完全。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/6/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "94ad66c98a5b5fca09855e4f0e93e749d24d934ee2faac1fadc2fda55b820608",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。；回读固定配方独立照射实验及Fig2c/d；c为8%6TA、d为5%15TA，时间响应和跨配方比较分开，未把趋缓写成反应完全。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/6/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "07f04bd2e1944587df88177bb5ec0b88e37c7f00ad3e19fc8fa63c550614db7f",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。；回读固定配方独立照射实验及Fig2c/d；c为8%6TA、d为5%15TA，时间响应和跨配方比较分开，未把趋缓写成反应完全。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/6/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "59a0c6dab08619627d1472c16a5c637856bb4bfaf73d08477328d66186d307b4",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。；回读固定配方独立照射实验及Fig2c/d；c为8%6TA、d为5%15TA，时间响应和跨配方比较分开，未把趋缓写成反应完全。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/7",
       "text_sha256": "f88bdaa680bd6d0451db61fd5e315241a24a448725537d2f6b30da2dc87daf39",
       "kind": "factual",
       "claim_ids": [
@@ -780,26 +1401,54 @@
       "reason": "核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。 回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。"
     },
     {
-      "pointer": "/case/sections/3/blocks/5/detail/title",
-      "text_sha256": "b65435b29d0cba305c34965ed9abeb2469c3fcbfe42997fc982afb80e3ad5827",
+      "pointer": "/case/sections/3/blocks/8/detail/title",
+      "text_sha256": "4b3cef1c6b2a7152fa856d49936313ca6056cfb1ad38a6fe5fe60b6b86bf3a64",
       "kind": "factual",
       "claim_ids": [
-        "C6",
-        "C7"
+        "C8"
       ],
       "verdict": "aligned",
-      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。"
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。"
     },
     {
-      "pointer": "/case/sections/3/blocks/5/detail/paragraphs/0",
-      "text_sha256": "2852970f7feae3eaec42acebcf8eaa247b976a789d2af02c66651165c4032705",
+      "pointer": "/case/sections/3/blocks/8/detail/blocks/0/walkthrough/title",
+      "text_sha256": "6846d7dfc9ad41c84a4413274b4b6968755b518b746c499db06110ac94e239e3",
       "kind": "factual",
       "claim_ids": [
-        "C6",
-        "C7"
+        "C8"
       ],
       "verdict": "aligned",
-      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。"
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/8/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "5ec5bddb10b2fd9a54bbea80f6abcbe716965cd196cd9495d3c4ef045a97b472",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/8/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "9843868f0de7f0a08e32a1f458e33e4300f8bd06e85d1bfa3b35f512678e9760",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/8/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "5da0e992945f12236c21ddd9e61deae2a366967577823b424b5dedea5a395e23",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。"
     },
     {
       "pointer": "/case/sections/4/title",
@@ -822,7 +1471,57 @@
       "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。"
     },
     {
-      "pointer": "/case/sections/4/blocks/2",
+      "pointer": "/case/sections/4/blocks/2/detail/title",
+      "text_sha256": "69c1377c7d30f81a23d31b90191119715eea086c30c113a03e5ab6126a9bca0e",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "对照主文局部照射段与Fig3a–f，核对8mm开孔、4%15TA、几何照片及e/f流变；染料在照后加入，未以颜色定量交联。"
+    },
+    {
+      "pointer": "/case/sections/4/blocks/2/detail/blocks/0/walkthrough/title",
+      "text_sha256": "dd4083b0b0dbd125fc0e3611c435925fc2e11199fcf99b13156c14d22ca2f057",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "对照主文局部照射段与Fig3a–f，核对8mm开孔、4%15TA、几何照片及e/f流变；染料在照后加入，未以颜色定量交联。"
+    },
+    {
+      "pointer": "/case/sections/4/blocks/2/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "42e33c424a1da8b27580451e4de309826cd78bfda27b382dc318be5345425e76",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "对照主文局部照射段与Fig3a–f，核对8mm开孔、4%15TA、几何照片及e/f流变；染料在照后加入，未以颜色定量交联。"
+    },
+    {
+      "pointer": "/case/sections/4/blocks/2/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "8ff7c92365a96e213d51452288309ad327ede37c4493b6bbc136ee72cf940c95",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "对照主文局部照射段与Fig3a–f，核对8mm开孔、4%15TA、几何照片及e/f流变；染料在照后加入，未以颜色定量交联。"
+    },
+    {
+      "pointer": "/case/sections/4/blocks/2/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "203649a69afb14c96e20b0983fd376160ea3a73c5731155b6b1f4ebdf426c1c5",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "对照主文局部照射段与Fig3a–f，核对8mm开孔、4%15TA、几何照片及e/f流变；染料在照后加入，未以颜色定量交联。"
+    },
+    {
+      "pointer": "/case/sections/4/blocks/3",
       "text_sha256": "db7ea071a64061f38fcc87871eeba15c4e23a08345a5e5d4a96c351907798b43",
       "kind": "factual",
       "claim_ids": [
@@ -867,7 +1566,57 @@
       "reason": "回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
     },
     {
-      "pointer": "/case/sections/5/blocks/4",
+      "pointer": "/case/sections/5/blocks/4/detail/title",
+      "text_sha256": "bf48f322af38d331ddaa960d9c359fc7eb71020457b30d43ef6ff1a507b34f05",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/4/detail/blocks/0/walkthrough/title",
+      "text_sha256": "9f8aa247018c4d4d912d19b83d98d812607338f47cc1f1e554aac8d83cb72b47",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/4/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "3db01af418cc429265114b9614195a08eff45d99aa547962044a17ab4dab6865",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/4/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "ba93c0ff959ac17687fe9dbfef1cd544ea9dc76ac0472529bbb6a1124d5b082b",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/4/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "cabb414a138b4d7b9d028e08c33130ab7549c6f93356cf7b275172c8a02a7b53",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/5",
       "text_sha256": "17d9398192a85f1775c68e5e18478ad809fc033a27fdb865bb23aaa6bebdd256",
       "kind": "factual",
       "claim_ids": [
@@ -878,7 +1627,81 @@
       "reason": "核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
     },
     {
-      "pointer": "/case/sections/5/blocks/5",
+      "pointer": "/case/sections/5/blocks/6/detail/title",
+      "text_sha256": "d80a135f5273b3b065ec9653dba488e61d339340c4934ca5cad95c6373af6dc2",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。；主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/blocks/0/walkthrough/title",
+      "text_sha256": "afd285f2244ede091560e3624f62ce0e280ea5a067e510542743f6006e405587",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "63bf4c36f9ad9f6f18566a90d6736f311b1921d4d91035218a340addc0e2fb20",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "f8d17353a460ce15bc5d751b01202e0fd0ad7d9754aa65c2ede4b309e15f23ca",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/blocks/1/walkthrough/title",
+      "text_sha256": "9e95a1266a49e00231f42587a6913b7a43597aa1aed8a39c6f686169695807d5",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。；主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/blocks/1/walkthrough/lead",
+      "text_sha256": "415705a91cb8e78eb4ea6ab843c582125a86e91243867696e142d337d9ca27f7",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。；主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/blocks/1/walkthrough/paragraphs/0",
+      "text_sha256": "cae00892f16e6c7de12dc6dee8022fec0520dfb40cfe4587c199e45e0720c069",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。；主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/7",
       "text_sha256": "4665c598ed16c550d4ece1f9e24be158ad022aded1564036cd14621a58bf78eb",
       "kind": "factual",
       "claim_ids": [
@@ -888,7 +1711,7 @@
       "reason": "核对g/h的固定组分、浓度与不同量程及P18；有限系列内模量增加，不推任意线性定律。"
     },
     {
-      "pointer": "/case/sections/5/blocks/6",
+      "pointer": "/case/sections/5/blocks/9",
       "text_sha256": "a5854477c8fa00d3f95c9db44ec1341051f14970cc4b12594523cc0402826d6d",
       "kind": "factual",
       "claim_ids": [
@@ -898,7 +1721,7 @@
       "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。"
     },
     {
-      "pointer": "/case/sections/5/blocks/7",
+      "pointer": "/case/sections/5/blocks/11",
       "text_sha256": "e3a90db64b4b25b37232524d51faf6af9eedd7f391f5814bf7e6acf5e2812bb9",
       "kind": "factual",
       "claim_ids": [
@@ -909,24 +1732,54 @@
       "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
     },
     {
-      "pointer": "/case/sections/5/blocks/8/detail/title",
-      "text_sha256": "66deec3649da98629d479438e5c25830b63e8ff10ac8f9c1196f7ea6a412abb0",
+      "pointer": "/case/sections/5/blocks/12/detail/title",
+      "text_sha256": "cdd3c2ec9f32ccf33d8f569f5b6a2b72a757d38e59512e92d14eb6a3f8296f38",
       "kind": "factual",
       "claim_ids": [
         "C12"
       ],
-      "verdict": "qualified",
-      "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。"
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
     },
     {
-      "pointer": "/case/sections/5/blocks/8/detail/paragraphs/0",
-      "text_sha256": "40dd44bc209c765dd99d4a928db7c703a4d481eac150d014a21aa7e30940e2f2",
+      "pointer": "/case/sections/5/blocks/12/detail/blocks/0/walkthrough/title",
+      "text_sha256": "cbe039412e0468b8c09ef9ea3820dc1286eaa39b17e74e8f1ac7d56cdb56ea4d",
       "kind": "factual",
       "claim_ids": [
         "C12"
       ],
-      "verdict": "qualified",
-      "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。"
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/12/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "a0956193a5e96bd742eea3c791ed8d27c2d445b5a308d9f35d5e8d4549757659",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/12/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "e08320d6efcda92a0d7baf1ce31e1764e78b8fd88e71cd8e03dedf3e40528d81",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/12/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "ee8aac25f6b219500328ed6dfe63bc592a1e75c32430c7b9c517a8f75d9ff044",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
     },
     {
       "pointer": "/case/sections/6/title",
@@ -970,7 +1823,767 @@
       "reason": "按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。 核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
     },
     {
-      "pointer": "/case/figures/scheme/title",
+      "pointer": "/case/figures/design-ab/title",
+      "text_sha256": "0a648df8db02a096ad8cb0d682cfe998e33a3525301b5cb5fdc1b6201ef90039",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文引言与Scheme1a/b，天然黏液来源、二硫键连接和合成模型目标均有对应。；实际查看Scheme1a–c及主文设计段：保留光响应构件与作者化学图景的层次，未把自由基式或可逆箭头写成中间体实测和循环验证。"
+    },
+    {
+      "pointer": "/case/figures/design-ab/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/design-ab/caption",
+      "text_sha256": "39048a6ea11e06a737498d0a6de44643fad2bc39c6993bab81f3d3785934d9e1",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文引言与Scheme1a/b，天然黏液来源、二硫键连接和合成模型目标均有对应。；实际查看Scheme1a–c及主文设计段：保留光响应构件与作者化学图景的层次，未把自由基式或可逆箭头写成中间体实测和循环验证。"
+    },
+    {
+      "pointer": "/case/figures/design-c/title",
+      "text_sha256": "2e5199425e85a34f61cc7b13aeabe4db0d8666a4aabb5be3b7609eea0f0469cd",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Scheme1a–c及主文设计段：保留光响应构件与作者化学图景的层次，未把自由基式或可逆箭头写成中间体实测和循环验证。"
+    },
+    {
+      "pointer": "/case/figures/design-c/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/design-c/caption",
+      "text_sha256": "5031f9c5c5bc2ecf1098a1c3a4a14ee5fb3a93e768702cada356bbf13ebb6624",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Scheme1a–c及主文设计段：保留光响应构件与作者化学图景的层次，未把自由基式或可逆箭头写成中间体实测和循环验证。"
+    },
+    {
+      "pointer": "/case/figures/synthesis-a/title",
+      "text_sha256": "40cf418f0c971b738e151c605a7b0421fb6224c2f19204a1a028f6440f101267",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C3",
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Scheme1a–c及主文设计段：保留光响应构件与作者化学图景的层次，未把自由基式或可逆箭头写成中间体实测和循环验证。；对照Fig1a与SI物理p5，构件合成阶段与最终光成胶阶段不同，无引发剂优势未扩大到整条路线。；回读主文构件合成、Fig1a及SI物理p9的S4d/整组图注，核对参照积分、字母归属和残余溶剂星号；单幅15TA谱不冒充全部系列或单链接枝分布测定。"
+    },
+    {
+      "pointer": "/case/figures/synthesis-a/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/synthesis-a/caption",
+      "text_sha256": "78ff6931de179a76410d338dfdbe7e21844064ff56c4512aeafdc354d41f806a",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C3",
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Scheme1a–c及主文设计段：保留光响应构件与作者化学图景的层次，未把自由基式或可逆箭头写成中间体实测和循环验证。；对照Fig1a与SI物理p5，构件合成阶段与最终光成胶阶段不同，无引发剂优势未扩大到整条路线。；回读主文构件合成、Fig1a及SI物理p9的S4d/整组图注，核对参照积分、字母归属和残余溶剂星号；单幅15TA谱不冒充全部系列或单链接枝分布测定。"
+    },
+    {
+      "pointer": "/case/figures/s4-identity/title",
+      "text_sha256": "06650f28c699fdbe1fb38689ae6e8026ead5d6f99e1a1067c1a9bad76a9f223b",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文构件合成、Fig1a及SI物理p9的S4d/整组图注，核对参照积分、字母归属和残余溶剂星号；单幅15TA谱不冒充全部系列或单链接枝分布测定。"
+    },
+    {
+      "pointer": "/case/figures/s4-identity/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/s4-identity/caption",
+      "text_sha256": "73dfeeee6e912067f46030a7b0780a4815f31580e7c2cf824bc3abd9149d42d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文构件合成、Fig1a及SI物理p9的S4d/整组图注，核对参照积分、字母归属和残余溶剂星号；单幅15TA谱不冒充全部系列或单链接枝分布测定。"
+    },
+    {
+      "pointer": "/case/figures/gel-vials/title",
+      "text_sha256": "55bd1621abe5cab37cf6dafb3d7e5df81ce72c3b2a1b167d2f7a078164825807",
+      "kind": "factual",
+      "claim_ids": [
+        "C4"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig1a–d照片、原图标签与正文成功/失败配方；同时保留接枝量、浓度与照时变化，不作单变量归因。"
+    },
+    {
+      "pointer": "/case/figures/gel-vials/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/gel-vials/caption",
+      "text_sha256": "a3b56e532f94ca327f6cf96b49612895eb4a6a7eb29579a3706d8cf7b42c9ddf",
+      "kind": "factual",
+      "claim_ids": [
+        "C4"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig1a–d照片、原图标签与正文成功/失败配方；同时保留接枝量、浓度与照时变化，不作单变量归因。"
+    },
+    {
+      "pointer": "/case/figures/gel-series/title",
+      "text_sha256": "ef9c60675284a925f8ea8e89997a898f6d2309e68ae6ed26bb5a1ba2a0f3c04f",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig1a–d照片、原图标签与正文成功/失败配方；同时保留接枝量、浓度与照时变化，不作单变量归因。；回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/figures/gel-series/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/gel-series/caption",
+      "text_sha256": "83297105ed978ccdd5ff2de4e9c2593c75c775f01158a9329867c4641be9d596",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig1a–d照片、原图标签与正文成功/失败配方；同时保留接枝量、浓度与照时变化，不作单变量归因。；回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/figures/nmr-low/title",
+      "text_sha256": "9149e67f43f3a6b7edd2d986cd2fd997c4199fd84b9e1081b3d8fd6f1b79dc9e",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/figures/nmr-low/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/nmr-low/caption",
+      "text_sha256": "652dac1fcebfa916bf93b040ed785c93292cc1513c1a6fedadee129a3511a1e4",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/figures/nmr-comparison/title",
+      "text_sha256": "6f189fd0ba2ae523707cc8a18c15c96ffae99bbd5f352c7de90112009de58fc7",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/figures/nmr-comparison/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/nmr-comparison/caption",
+      "text_sha256": "7e3adafd0ad294dadf180ae3fd49b842ffe5627fce8f2cb3839d7fdb50e086ff",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/figures/nmr-3ta/title",
+      "text_sha256": "bcc8ba544c5af57851ecc008ebb824cb59acaebe2d7a1a11bdb67d9df9ff10fe",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/figures/nmr-3ta/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/nmr-3ta/caption",
+      "text_sha256": "faa8ca1f7d945657c049b05e99f4e63cab7eda630ccba26e1c966c9e35acdcf9",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "回读主文NMR讨论与SI物理p9–10的S5a/b/c；逐幅核对3%15TA、6%15TA、10%3TA和时间标区，谱变化与宏观成胶分开。"
+    },
+    {
+      "pointer": "/case/figures/rheology-ab/title",
+      "text_sha256": "71bc929826daf2d0f19843c43793feb2789ec964b7a792d32aaf71ba0af8cd2d",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。"
+    },
+    {
+      "pointer": "/case/figures/rheology-ab/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/rheology-ab/caption",
+      "text_sha256": "16d172317325e9ddaf54aee8eca6b58c8252588aae6fbd6ff039ceaf76eb34eb",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。"
+    },
+    {
+      "pointer": "/case/figures/rheology-cd/title",
+      "text_sha256": "b3350798d63ee8c7419db6e085a515d796fe65f1815ebb36a51fc186e7c87828",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "回读固定配方独立照射实验及Fig2c/d；c为8%6TA、d为5%15TA，时间响应和跨配方比较分开，未把趋缓写成反应完全。"
+    },
+    {
+      "pointer": "/case/figures/rheology-cd/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/rheology-cd/caption",
+      "text_sha256": "447492e32e720f1c32a77887e3be56c700c280e70545d17ef890f818d9adecb8",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "回读固定配方独立照射实验及Fig2c/d；c为8%6TA、d为5%15TA，时间响应和跨配方比较分开，未把趋缓写成反应完全。"
+    },
+    {
+      "pointer": "/case/figures/rheology-read/title",
+      "text_sha256": "ab7a4acc997d974f70e513197c5fbf47c1ac1f7bdd782a9547c2dcd1ba474eb5",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。"
+    },
+    {
+      "pointer": "/case/figures/rheology-read/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/rheology-read/caption",
+      "text_sha256": "188b9861b0fa96c2f8b85123491eb57accea278db8b0b7ce03c84970ad8ed349",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "实际查看Fig2a/b成对符号、图例与原轴单位，核对固定5min照时、1%应变和各自低频模量判据；门槛值保留所测条件。"
+    },
+    {
+      "pointer": "/case/figures/rheology-time/title",
+      "text_sha256": "b0f3e9f3554ec56e6941dbd9f79cfec7f8cd20b38ca56f9f2a40c4884b81774c",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "回读固定配方独立照射实验及Fig2c/d；c为8%6TA、d为5%15TA，时间响应和跨配方比较分开，未把趋缓写成反应完全。"
+    },
+    {
+      "pointer": "/case/figures/rheology-time/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/rheology-time/caption",
+      "text_sha256": "939ff5123ce59e49ce4f4ab0f9ad5484f363c4700a5317dd984c48e4d916ccae",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "回读固定配方独立照射实验及Fig2c/d；c为8%6TA、d为5%15TA，时间响应和跨配方比较分开，未把趋缓写成反应完全。"
+    },
+    {
+      "pointer": "/case/figures/morphology-ef/title",
+      "text_sha256": "dc78c251da5a1aeac3452684361de3b859c3c4f1cdfd7b05da32d4ff6afb40e0",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。"
+    },
+    {
+      "pointer": "/case/figures/morphology-ef/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/morphology-ef/caption",
+      "text_sha256": "d87cca7309b6d7abf774e1e0e21a55a30cb592e6bdda4cec00d631fb5490d7c8",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。"
+    },
+    {
+      "pointer": "/case/figures/local-ab/title",
+      "text_sha256": "212a65994756a07618c0810be6c7a5c3c39114c05e2b20cfbaff4f67b5935059",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "对照主文局部照射段与Fig3a–f，核对8mm开孔、4%15TA、几何照片及e/f流变；染料在照后加入，未以颜色定量交联。"
+    },
+    {
+      "pointer": "/case/figures/local-ab/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/local-ab/caption",
+      "text_sha256": "b7b9ee18edd3b513f9e4de8bcd1ebd980b1e339f24df720dacc7b5165a09efba",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "对照主文局部照射段与Fig3a–f，核对8mm开孔、4%15TA、几何照片及e/f流变；染料在照后加入，未以颜色定量交联。"
+    },
+    {
+      "pointer": "/case/figures/local-cd/title",
+      "text_sha256": "9f3289531ad189dd80c7e3616334b30d7679d7803972d6ed2369747b12136675",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "对照主文局部照射段与Fig3a–f，核对8mm开孔、4%15TA、几何照片及e/f流变；染料在照后加入，未以颜色定量交联。"
+    },
+    {
+      "pointer": "/case/figures/local-cd/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/local-cd/caption",
+      "text_sha256": "03b8a592129a5a9d0cc3a9e027fb3fba4e31d3f4498a55f46db4cc3c05e2d822",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "对照主文局部照射段与Fig3a–f，核对8mm开孔、4%15TA、几何照片及e/f流变；染料在照后加入，未以颜色定量交联。"
+    },
+    {
+      "pointer": "/case/figures/local-ef/title",
+      "text_sha256": "6640663cd15b449a3b8b5f76fa271510c65e992d9daabd82612de53d042dd2ce",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "对照主文局部照射段与Fig3a–f，核对8mm开孔、4%15TA、几何照片及e/f流变；染料在照后加入，未以颜色定量交联。"
+    },
+    {
+      "pointer": "/case/figures/local-ef/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/local-ef/caption",
+      "text_sha256": "2ff9cfb733a3861c0f3a7bdefa6157b511c55592073009c719b8c7fddd97350a",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "对照主文局部照射段与Fig3a–f，核对8mm开孔、4%15TA、几何照片及e/f流变；染料在照后加入，未以颜色定量交联。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-a/title",
+      "text_sha256": "fc67009fa5680ba820186d73dac71a5f5a0197e5c940523f5db9027af5da0edf",
+      "kind": "factual",
+      "claim_ids": [
+        "C10"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig4a所有照片上方的浓度和箭头，明确4%BSM与8%聚合物是母液，混合后为2%与4%。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-a/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-a/caption",
+      "text_sha256": "b400473f5c2676e97292d5922c76d0dd5a9d0df8479d67ba9580b2b877fe6cc1",
+      "kind": "factual",
+      "claim_ids": [
+        "C10"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig4a所有照片上方的浓度和箭头，明确4%BSM与8%聚合物是母液，混合后为2%与4%。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-b/title",
+      "text_sha256": "7fcc5c11c47b6d58ce99722f0cac746988839c75f1a823a5b4bc2268043aa6d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-b/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-b/caption",
+      "text_sha256": "47ad7e55a9ca2a04679ef30117b43c1307babc281e2ab85d7b2412d7b55c7ae5",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-dark/title",
+      "text_sha256": "81d2ca0d19e6fe6c437755a94366f74497cc6af6282a7ca227530c6568884744",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-dark/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-dark/caption",
+      "text_sha256": "82c7fe2fc8b13d9a1a4010ebae4892c655ead73ccb82bc49d58e832d0454b59f",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-c/title",
+      "text_sha256": "8cc54f5ede2b1d1022390877443d59f18592bf5b6b0bad7ed11100b886f2f977",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-c/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-c/caption",
+      "text_sha256": "cff52ecb9455f6ea1c5baeaf740b2245312325221d452f59a02ec5602118617e",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-def/title",
+      "text_sha256": "4e05e2963b0248529d5ac5c0df66f491085eb60f322037fafba70f946a805873",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。；主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-def/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-def/caption",
+      "text_sha256": "3782c6adc04254d636f2ead3dee7cd8ada09f10b838cfab15f0c4faad7528273",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "查看Fig2e/f及Fig4c–f的样品、各自标尺和图注干燥条件；区分形貌、湿态力学和键型解释，不把不同样品排成时间录像。；主文Fig4b与SI物理p13的S9合读；无光混合基线和照后三组曲线支持作者共同参与的解释，不将SEM或总体模量当作键型直接鉴定。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-gh/title",
+      "text_sha256": "0f702ab8254910168d285c05c3679e73d99330cff2e7bca4d82df26b1fc1b96f",
+      "kind": "factual",
+      "claim_ids": [
+        "C13"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig4g/h两个独立系列中固定和改变的组分、y轴范围及G′/G″图例，不比较图面斜率来量化跨图效应。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-gh/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-gh/caption",
+      "text_sha256": "4df975dfaa5cf54486ee866de3d93cf5d05793c83ca954f84f92b5c549434923",
+      "kind": "factual",
+      "claim_ids": [
+        "C13"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig4g/h两个独立系列中固定和改变的组分、y轴范围及G′/G″图例，不比较图面斜率来量化跨图效应。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-i/title",
+      "text_sha256": "9cd17f6f332660107a56d6afeebd0aaddc8038d5951f372500b7e09b481ff379",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-i/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-i/caption",
+      "text_sha256": "42791278cbf2ca0f285b1d58cb0579c35b390344c5572b56e47e6ad6c5d7694a",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-full-frequency/title",
+      "text_sha256": "14f6222474d685e82c392ef4b0be932470175cb2786d377c5be265e90100cc58",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-full-frequency/role",
+      "text_sha256": "e771aca5bc84eb3c13253c1dd103acda1901241aed9197e74c225c2481a507a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/figures/hybrid-full-frequency/caption",
+      "text_sha256": "92e68d908bcbf6412820d7c241f2d3f1c49025081551a6cf80df4cde4c955481",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "逐项对照Fig4i与SI物理p14的S13：前者只有两体系G′，后者有频率和G′/G″；核对3/5/8min及颜色符号，不补造缺失指标。"
+    },
+    {
+      "pointer": "/case/composites/scheme-complete/title",
       "text_sha256": "be18aa8ae6f3fe67f47e32e4197d48ac2677a547b327e70e0ee358b6f4d7849f",
       "kind": "factual",
       "claim_ids": [
@@ -981,29 +2594,7 @@
       "reason": "回源引言的黏液来源/二硫键背景，作为模型动机，不迁移为新材料已测生物效能。 回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。"
     },
     {
-      "pointer": "/case/figures/scheme/role",
-      "text_sha256": "7b450d1578ea81bdfe66475f7babafe894b9a2d339a7a4c8e5aa622479c8217e",
-      "kind": "factual",
-      "claim_ids": [
-        "C1",
-        "C2"
-      ],
-      "verdict": "qualified",
-      "reason": "回源引言的黏液来源/二硫键背景，作为模型动机，不迁移为新材料已测生物效能。 回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。"
-    },
-    {
-      "pointer": "/case/figures/scheme/caption",
-      "text_sha256": "9b47dba1b5530fc9645f20cc8a395482dee05667af86d5cdbf613bb9319dd1ea",
-      "kind": "factual",
-      "claim_ids": [
-        "C1",
-        "C2"
-      ],
-      "verdict": "qualified",
-      "reason": "回源引言的黏液来源/二硫键背景，作为模型动机，不迁移为新材料已测生物效能。 回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。"
-    },
-    {
-      "pointer": "/case/figures/f1/title",
+      "pointer": "/case/composites/f1-complete/title",
       "text_sha256": "daa11d03ed2deb951a90d869c5722e765804964ae71ed5a3ea3d66bbc15e03bb",
       "kind": "factual",
       "claim_ids": [
@@ -1014,89 +2605,7 @@
       "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
     },
     {
-      "pointer": "/case/figures/f1/role",
-      "text_sha256": "f3ac5a4e283a8aa888344cd85300caa480ee1fce63e769a0bf9971f26a490614",
-      "kind": "factual",
-      "claim_ids": [
-        "C2",
-        "C4"
-      ],
-      "verdict": "qualified",
-      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
-    },
-    {
-      "pointer": "/case/figures/f1/caption",
-      "text_sha256": "3c5291a0d41ca84a4c2c2303cbbd2b7324aa599b631937d27205a4ddb1e97e31",
-      "kind": "factual",
-      "claim_ids": [
-        "C2",
-        "C4"
-      ],
-      "verdict": "qualified",
-      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
-    },
-    {
-      "pointer": "/case/figures/s5a/title",
-      "text_sha256": "42bb56b95c960e97511e1070dfa4300ca893881f0fada50e87b8c831650a044c",
-      "kind": "factual",
-      "claim_ids": [
-        "C5"
-      ],
-      "verdict": "qualified",
-      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
-    },
-    {
-      "pointer": "/case/figures/s5a/role",
-      "text_sha256": "e7f27fdbc68bd2d1a38dc3c84d6f7c05bc40001bef81648da527520c436fe310",
-      "kind": "factual",
-      "claim_ids": [
-        "C5"
-      ],
-      "verdict": "qualified",
-      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
-    },
-    {
-      "pointer": "/case/figures/s5a/caption",
-      "text_sha256": "85fb30f5baa406df18ba23525c54c5eba02467d736867e8b1349202bf7642b81",
-      "kind": "factual",
-      "claim_ids": [
-        "C5"
-      ],
-      "verdict": "qualified",
-      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
-    },
-    {
-      "pointer": "/case/figures/s5bc/title",
-      "text_sha256": "f4252033f2cd7cd36bfda7a6387d1e4421c58719106523dc43c8f9f7765b1026",
-      "kind": "factual",
-      "claim_ids": [
-        "C5"
-      ],
-      "verdict": "qualified",
-      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
-    },
-    {
-      "pointer": "/case/figures/s5bc/role",
-      "text_sha256": "c80feb53c9d8d401bbff4e9a73ab26209764d54d1b3ca6ccd0241fd84d1faf2b",
-      "kind": "factual",
-      "claim_ids": [
-        "C5"
-      ],
-      "verdict": "qualified",
-      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
-    },
-    {
-      "pointer": "/case/figures/s5bc/caption",
-      "text_sha256": "8bbbecace9f74420e93560f58ce694e1700d5525b7886adfb72cf2b561e42f4d",
-      "kind": "factual",
-      "claim_ids": [
-        "C5"
-      ],
-      "verdict": "qualified",
-      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
-    },
-    {
-      "pointer": "/case/figures/f2/title",
+      "pointer": "/case/composites/f2-complete/title",
       "text_sha256": "028a9cde7e415ef6ea5f7192939a6d65c30bdadba26d6d05e9e768b4f2d2f7f0",
       "kind": "factual",
       "claim_ids": [
@@ -1108,31 +2617,7 @@
       "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。 核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。"
     },
     {
-      "pointer": "/case/figures/f2/role",
-      "text_sha256": "8a67487781934b57cfdbbbbbe6dc786c2219e4e214cdf87b78affeed0a2e131e",
-      "kind": "factual",
-      "claim_ids": [
-        "C6",
-        "C7",
-        "C8"
-      ],
-      "verdict": "qualified",
-      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。 核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。"
-    },
-    {
-      "pointer": "/case/figures/f2/caption",
-      "text_sha256": "7de77edf7430f30882cc023788115aad4e4d0474339289898989a39ed4f63828",
-      "kind": "factual",
-      "claim_ids": [
-        "C6",
-        "C7",
-        "C8"
-      ],
-      "verdict": "qualified",
-      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。 核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。"
-    },
-    {
-      "pointer": "/case/figures/f3/title",
+      "pointer": "/case/composites/f3-complete/title",
       "text_sha256": "938bea1ddc2ba2121b3c05758ab86e39e506e20369b5bd47e1a320a102f4c0fd",
       "kind": "factual",
       "claim_ids": [
@@ -1142,27 +2627,7 @@
       "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。"
     },
     {
-      "pointer": "/case/figures/f3/role",
-      "text_sha256": "99c50895813dc271b76006c44d883b81d711309db1b3be1d7d48d9a95466a85f",
-      "kind": "factual",
-      "claim_ids": [
-        "C9"
-      ],
-      "verdict": "aligned",
-      "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。"
-    },
-    {
-      "pointer": "/case/figures/f3/caption",
-      "text_sha256": "8c9a7c9dc489b04b7c5ebd436a54a0f40ee51cdc90d4614a7b92f2481b92cfa3",
-      "kind": "factual",
-      "claim_ids": [
-        "C9"
-      ],
-      "verdict": "aligned",
-      "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。"
-    },
-    {
-      "pointer": "/case/figures/f4/title",
+      "pointer": "/case/composites/f4-complete/title",
       "text_sha256": "0f2524d19df38db98d24b453b2a89f7aead04ca41f0debd3d6c7cbfa49aa0e0e",
       "kind": "factual",
       "claim_ids": [
@@ -1174,94 +2639,6 @@
       ],
       "verdict": "qualified",
       "reason": "核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。 放大Fig4a并回源P16，母液4%BSM/8%15TA与混合后2%/4%分别对应照片，不混同时间点。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。 放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。 核对g/h的固定组分、浓度与不同量程及P18；有限系列内模量增加，不推任意线性定律。"
-    },
-    {
-      "pointer": "/case/figures/f4/role",
-      "text_sha256": "c2ee748a46856ada4f52b26bb477101b40767b8772e0bd5b298b304261ab5725",
-      "kind": "factual",
-      "claim_ids": [
-        "C8",
-        "C10",
-        "C11",
-        "C12",
-        "C13"
-      ],
-      "verdict": "qualified",
-      "reason": "核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。 放大Fig4a并回源P16，母液4%BSM/8%15TA与混合后2%/4%分别对应照片，不混同时间点。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。 放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。 核对g/h的固定组分、浓度与不同量程及P18；有限系列内模量增加，不推任意线性定律。"
-    },
-    {
-      "pointer": "/case/figures/f4/caption",
-      "text_sha256": "190910e199135cdd2131c5b0f9dca0cd09222e163175d0a34c01ce401f396170",
-      "kind": "factual",
-      "claim_ids": [
-        "C8",
-        "C10",
-        "C11",
-        "C12",
-        "C13"
-      ],
-      "verdict": "qualified",
-      "reason": "核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。 放大Fig4a并回源P16，母液4%BSM/8%15TA与混合后2%/4%分别对应照片，不混同时间点。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。 放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。 核对g/h的固定组分、浓度与不同量程及P18；有限系列内模量增加，不推任意线性定律。"
-    },
-    {
-      "pointer": "/case/figures/s9/title",
-      "text_sha256": "23c653817826cd3bf19396a36c03be1bff2904a1c1868d6ed6ab8c27d74c5fcb",
-      "kind": "factual",
-      "claim_ids": [
-        "C11"
-      ],
-      "verdict": "qualified",
-      "reason": "回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
-    },
-    {
-      "pointer": "/case/figures/s9/role",
-      "text_sha256": "6b4f4da436dc043f678178710f8c54ce64bd5c8ffb445caf261a5255f8ba0eb3",
-      "kind": "factual",
-      "claim_ids": [
-        "C11"
-      ],
-      "verdict": "qualified",
-      "reason": "回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
-    },
-    {
-      "pointer": "/case/figures/s9/caption",
-      "text_sha256": "f807db6563badcbb6b64e82b302d5d3a96088c93a365e27345d71a0da61f7360",
-      "kind": "factual",
-      "claim_ids": [
-        "C11"
-      ],
-      "verdict": "qualified",
-      "reason": "回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
-    },
-    {
-      "pointer": "/case/figures/s13/title",
-      "text_sha256": "3d049e4ff25330b4265de1c9a80322328048dded71244b40c577d107443dddaf",
-      "kind": "factual",
-      "claim_ids": [
-        "C12"
-      ],
-      "verdict": "qualified",
-      "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。"
-    },
-    {
-      "pointer": "/case/figures/s13/role",
-      "text_sha256": "2b71d6e3bd4739bcf99199d8d1211b399f5b0ee1d692b0da592a23d472d54ea9",
-      "kind": "factual",
-      "claim_ids": [
-        "C12"
-      ],
-      "verdict": "qualified",
-      "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。"
-    },
-    {
-      "pointer": "/case/figures/s13/caption",
-      "text_sha256": "7a57cd10c2ae028a1bbc87e5b73122a701e28388ade2ff9b261c619c2dca5980",
-      "kind": "factual",
-      "claim_ids": [
-        "C12"
-      ],
-      "verdict": "qualified",
-      "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。"
     },
     {
       "pointer": "/case/research_graph/nodes/0/title",
@@ -1609,8 +2986,8 @@
   ],
   "reviewer": {
     "method": "same_agent_second_pass",
-    "identity": "A-with-1 同一执行代理",
-    "source_first_summary": "成稿后重新读取正文P1–2、P5–7、P9–13、P15–20、全部主图图注与SI p2/5/6/9/10/11/13/14相关文字；对实际看过的图及放大局部逐项比较14条规范判断和103个可见单元。未进行独立代理审阅、读者试验或原始实验复算。",
+    "identity": "Codex，2026-11-04公开样章来源优先复读与实际图像检查",
+    "source_first_summary": "回读原JATS引言、合成、NMR、流变、空间成胶和BSM结果/图注，以及SI物理p5、p9、p10、p13、p14；实际查看全部原图及新版SVG联系表。原主干保持，新增138项可见表述另行对照来源。视觉检查发现Fig4b图例裁切和相邻面板残片，已改为保留b/c同带、拆开S5b/c并修正边界。此为同代理第二遍，不是独立审稿或真人效果试验。",
     "unresolved_items": []
   }
 }

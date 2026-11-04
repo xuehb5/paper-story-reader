@@ -142,14 +142,14 @@ def build(input_file,output,review_file=None,draft=False,context_file=None):
             a[key]=dest.relative_to(output).as_posix()
     core.ROOT=output;core.assets=assets;core.sources=sources;core.cases=navigation.get('papers') or [case]
     report=core.render(case)
-    (output/'index.html').write_text('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>论文伴读</title><a href="'+case['id']+'.html">'+html.escape(case['title'])+'</a></html>',encoding='utf-8')
-    report.update({'renderer_version':'v0.20.0','input_sha256':digest(input_file),'source_hashes_verified':True,'images_hashes':{fid:digest(output/a['image']) for fid,a in assets.items() if fid in used},'external_runtime_dependencies':0,'scientific_sufficiency_automatically_judged':False,'content_review_status':'draft_unreviewed' if draft else 'review_record_complete','source_review':review_result,'context_review':release_result})
+    (output/'index.html').write_text('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url='+case['id']+'.html"><title>PaperStory · '+html.escape(case['title'])+'</title><a href="'+case['id']+'.html">打开交互读本：'+html.escape(case['title'])+'</a></html>',encoding='utf-8')
+    report.update({'renderer_version':'v0.20.1','input_sha256':digest(input_file),'source_hashes_verified':True,'images_hashes':{fid:digest(output/a['image']) for fid,a in assets.items() if fid in used},'external_runtime_dependencies':0,'scientific_sufficiency_automatically_judged':False,'content_review_status':'draft_unreviewed' if draft else 'review_record_complete','source_review':review_result,'context_review':release_result})
     (output/'build-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     spec=importlib.util.spec_from_file_location('verify_delivery',SKILL/'scripts/verify_delivery.py');delivery=importlib.util.module_from_spec(spec);spec.loader.exec_module(delivery)
     encoding=delivery.verify([output/(case['id']+'.html'),output/(case['id']+'.md')],case.get('language','zh'))
     if not encoding['passed']:raise ValueError('generated delivery encoding invalid: '+'; '.join(encoding['errors']))
     files={p.relative_to(output).as_posix():digest(p) for p in output.rglob('*') if p.is_file() and p.name!='delivery-manifest.json'}
-    (output/'delivery-manifest.json').write_text(json.dumps({'renderer_version':'v0.20.0','input_sha256':digest(input_file),'files':files,'notice':'Any later byte change requires regeneration and renewed review for content changes. Hashes verify bytes, not scientific truth.'},ensure_ascii=False,indent=2)+'\n','utf-8')
+    (output/'delivery-manifest.json').write_text(json.dumps({'renderer_version':'v0.20.1','input_sha256':digest(input_file),'files':files,'notice':'Any later byte change requires regeneration and renewed review for content changes. Hashes verify bytes, not scientific truth.'},ensure_ascii=False,indent=2)+'\n','utf-8')
     return report
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('input');p.add_argument('--output',required=True);p.add_argument('--review');p.add_argument('--context-audit');p.add_argument('--draft',action='store_true');a=p.parse_args()
