@@ -1,0 +1,188 @@
+{
+  "nodes": [
+    {
+      "id": "question",
+      "type": "main",
+      "section": "question",
+      "target": "question",
+      "title": "为什么要把黏液模型的连接交给光？",
+      "code": "01",
+      "figures": "Scheme 1",
+      "finding": "lPGS 骨架连接含 1,2-二硫戊环的 TA，为光触发交联提供设计基础。"
+    },
+    {
+      "id": "building",
+      "type": "main",
+      "section": "building",
+      "target": "building",
+      "title": "把光敏单元接到骨架：先分清合成与交联",
+      "code": "02",
+      "figures": "",
+      "finding": ""
+    },
+    {
+      "id": "threshold",
+      "type": "main",
+      "section": "threshold",
+      "target": "threshold",
+      "title": "有化学反应，为什么还可能不成胶？",
+      "code": "03",
+      "figures": "Fig. 1、Fig. S5a、Fig. S5b/c",
+      "finding": "低浓度 15TA 与 3TA 的 NMR 变化和不成胶结果并存，说明化学变化与宏观成胶需要分别判断。"
+    },
+    {
+      "id": "mechanics",
+      "type": "main",
+      "section": "mechanics",
+      "target": "mechanics",
+      "title": "用固定条件找成胶门槛，再调模量",
+      "code": "04",
+      "figures": "Fig. 2",
+      "finding": "固定照射 5 min 后，本文以 G′ 占优判定的 CGC 约为 6TA 的 7.5% 和 15TA 的 4%（w/v）。"
+    },
+    {
+      "id": "space",
+      "type": "main",
+      "section": "space",
+      "target": "space",
+      "title": "光还能把凝胶限定在什么位置？",
+      "code": "05",
+      "figures": "Fig. 3",
+      "finding": "掩膜局部照射在 4% lPGS-15TA 中形成局部凝胶，并提供所取凝胶的流变对照。"
+    },
+    {
+      "id": "hybrid",
+      "type": "main",
+      "section": "hybrid",
+      "target": "hybrid",
+      "title": "能否让少量天然黏蛋白进入共同成胶？",
+      "code": "06",
+      "figures": "Fig. 4、Fig. S9",
+      "finding": "混合液在无光时模量低，照光后 G′ 高于相应单组分；这支持两者共同参与成胶的作者解释。"
+    },
+    {
+      "id": "limits",
+      "type": "main",
+      "section": "limits",
+      "target": "limits",
+      "title": "这项工作把模型推进到了哪一步？",
+      "code": "07",
+      "figures": "",
+      "finding": "本文展示的是可调模量、局部成胶和 BSM 杂化的模型平台；生物功能与长期循环仍需单独验证。"
+    },
+    {
+      "id": "branch-question-1",
+      "type": "branch",
+      "section": "question",
+      "target": "branch-question-1",
+      "title": "动态连接示意等于测过自修复吗？",
+      "code": "01·左1",
+      "figures": "",
+      "side": "left",
+      "origin": "question-p3",
+      "kind": "explanation"
+    },
+    {
+      "id": "branch-threshold-1",
+      "type": "branch",
+      "section": "threshold",
+      "target": "branch-threshold-1",
+      "title": "S5 的黄色、蓝色标区怎样读？",
+      "code": "03·右1",
+      "figures": "",
+      "side": "right",
+      "origin": "threshold-p3",
+      "kind": "explanation"
+    },
+    {
+      "id": "branch-mechanics-1",
+      "type": "branch",
+      "section": "mechanics",
+      "target": "branch-mechanics-1",
+      "title": "CGC 与最大模量是同一个指标吗？",
+      "code": "04·左1",
+      "figures": "",
+      "side": "left",
+      "origin": "mechanics-p4",
+      "kind": "explanation"
+    },
+    {
+      "id": "branch-hybrid-1",
+      "type": "branch",
+      "section": "hybrid",
+      "target": "branch-hybrid-1",
+      "title": "S13 怎样补足 Fig.4i？",
+      "code": "06·右1",
+      "figures": "Fig. S13",
+      "side": "right",
+      "origin": "hybrid-p6",
+      "kind": "si"
+    }
+  ],
+  "edges": [
+    {
+      "from": "question",
+      "to": "building",
+      "kind": "reading-order",
+      "label": "接着读"
+    },
+    {
+      "from": "building",
+      "to": "threshold",
+      "kind": "reading-order",
+      "label": "接着读"
+    },
+    {
+      "from": "threshold",
+      "to": "mechanics",
+      "kind": "reading-order",
+      "label": "接着读"
+    },
+    {
+      "from": "mechanics",
+      "to": "space",
+      "kind": "reading-order",
+      "label": "接着读"
+    },
+    {
+      "from": "space",
+      "to": "hybrid",
+      "kind": "reading-order",
+      "label": "接着读"
+    },
+    {
+      "from": "hybrid",
+      "to": "limits",
+      "kind": "reading-order",
+      "label": "接着读"
+    },
+    {
+      "from": "question",
+      "to": "branch-question-1",
+      "origin": "question-p3",
+      "kind": "branch",
+      "label": "就近细讲"
+    },
+    {
+      "from": "threshold",
+      "to": "branch-threshold-1",
+      "origin": "threshold-p3",
+      "kind": "branch",
+      "label": "就近细讲"
+    },
+    {
+      "from": "mechanics",
+      "to": "branch-mechanics-1",
+      "origin": "mechanics-p4",
+      "kind": "branch",
+      "label": "就近细讲"
+    },
+    {
+      "from": "hybrid",
+      "to": "branch-hybrid-1",
+      "origin": "hybrid-p6",
+      "kind": "branch",
+      "label": "SI补证"
+    }
+  ]
+}

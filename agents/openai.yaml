@@ -1,0 +1,4 @@
+interface:
+  display_name: "PaperStory｜论文故事线"
+  short_description: "联合主文与SI还原研究故事，生成正文优先、带脑图与可缩放侧枝的离线读本"
+  default_prompt: "使用 $paper-story-reader，结合论文主文和同篇SI生成有原文依据的研究故事、交互正文及脑图导航。"

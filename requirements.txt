@@ -1,0 +1,2 @@
+# Optional for JATS-only workflows; required by the PDF-backed worked example.
+pypdf>=6.0,<7.0

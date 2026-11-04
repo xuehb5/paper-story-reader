@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If PaperStory helps your research or teaching, please cite this software and separately cite any papers you read."
+title: "PaperStory: source-grounded research stories for materials and chemistry papers"
+type: software
+authors:
+  - family-names: XUE
+    given-names: Flex
+repository-code: "https://github.com/xuehb5/paper-story-reader"
+url: "https://xuehb5.github.io/paper-story-reader/"
+version: 0.20.0
+date-released: 2026-11-04
+license: MIT
+keywords:
+  - scientific literature
+  - materials science
+  - chemistry
+  - agent skill
+  - interactive reading

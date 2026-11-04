@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "id": "design",
+      "title": "以连接方式建立模型",
+      "role": "设计依据",
+      "target": "question-p2",
+      "finding": "lPGS 骨架连接含 1,2-二硫戊环的 TA，为光触发交联提供设计基础。",
+      "claim_id": "C2",
+      "row": 0,
+      "column": "center",
+      "figure_note": "Scheme 1",
+      "lines": [
+        "以连接方式建立模型"
+      ],
+      "x": 90,
+      "y": 12
+    },
+    {
+      "id": "chemistry",
+      "title": "谱变化与成胶分开",
+      "role": "化学响应证据",
+      "target": "threshold-p2",
+      "finding": "低浓度 15TA 与 3TA 的 NMR 变化和不成胶结果并存，说明化学变化与宏观成胶需要分别判断。",
+      "claim_id": "C5",
+      "row": 1,
+      "column": "left",
+      "figure_note": "Fig. S5",
+      "lines": [
+        "谱变化与成胶分开"
+      ],
+      "x": 5,
+      "y": 124
+    },
+    {
+      "id": "rheology",
+      "title": "固定照时找门槛",
+      "role": "湿态力学证据",
+      "target": "mechanics-p2",
+      "finding": "固定照射 5 min 后，本文以 G′ 占优判定的 CGC 约为 6TA 的 7.5% 和 15TA 的 4%（w/v）。",
+      "claim_id": "C6",
+      "row": 1,
+      "column": "right",
+      "figure_note": "Fig. 2a/b",
+      "lines": [
+        "固定照时找门槛"
+      ],
+      "x": 175,
+      "y": 124
+    },
+    {
+      "id": "tunable",
+      "title": "配方内光调模量",
+      "role": "材料响应",
+      "target": "mechanics-p3",
+      "finding": "各自固定配方内 G′ 随照时上升并趋缓；跨配方比较同时改变 TA 数与质量浓度。",
+      "claim_id": "C7",
+      "row": 2,
+      "column": "center",
+      "figure_note": "Fig. 2c/d",
+      "lines": [
+        "配方内光调模量"
+      ],
+      "x": 90,
+      "y": 236
+    },
+    {
+      "id": "local",
+      "title": "局部照射局部成胶",
+      "role": "空间控制展示",
+      "target": "space-p1",
+      "finding": "掩膜局部照射在 4% lPGS-15TA 中形成局部凝胶，并提供所取凝胶的流变对照。",
+      "claim_id": "C9",
+      "row": 3,
+      "column": "left",
+      "figure_note": "Fig. 3",
+      "lines": [
+        "局部照射局部成胶"
+      ],
+      "x": 5,
+      "y": 348
+    },
+    {
+      "id": "biohybrid",
+      "title": "支持两组分参与成胶",
+      "role": "作者解释与其对照",
+      "target": "hybrid-p2",
+      "finding": "混合液在无光时模量低，照光后 G′ 高于相应单组分；这支持两者共同参与成胶的作者解释。",
+      "claim_id": "C11",
+      "row": 3,
+      "column": "right",
+      "figure_note": "Fig. 4b / S9",
+      "lines": [
+        "支持两组分参与成胶"
+      ],
+      "x": 175,
+      "y": 348
+    },
+    {
+      "id": "bounded",
+      "title": "模型能力仍有边界",
+      "role": "有限综合认识",
+      "target": "limits-p2",
+      "finding": "本文展示的是可调模量、局部成胶和 BSM 杂化的模型平台；生物功能与长期循环仍需单独验证。",
+      "claim_id": "C14",
+      "row": 4,
+      "column": "center",
+      "figure_note": "Fig. 1–4",
+      "lines": [
+        "模型能力仍有边界"
+      ],
+      "x": 90,
+      "y": 460
+    }
+  ],
+  "edges": [
+    {
+      "from": "chemistry",
+      "to": "design",
+      "label": "为光敏化学设计提供支持",
+      "kind": "support"
+    },
+    {
+      "from": "rheology",
+      "to": "design",
+      "label": "为成胶目标提供湿态证据",
+      "kind": "support"
+    },
+    {
+      "from": "rheology",
+      "to": "tunable",
+      "label": "继续检验固定配方的光时响应",
+      "kind": "interpretation"
+    },
+    {
+      "from": "design",
+      "to": "biohybrid",
+      "label": "提出与 BSM 共同连接的解释",
+      "kind": "interpretation"
+    },
+    {
+      "from": "local",
+      "to": "bounded",
+      "label": "提供位置控制的实测范围",
+      "kind": "support"
+    },
+    {
+      "from": "biohybrid",
+      "to": "bounded",
+      "label": "提供杂化成胶范围并保留键型边界",
+      "kind": "interpretation"
+    },
+    {
+      "from": "tunable",
+      "to": "bounded",
+      "label": "提供模量可调的测量范围",
+      "kind": "support"
+    }
+  ]
+}

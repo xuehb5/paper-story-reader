@@ -1,0 +1,1616 @@
+{
+  "schema_version": 1,
+  "input_sha256": "957fa978d09f69491c980e4804f045489fa574ee8085db5a1334b8a447ae335e",
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "作者以黏蛋白二硫键连接及黏液来源差异为出发点，设计可调的合成黏液模型。",
+      "level": "background",
+      "subject": "天然黏液与黏蛋白、拟构建的模型",
+      "conditions": "引言讨论天然黏液的来源、纯化与动态网络",
+      "scope": "研究动机，不是本文已完成的免疫功能测量",
+      "support": "天然体系的二硫键与来源不确定性说明模型设计目标",
+      "limit": "结构模仿不等于全部生物功能被重建",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Introduction，正文科学段 P1–P3",
+          "quote": "The poorly defined structures and source-dependent composition of mucus also restrict its research."
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Introduction，P2",
+          "quote": "Therefore, a synthetic building block whose viscoelastic behavior in the gel state can be tuned through controlled intermolecular disulfide bond formation would pave a broader path for developing mucus-mimetic hydrogels."
+        },
+        {
+          "kind": "figure",
+          "asset": "scheme",
+          "panels": "a–c",
+          "axes": "示意图，无测量坐标",
+          "legend": "a 天然黏蛋白；b 合成聚甘油；c TA 开环/交联示意",
+          "conditions": "设计示意；非直接观测中间体",
+          "observation": "a 末端硫醇/二硫键连接；b 硫酸化链与光敏单元；c 环状二硫键、自由基式及交联结构以可逆箭头相接"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "statement": "lPGS 骨架连接含 1,2-二硫戊环的 TA，为光触发交联提供设计基础。",
+      "level": "author_interpretation",
+      "subject": "光照前的 lPGS-nTA 大分子",
+      "conditions": "370 nm 光触发端点成胶；TA 数 n=3、5、6、15",
+      "scope": "材料选择与作者提出的二硫键交联解释",
+      "support": "亲水多官能骨架、硫酸基和光敏 TA 被整合在同一构件",
+      "limit": "Scheme 1 的自由基/动态连接是化学设计图，不是中间体直接鉴定或循环寿命测定",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P5",
+          "quote": "The motivations for choosing linear polyglycerol sulfate (lPGS) as the macromolecular building block are its ease of synthesis, multifunctionality, low intrinsic viscosity, and superior biocompatibility."
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P5",
+          "quote": "This family has gained enormous attention, as the 1,2-dithiolane group can undergo intermolecular crosslinking upon UV irradiation without photo-initiators"
+        },
+        {
+          "kind": "figure",
+          "asset": "f1",
+          "panels": "a",
+          "axes": "合成结构图，无测量轴",
+          "legend": "lPGS-NH2、TA-NHS、lPGS-nTA；n=3,5,6,15",
+          "conditions": "DMF:H2O；Et3N；RT；24 h",
+          "observation": "TA-NHS 与侧基胺形成酰胺连接，TA 的五元二硫环保留于产物侧基"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "statement": "无额外光引发剂或氧化剂的优势限于最终光交联；前体胺化使用过光引发剂。",
+      "level": "observation",
+      "subject": "lPGS→lPGS-NH2→lPGS-nTA；最终交联与前体合成是不同阶段",
+      "conditions": "SI p5 370 nm 3 h；p6 NHS 偶联室温24 h；p9 NMR积分",
+      "scope": "不将末端成胶优势推广至整条合成路线",
+      "support": "SI明确列出Irgacure及透析，最终交联条件另列",
+      "limit": "没有残留定量与本读本独立生物相容性测量；n是文中命名，不作逐链单分子计数",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-si",
+          "locator": "SI p5，Synthesis of aminated lPGS",
+          "quote": "methylpropiophenon (65 mg, Irgacure 259) was added and the reaction was conducted under the",
+          "page": 5
+        },
+        {
+          "kind": "text",
+          "source": "A-si",
+          "locator": "SI p6，Synthesis of lPGS-nTA",
+          "quote": "The number of thioctic acid (TA) coupled to lPGS-nTA could be well controlled through tuning the equivalents of TA- NHS as this reaction step is quantitative.",
+          "page": 6
+        },
+        {
+          "kind": "text",
+          "source": "A-si",
+          "locator": "SI p9，Fig. S4 图注",
+          "quote": "The integral of protons from -CH2- group adjacent to the -OSO3- on the backbone (a) was used as a reference.",
+          "page": 9
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Conclusion，P20",
+          "quote": "Moreover, the photo-regulated crosslinking reaction requires no photo-initiators or oxidizing reagents"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results P6，合成路线",
+          "quote": "First, we synthesized a linear polyglycerol backbone by anionic ring-opening polymerization of ethoxyethyl glycidyl ether and allyl glycidyl ether, followed by deprotection in slightly acidic media. 43  Next, the polymer was sulfated by following a reported protocol. 46  The allyl glycidyl units on the backbone were then functionalized with cysteamine through thiol–ene chemistry and characterized by NMR (Scheme S1 and Fig. S1–S3 † ). 43"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "statement": "Fig. 1 所列不同 TA 量、浓度和照时下的瓶倒置结果显示成胶差异，不能当作严格单变量比较。",
+      "level": "observation",
+      "subject": "lPGS-15TA 5% 与 lPGS-3TA 10%；补充5TA/6TA",
+      "conditions": "pH7.4、10 mM PBS；370 nm、25 mW/cm²、25°C；不同时间",
+      "scope": "瓶倒置/肉眼状态；表S1列举条件，不是穷尽相图或所有最小浓度",
+      "support": "高TA样品在较低质量浓度和较短照时下成胶，低TA反例仍流动",
+      "limit": "浓度与照时同时变化；没有从照片算TA独立效应",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P6",
+          "quote": "A 5% (w/v) free flowing solution of lPGS-15TA in PBS buffer, upon UV light irradiation for 5 min, formed a free-standing hydrogel"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P6",
+          "quote": "whereas a 10% (w/v) solution of lPGS-3TA could not form a hydrogel even after 60 min of UV light exposure"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P7",
+          "quote": "We found that lPGS-5TA, at 10% (w/v) solution in PBS buffer, transformed into a free-standing hydrogel upon 10 min UV irradiation."
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P7",
+          "quote": "Interestingly, lPGS-6TA, at 8% (w/v) solution in PBS buffer, formed a hydrogel after just 5 min of UV exposure"
+        },
+        {
+          "kind": "figure",
+          "asset": "f1",
+          "panels": "b、c、d",
+          "axes": "瓶照片/趋势示意，无测量轴",
+          "legend": "b 15TA；c 3TA；d 3/5/6/15TA系列",
+          "conditions": "b 5%、5min；c10%、60min；370nm 25mW/cm² pH7.4 25°C",
+          "observation": "b照后不沿瓶流动，c照后仍聚于下侧；d楔形箭头概括TA增多、用量/照时降低趋势，不是数值曲线"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "statement": "低浓度 15TA 与 3TA 的 NMR 变化和不成胶结果并存，说明化学变化与宏观成胶需要分别判断。",
+      "level": "author_interpretation",
+      "subject": "15TA 3%/6%，3TA 10% 的照前照后NMR；对应宏观状态",
+      "conditions": "Fig.S5 0–10 min；正文另报告3TA 60min不成胶",
+      "scope": "谱变化支持作者开环/交联解释；不直接数出链间交联密度",
+      "support": "15TA两浓度及3TA均发生局部谱峰变化，只有部分配方成胶，作者据此提出网络不足",
+      "limit": "NMR不能独立区分全部连接拓扑或量化贯通网络；S5c不含60min谱",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P7",
+          "quote": "The difference in the macroscopic outcome is presumably because 3% (w/v) lPGS-15TA developed an insufficient crosslinked network and consequently remained in solution."
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P7",
+          "quote": "By contrast, 6% lPGS-15TA formed a sufficiently extensive, crosslinked network, resulting in a free-standing hydrogel."
+        },
+        {
+          "kind": "figure",
+          "asset": "s5a",
+          "panels": "Fig.S5a（SI物理p9下部）",
+          "axes": "1H位移 f1(ppm)，堆叠谱；非成胶率轴",
+          "legend": "15TA 3%；0、2、4、5、8、10min",
+          "conditions": "来源标为UV暴露；正文对应低浓度不成胶",
+          "observation": "黄色环相关谱峰衰减，蓝色标区细分峰并合；纵向堆叠为不同照时，非同一峰沿空间移动"
+        },
+        {
+          "kind": "figure",
+          "asset": "s5bc",
+          "panels": "Fig.S5b/c（SI物理p10）",
+          "axes": "1H位移 f1(ppm)，堆叠谱",
+          "legend": "b 15TA 6%：0、2、4、6、8、10min；c 3TA10%：0、3、6、10min",
+          "conditions": "光照时间按各面板独立标签",
+          "observation": "两面板黄色标区峰降低、蓝区分裂变得不清；c时间至10min，不能将其当60min谱"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "statement": "固定照射 5 min 后，本文以 G′ 占优判定的 CGC 约为 6TA 的 7.5% 和 15TA 的 4%（w/v）。",
+      "level": "observation",
+      "subject": "6TA/15TA 不同浓度光照后湿态样品",
+      "conditions": "370nm、25mW/cm²；1%应变；横轴ω标Hz；主要比较1Hz",
+      "scope": "操作性CGC，依照时及测量口径；文献黏液范围不是同批天然对照",
+      "support": "7→7.5%及3.5→4%跨过低频模量占优的组间变化",
+      "limit": "高频均上扬，不能只挑高频认胶；不把Hz默改rad/s",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P9",
+          "quote": "indicating a value of around 7.5% (w/v) for the CGC of lPGS-6TA"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P10",
+          "quote": "Interestingly, here the CGC dropped to 4% (w/v)"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P11",
+          "quote": "G ′ values were observed in the range of 7–10 Pa, while G ′′ remained around 1 Pa at 1 Hz."
+        },
+        {
+          "kind": "figure",
+          "asset": "f2",
+          "panels": "a/b",
+          "axes": "横轴ω(Hz)0.1–100；纵轴G′,G″(Pa)，双对数",
+          "legend": "实心G′/空心G″；a 7/7.5/8/10%；b3.5/4/4.5/5%",
+          "conditions": "5minUV；370nm25mW/cm²；1%应变",
+          "observation": "低频红色阈值组G′明显高于G″；更高浓度两模量提高；高频上扬；不是全频率常数"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "statement": "各自固定配方内 G′ 随照时上升并趋缓；跨配方比较同时改变 TA 数与质量浓度。",
+      "level": "observation",
+      "subject": "6TA8%、15TA5%分别照射后取样流变",
+      "conditions": "各瓶独立照射；1Hz、1%应变；0–10min",
+      "scope": "图2c/d描述G′随时间，非实时原位单瓶聚合转化率",
+      "support": "6TA约3min后、15TA约2min起明显提高，较晚增长趋缓",
+      "limit": "作者称饱和，不直接当作所有TA完全反应；图2d末端仍有差异",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P12",
+          "quote": "we prepared a series of vials containing a fixed concentration of lPGS- n TA and irradiated them independently with UV light for different time spans before performing rheology measurements."
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P12",
+          "quote": "G ′ did not change noticeably in the beginning, but after 3 min, G ′ rapidly increased until becoming saturated at the 5 min mark"
+        },
+        {
+          "kind": "figure",
+          "asset": "f2",
+          "panels": "c/d",
+          "axes": "横轴UV time(min)；纵轴G′,G″(Pa)，0–500",
+          "legend": "c6TA8%、d15TA5%；黑方块G′，红点G″",
+          "conditions": "1Hz、1%应变，各瓶独立照时",
+          "observation": "G′明显上升、G″贴近底部；d总体高于c；后段趋缓但d10min仍比中段高，避免绝对恒定"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "statement": "SEM 对比的是干燥处理样品的形貌，不能直接给出湿态二硫键连接拓扑。",
+      "level": "synthesis",
+      "subject": "Fig2e/f、Fig4c–f及S10 干燥样品",
+      "conditions": "正文图2注称冻干；SI p2记高真空干燥、镀金5nm",
+      "scope": "微米级干态形貌与流变互补",
+      "support": "光照后网络状/纤维或多孔形貌改变与宏观变化相伴",
+      "limit": "不以干态SEM直接鉴定共价键，也不把干燥孔尺寸转为湿态孔径",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Fig.2图注",
+          "quote": "All the samples for SEM were lyophilized polymer aqueous solutions or hydrogels that were prepared in PBS (pH 7.4) buffer at 25 °C."
+        },
+        {
+          "kind": "text",
+          "source": "A-si",
+          "locator": "SI p2，SEM",
+          "quote": "The samples were dried under high vacuum and coated with a 5 nm gold layer",
+          "page": 2
+        },
+        {
+          "kind": "figure",
+          "asset": "f2",
+          "panels": "e/f",
+          "axes": "SEM标尺50μm",
+          "legend": "e 15TA5%；f6TA8%；各为0/5minUV",
+          "conditions": "干燥后SEM，非湿态原位",
+          "observation": "e照后较致密纤维状网络；f照后网络状结构；两组浓度不同"
+        },
+        {
+          "kind": "figure",
+          "asset": "f4",
+          "panels": "c/d/e/f",
+          "axes": "SEM：c/d50μm；e100μm；f30μm",
+          "legend": "c4%15TA无UV；d2%BSM无UV；e混合无UV；f混合5minUV",
+          "conditions": "干燥、镀金SEM；不同图倍率/标尺不同",
+          "observation": "c片状不规则；d纤维；e不规则混合结构；f多孔网状；四幅不是同一溶液连续时间轨迹"
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "statement": "掩膜局部照射在 4% lPGS-15TA 中形成局部凝胶，并提供所取凝胶的流变对照。",
+      "level": "observation",
+      "subject": "35mm培养皿中的4%15TA；掩膜孔直径8mm",
+      "conditions": "370nm、25mW/cm²、5min；照后加亚甲基蓝；与均匀凝胶比较",
+      "scope": "几何成胶与模量展示，未直接检测病原防御或输运功能",
+      "support": "局部透明区域与掩膜几何对应，取出后G′>G″",
+      "limit": "蓝色深浅不是交联密度定量；不从示意双箭头推导反复可逆实测",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P15",
+          "quote": "After 5 min of UV irradiation through the photomask, a transparent gel “island” was indeed obtained at the center of the Petri dish, while the other areas remained in solution"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P15",
+          "quote": "After 5 min of UV irradiation, we added 10 μL of methylene blue (2 mM) to the Petri dish to better visualize the local gel formation."
+        },
+        {
+          "kind": "figure",
+          "asset": "f3",
+          "panels": "a–f",
+          "axes": "a示意；b–d照片；e/f横ω(Hz)0.1–10，纵G′,G″(Pa)",
+          "legend": "e局部；f均匀；黑方块G′，红点G″",
+          "conditions": "4%15TA；UV370nm25mW/cm²5min；e/f三次重复",
+          "observation": "b圆形透明区；c双圆；d圆/矩形/三角；e/f低频G′高于G″，约十Pa量级且高频上扬"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "statement": "Fig. 4a 的两份母液为 4% BSM 和 8% 聚合物，混合后标注为 2% BSM 与 4% 聚合物。",
+      "level": "observation",
+      "subject": "BSM母液、15TA母液、混合液、光照后混合物",
+      "conditions": "图4a标签；pH7.4最终照射370nm25mW/cm²5min",
+      "scope": "照片身份与最终浓度；母液不套到图4b测试组",
+      "support": "四照片配对上方示意标签，前两份独立母液不是混合液照前照后",
+      "limit": "不把所有照片都解释成4%15TA+2%BSM的不同时间点",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P16",
+          "quote": "mixing BSM (2% w/v) with lPGS-15TA (4% w/v) formed a hybrid hydrogel with significant viscoelasticity upon UV exposure"
+        },
+        {
+          "kind": "figure",
+          "asset": "f4",
+          "panels": "a",
+          "axes": "示意/瓶照片，无定量轴",
+          "legend": "BSM4%、lPGS-15TA8%、混合BSM2%+聚合物4%、光照后混合物",
+          "conditions": "前两图母液；混合后浓度减半；UV作用于混合样",
+          "observation": "前两幅分别是棕色BSM和浅色聚合物溶液；第三混合仍流动；第四倾斜仍保形"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results P16，BSM模型瓶颈",
+          "quote": "Commercially available bovine submaxillary mucin (BSM), which is regarded as the model system for human mucus"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results P16，文献高浓度背景",
+          "quote": "It has been shown that BSM only begins to exhibit viscoelasticity comparable to healthy sputum at a concentration range of 10–14% (w/v)."
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "statement": "混合液在无光时模量低，照光后 G′ 高于相应单组分；这支持两者共同参与成胶的作者解释。",
+      "level": "author_interpretation",
+      "subject": "15TA4%、BSM2%、二者混合，照前/照后分别比较",
+      "conditions": "1%应变；5minUV；Fig4b为照后，S9为照前；1Hz取点",
+      "scope": "支持生物杂化网络解释，不直接鉴定特定BSM–聚合物连接",
+      "support": "无光控制及光后非简单叠加的弹性增强约束了仅混合即成胶的解释",
+      "limit": "总体流变和SEM不能独立排除全部物理相互作用或直接分配每条共价连接",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P17",
+          "quote": "These two observations suggest the joint participation of both lPGS-15TA and BSM in the hybrid hydrogel formation"
+        },
+        {
+          "kind": "figure",
+          "asset": "f4",
+          "panels": "b",
+          "axes": "横ω(Hz)；纵G′,G″(Pa)，双对数",
+          "legend": "黑方块BSM2%；红圆15TA4%；蓝三角混合；实心G′/空心G″",
+          "conditions": "各组5minUV；1%应变",
+          "observation": "混合组低频G′明显高于单组分；BSM单独低模量；高频各有上扬"
+        },
+        {
+          "kind": "figure",
+          "asset": "s9",
+          "panels": "S9a/b/c；SI p13上部",
+          "axes": "横ω(Hz)0.1–100；纵G′,G″(Pa)",
+          "legend": "a聚合物4%；b4.5%；c5%；各与2%BSM及混合对照",
+          "conditions": "照前；三次重复，误差棒省略",
+          "observation": "低频各组模量较低；没有光后混合物高的G′平台；不能以高频上扬代替低频判断"
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "statement": "Fig. 4i 只显示两体系的 G′；随照时增加，混合体系的 G′ 增长显著，而聚合物单独变化小。",
+      "level": "author_interpretation",
+      "subject": "4%15TA及4%15TA+2%BSM",
+      "conditions": "3/5/8minUV；Fig4i取1Hz；S13给全频率双模量",
+      "scope": "光时响应支持BSM参与的作者解释；非直接键型鉴定",
+      "support": "固定各自组成后的时间依赖不同，补充浓度系列",
+      "limit": "Fig4集合图注泛称G′/G″，i图例实际仅G′；不能让图i承担G″不变判断",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P18",
+          "quote": "We found that, with increased UV exposure time, G ′ of lPGS-15TA alone changed only slightly, whereas G ′ of the hybrid system increased significantly"
+        },
+        {
+          "kind": "figure",
+          "asset": "f4",
+          "panels": "i",
+          "axes": "横UV irradiation(min)3/5/8；纵G′(Pa)",
+          "legend": "黑方块4%15TA G′；红点15TA+2%BSM G′",
+          "conditions": "1Hz，各组成固定；照时变化",
+          "observation": "红点上升，黑方块低位变化小；没有G″曲线"
+        },
+        {
+          "kind": "figure",
+          "asset": "s13",
+          "panels": "S13a/b；SI p14下部",
+          "axes": "横ω(Hz)；纵G′,G″(Pa)，双对数",
+          "legend": "a4%15TA；b4%15TA+2%BSM；黑/红/蓝为3/5/8min，实/空分两模量",
+          "conditions": "各体系独立照3/5/8min；三次重复，误差棒省略",
+          "observation": "a低频G′随照时改变较小；b各时G′均高于相应G″并随照时上移；包含图4i未画的G″"
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "statement": "在另一组分固定时，提高聚合物或 BSM 的浓度可提高所测混合凝胶 G′。",
+      "level": "observation",
+      "subject": "图4g固定BSM2%；图4h固定15TA4%",
+      "conditions": "g聚合物4/4.5/5%；h BSM0.5/1/2%；5minUV；1Hz",
+      "scope": "有限浓度系列，非任意浓度普遍规律",
+      "support": "两个独立配方系列给出可调性；h中G″变化较小",
+      "limit": "不跨g/h量程直接比斜率或赋予线性定律",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P18",
+          "quote": "with the lPGS-15TA concentration fixed at 4% (w/v), increasing the concentration of BSM led to a significant increase in G ′ with negligible change in G ′′"
+        },
+        {
+          "kind": "figure",
+          "asset": "f4",
+          "panels": "g/h",
+          "axes": "g横lPGS-15TA(%w/v)、纵G′,G″Pa至1000；h横BSM(%w/v)、纵G′,G″Pa至200",
+          "legend": "黑方G′；红点G″；两个独立配方系列",
+          "conditions": "1Hz、5minUV；g固定BSM2%；h固定15TA4%",
+          "observation": "g黑方上升；h黑方上升，红点较低变化小；g/h纵轴量程不同"
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "statement": "本文展示的是可调模量、局部成胶和 BSM 杂化的模型平台；生物功能与长期循环仍需单独验证。",
+      "level": "synthesis",
+      "subject": "lPGS-nTA合成及其水凝胶模型",
+      "conditions": "正文Fig1–4，SI方法/NMR/流变/SEM",
+      "scope": "所展示的合成、形貌和流变范围；作者应用展望与实验结果分开",
+      "support": "主文证据组合回答可控成胶，不把天然黏液防御背景移植成本文测试",
+      "limit": "不以模量接近推断抗感染、活细胞兼容、长期稳定、恢复循环或所有天然黏液功能",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Conclusion，P20",
+          "quote": "This versatile approach of photo-regulated disulfide crosslinking strategy creates new opportunities, not only in developing artificial mucus but also in designing new biomimetic and biohybrid materials"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P19",
+          "quote": "It is a challenging task for a single synthetic building block to capture all of these structural features along with functional macroscopic properties such as viscoelasticity."
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "pointer": "/case/title",
+      "text_sha256": "28a578bbb42c013e6f15c127ae0d51fd8f9c2ca42bb386418a752ac16f3bee27",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C6",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/thesis",
+      "text_sha256": "c2eefc9eca135f368899fa78c5405b38b6960d5ae0766885bfad79b59e6961b7",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C5",
+        "C6",
+        "C9",
+        "C11",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/coverage",
+      "text_sha256": "0c2bc24321219c5ae1d2cb50f3a39063c4b42f660fcc033d2d85bbc91c296c90",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "记录材料覆盖、阅读动作或关系线型标签；不增加材料性能、机理或实验结果判断。"
+    },
+    {
+      "pointer": "/case/sections/0/title",
+      "text_sha256": "9ce41960aa826f46c62576d86fdb004cb798f500d78cf8664b870ba91899e224",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "回源引言的黏液来源/二硫键背景，作为模型动机，不迁移为新材料已测生物效能。 回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。"
+    },
+    {
+      "pointer": "/case/sections/0/blocks/0",
+      "text_sha256": "15c86a00df9ecfc28264906516141a5ba4b49a9751435a78aec8c778c6ccce5d",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "回源引言的黏液来源/二硫键背景，作为模型动机，不迁移为新材料已测生物效能。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/sections/0/blocks/1",
+      "text_sha256": "ad00c73c2af85e1826d88956f120e58d792028d920c6dc7de700d39a17c5001c",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C2",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "回源引言的黏液来源/二硫键背景，作为模型动机，不迁移为新材料已测生物效能。 回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/sections/0/blocks/3",
+      "text_sha256": "5b2982252f82e8be7dfce579555d0ede6d3205b06931a0549329bed6895bfd43",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C5",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/sections/0/blocks/4/detail/title",
+      "text_sha256": "9761f0f3fe9013467f0e16e7c0dfe70a2245ddf3c9b483d274e6429a8fc9f282",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/sections/0/blocks/4/detail/paragraphs/0",
+      "text_sha256": "c61688c93708200c5428a7742f343757c047f2ec1b1fead88864c6fcfb93adf9",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/sections/1/title",
+      "text_sha256": "76345f06eb38800409dc34ffd413cb16dc9ee4ec56d1844cb39c02c5fdd0afdd",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C3"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 逐查SI p5引发剂、p6偶联及p9积分参照；优势限定末端交联，不扩成全路线或逐链分布。"
+    },
+    {
+      "pointer": "/case/sections/1/blocks/0",
+      "text_sha256": "ca2d277ad9403269778fc3e47c535a675f6badcc573754b6093fd742fdcbfce0",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C3"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 逐查SI p5引发剂、p6偶联及p9积分参照；优势限定末端交联，不扩成全路线或逐链分布。"
+    },
+    {
+      "pointer": "/case/sections/1/blocks/1",
+      "text_sha256": "94e895cfc2a8ac3725e83933cbfd7c6686a49096c4e6f9336abcd620bfe13de1",
+      "kind": "factual",
+      "claim_ids": [
+        "C3"
+      ],
+      "verdict": "aligned",
+      "reason": "逐查SI p5引发剂、p6偶联及p9积分参照；优势限定末端交联，不扩成全路线或逐链分布。"
+    },
+    {
+      "pointer": "/case/sections/1/blocks/2",
+      "text_sha256": "1ec1f7586d9692ce3d88b57fe7218623f5f3ee787b23483546122b65b57ae2a8",
+      "kind": "factual",
+      "claim_ids": [
+        "C3",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "逐查SI p5引发剂、p6偶联及p9积分参照；优势限定末端交联，不扩成全路线或逐链分布。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/sections/2/title",
+      "text_sha256": "d8a848108b71d367b7b72244b18b80f94bd560abed6398497147225b1f092a9c",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。 回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/0",
+      "text_sha256": "3058e062efc5667a1044e753fc099253467de85d6d4ccc6d02f6eff8d8a2603d",
+      "kind": "factual",
+      "claim_ids": [
+        "C4"
+      ],
+      "verdict": "aligned",
+      "reason": "Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/2",
+      "text_sha256": "7fde911ee73e884b0ec4c2d6d0e882d19f0ca046d600b17f35d0ca0d98a94cee",
+      "kind": "factual",
+      "claim_ids": [
+        "C5",
+        "C4"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/5",
+      "text_sha256": "a18b6ac46494930ace9e7fb7d8f15ae8403abb616d7750a8a971f1452d845e22",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "verdict": "qualified",
+      "reason": "Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。 回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/6/detail/title",
+      "text_sha256": "dc434d369e6f55d8ad7a7aacdf9386e4627d82212e08dee6e501f011a6051c47",
+      "kind": "factual",
+      "claim_ids": [
+        "C5",
+        "C4"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
+    },
+    {
+      "pointer": "/case/sections/2/blocks/6/detail/paragraphs/0",
+      "text_sha256": "2239a6d084c3d3f351c3b6c8f7117c5f7ceb1994c6c82e0f5c5a187a9a4ea9df",
+      "kind": "factual",
+      "claim_ids": [
+        "C5",
+        "C4"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
+    },
+    {
+      "pointer": "/case/sections/3/title",
+      "text_sha256": "bc5f5a8d356062d8239f4879dbc33b87feb5bd1c5dc31a00f420317b514eef0a",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "verdict": "qualified",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。 核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/0",
+      "text_sha256": "bd03d6fd29e66a83b42ae2f2544711fc7ca588a7b25d77d0fc4db0fdaeb89464",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/2",
+      "text_sha256": "356dcf0533a8f52f12caefe3f79368efd558ae9fff661e81269373155bc97e86",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/3",
+      "text_sha256": "68f93b57bb9683d18268122ff0ebd0d00b5497b4912ed0dafdea11e6585c4a81",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/4",
+      "text_sha256": "f88bdaa680bd6d0451db61fd5e315241a24a448725537d2f6b30da2dc87daf39",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C5",
+        "C7"
+      ],
+      "verdict": "qualified",
+      "reason": "核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。 回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/5/detail/title",
+      "text_sha256": "b65435b29d0cba305c34965ed9abeb2469c3fcbfe42997fc982afb80e3ad5827",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。"
+    },
+    {
+      "pointer": "/case/sections/3/blocks/5/detail/paragraphs/0",
+      "text_sha256": "2852970f7feae3eaec42acebcf8eaa247b976a789d2af02c66651165c4032705",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。"
+    },
+    {
+      "pointer": "/case/sections/4/title",
+      "text_sha256": "26de5fe0703dd741b23638156a3a0f774c7c0d33300f6602e6a9abd40294f0ec",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。"
+    },
+    {
+      "pointer": "/case/sections/4/blocks/0",
+      "text_sha256": "1d7cfb9a12f67fc225737a4dfdb102683f04a64384a824f59616b0c1832bf0fc",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。"
+    },
+    {
+      "pointer": "/case/sections/4/blocks/2",
+      "text_sha256": "db7ea071a64061f38fcc87871eeba15c4e23a08345a5e5d4a96c351907798b43",
+      "kind": "factual",
+      "claim_ids": [
+        "C9",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/sections/5/title",
+      "text_sha256": "4a70d3e2d8f65988017e97d511f2112d3b79f54ad14aa53b72dbadc3dc253e8b",
+      "kind": "factual",
+      "claim_ids": [
+        "C10",
+        "C11",
+        "C12",
+        "C13"
+      ],
+      "verdict": "qualified",
+      "reason": "放大Fig4a并回源P16，母液4%BSM/8%15TA与混合后2%/4%分别对应照片，不混同时间点。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。 放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。 核对g/h的固定组分、浓度与不同量程及P18；有限系列内模量增加，不推任意线性定律。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/0",
+      "text_sha256": "03a791c12d37ac20cd2513a9fd1118163845873a11e094ba7e7ec9da560c0d7a",
+      "kind": "factual",
+      "claim_ids": [
+        "C10",
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "放大Fig4a并回源P16，母液4%BSM/8%15TA与混合后2%/4%分别对应照片，不混同时间点。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/2",
+      "text_sha256": "877bec31efac7b68eacc58d487629684d0f1bc7041c82b2564ddb59c823f5429",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/4",
+      "text_sha256": "17d9398192a85f1775c68e5e18478ad809fc033a27fdb865bb23aaa6bebdd256",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/5",
+      "text_sha256": "4665c598ed16c550d4ece1f9e24be158ad022aded1564036cd14621a58bf78eb",
+      "kind": "factual",
+      "claim_ids": [
+        "C13"
+      ],
+      "verdict": "aligned",
+      "reason": "核对g/h的固定组分、浓度与不同量程及P18；有限系列内模量增加，不推任意线性定律。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6",
+      "text_sha256": "a5854477c8fa00d3f95c9db44ec1341051f14970cc4b12594523cc0402826d6d",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "qualified",
+      "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/7",
+      "text_sha256": "e3a90db64b4b25b37232524d51faf6af9eedd7f391f5814bf7e6acf5e2812bb9",
+      "kind": "factual",
+      "claim_ids": [
+        "C12",
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/8/detail/title",
+      "text_sha256": "66deec3649da98629d479438e5c25830b63e8ff10ac8f9c1196f7ea6a412abb0",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "qualified",
+      "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。"
+    },
+    {
+      "pointer": "/case/sections/5/blocks/8/detail/paragraphs/0",
+      "text_sha256": "40dd44bc209c765dd99d4a928db7c703a4d481eac150d014a21aa7e30940e2f2",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "qualified",
+      "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。"
+    },
+    {
+      "pointer": "/case/sections/6/title",
+      "text_sha256": "b760b4b604fc04df14e7cd8ca0e103354e61215e58c06e5352b5e74631312dec",
+      "kind": "factual",
+      "claim_ids": [
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/sections/6/blocks/0",
+      "text_sha256": "bc1d9855cdc605b2d134533036925255ad8d852e8e0a6aa8625300b40756be87",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C9",
+        "C11",
+        "C13",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。 回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。 回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。 核对g/h的固定组分、浓度与不同量程及P18；有限系列内模量增加，不推任意线性定律。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/sections/6/blocks/1",
+      "text_sha256": "d862248758ee9dd5a8a5c842408df0326518c3ca578985f8c697338bde62535b",
+      "kind": "factual",
+      "claim_ids": [
+        "C14",
+        "C6",
+        "C8",
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。 核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
+    },
+    {
+      "pointer": "/case/figures/scheme/title",
+      "text_sha256": "be18aa8ae6f3fe67f47e32e4197d48ac2677a547b327e70e0ee358b6f4d7849f",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "回源引言的黏液来源/二硫键背景，作为模型动机，不迁移为新材料已测生物效能。 回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。"
+    },
+    {
+      "pointer": "/case/figures/scheme/role",
+      "text_sha256": "7b450d1578ea81bdfe66475f7babafe894b9a2d339a7a4c8e5aa622479c8217e",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "回源引言的黏液来源/二硫键背景，作为模型动机，不迁移为新材料已测生物效能。 回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。"
+    },
+    {
+      "pointer": "/case/figures/scheme/caption",
+      "text_sha256": "9b47dba1b5530fc9645f20cc8a395482dee05667af86d5cdbf613bb9319dd1ea",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "回源引言的黏液来源/二硫键背景，作为模型动机，不迁移为新材料已测生物效能。 回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。"
+    },
+    {
+      "pointer": "/case/figures/f1/title",
+      "text_sha256": "daa11d03ed2deb951a90d869c5722e765804964ae71ed5a3ea3d66bbc15e03bb",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C4"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
+    },
+    {
+      "pointer": "/case/figures/f1/role",
+      "text_sha256": "f3ac5a4e283a8aa888344cd85300caa480ee1fce63e769a0bf9971f26a490614",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C4"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
+    },
+    {
+      "pointer": "/case/figures/f1/caption",
+      "text_sha256": "3c5291a0d41ca84a4c2c2303cbbd2b7324aa599b631937d27205a4ddb1e97e31",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C4"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 Fig1b/c与TableS1逐个核对15TA5%5min、3TA10%60min等；多条件比较不写单因果。"
+    },
+    {
+      "pointer": "/case/figures/s5a/title",
+      "text_sha256": "42bb56b95c960e97511e1070dfa4300ca893881f0fada50e87b8c831650a044c",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
+    },
+    {
+      "pointer": "/case/figures/s5a/role",
+      "text_sha256": "e7f27fdbc68bd2d1a38dc3c84d6f7c05bc40001bef81648da527520c436fe310",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
+    },
+    {
+      "pointer": "/case/figures/s5a/caption",
+      "text_sha256": "85fb30f5baa406df18ba23525c54c5eba02467d736867e8b1349202bf7642b81",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
+    },
+    {
+      "pointer": "/case/figures/s5bc/title",
+      "text_sha256": "f4252033f2cd7cd36bfda7a6387d1e4421c58719106523dc43c8f9f7765b1026",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
+    },
+    {
+      "pointer": "/case/figures/s5bc/role",
+      "text_sha256": "c80feb53c9d8d401bbff4e9a73ab26209764d54d1b3ca6ccd0241fd84d1faf2b",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
+    },
+    {
+      "pointer": "/case/figures/s5bc/caption",
+      "text_sha256": "8bbbecace9f74420e93560f58ce694e1700d5525b7886adfb72cf2b561e42f4d",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
+    },
+    {
+      "pointer": "/case/figures/f2/title",
+      "text_sha256": "028a9cde7e415ef6ea5f7192939a6d65c30bdadba26d6d05e9e768b4f2d2f7f0",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "verdict": "qualified",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。 核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。"
+    },
+    {
+      "pointer": "/case/figures/f2/role",
+      "text_sha256": "8a67487781934b57cfdbbbbbe6dc786c2219e4e214cdf87b78affeed0a2e131e",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "verdict": "qualified",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。 核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。"
+    },
+    {
+      "pointer": "/case/figures/f2/caption",
+      "text_sha256": "7de77edf7430f30882cc023788115aad4e4d0474339289898989a39ed4f63828",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "verdict": "qualified",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。 核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。"
+    },
+    {
+      "pointer": "/case/figures/f3/title",
+      "text_sha256": "938bea1ddc2ba2121b3c05758ab86e39e506e20369b5bd47e1a320a102f4c0fd",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。"
+    },
+    {
+      "pointer": "/case/figures/f3/role",
+      "text_sha256": "99c50895813dc271b76006c44d883b81d711309db1b3be1d7d48d9a95466a85f",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。"
+    },
+    {
+      "pointer": "/case/figures/f3/caption",
+      "text_sha256": "8c9a7c9dc489b04b7c5ebd436a54a0f40ee51cdc90d4614a7b92f2481b92cfa3",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。"
+    },
+    {
+      "pointer": "/case/figures/f4/title",
+      "text_sha256": "0f2524d19df38db98d24b453b2a89f7aead04ca41f0debd3d6c7cbfa49aa0e0e",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C10",
+        "C11",
+        "C12",
+        "C13"
+      ],
+      "verdict": "qualified",
+      "reason": "核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。 放大Fig4a并回源P16，母液4%BSM/8%15TA与混合后2%/4%分别对应照片，不混同时间点。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。 放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。 核对g/h的固定组分、浓度与不同量程及P18；有限系列内模量增加，不推任意线性定律。"
+    },
+    {
+      "pointer": "/case/figures/f4/role",
+      "text_sha256": "c2ee748a46856ada4f52b26bb477101b40767b8772e0bd5b298b304261ab5725",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C10",
+        "C11",
+        "C12",
+        "C13"
+      ],
+      "verdict": "qualified",
+      "reason": "核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。 放大Fig4a并回源P16，母液4%BSM/8%15TA与混合后2%/4%分别对应照片，不混同时间点。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。 放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。 核对g/h的固定组分、浓度与不同量程及P18；有限系列内模量增加，不推任意线性定律。"
+    },
+    {
+      "pointer": "/case/figures/f4/caption",
+      "text_sha256": "190910e199135cdd2131c5b0f9dca0cd09222e163175d0a34c01ce401f396170",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C10",
+        "C11",
+        "C12",
+        "C13"
+      ],
+      "verdict": "qualified",
+      "reason": "核对SEM对象、标尺及SI干燥/镀金方法；不把干态形貌表述成湿态结构/键型直接证据。 放大Fig4a并回源P16，母液4%BSM/8%15TA与混合后2%/4%分别对应照片，不混同时间点。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。 放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。 核对g/h的固定组分、浓度与不同量程及P18；有限系列内模量增加，不推任意线性定律。"
+    },
+    {
+      "pointer": "/case/figures/s9/title",
+      "text_sha256": "23c653817826cd3bf19396a36c03be1bff2904a1c1868d6ed6ab8c27d74c5fcb",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
+    },
+    {
+      "pointer": "/case/figures/s9/role",
+      "text_sha256": "6b4f4da436dc043f678178710f8c54ce64bd5c8ffb445caf261a5255f8ba0eb3",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
+    },
+    {
+      "pointer": "/case/figures/s9/caption",
+      "text_sha256": "f807db6563badcbb6b64e82b302d5d3a96088c93a365e27345d71a0da61f7360",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
+    },
+    {
+      "pointer": "/case/figures/s13/title",
+      "text_sha256": "3d049e4ff25330b4265de1c9a80322328048dded71244b40c577d107443dddaf",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "qualified",
+      "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。"
+    },
+    {
+      "pointer": "/case/figures/s13/role",
+      "text_sha256": "2b71d6e3bd4739bcf99199d8d1211b399f5b0ee1d692b0da592a23d472d54ea9",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "qualified",
+      "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。"
+    },
+    {
+      "pointer": "/case/figures/s13/caption",
+      "text_sha256": "7a57cd10c2ae028a1bbc87e5b73122a701e28388ade2ff9b261c619c2dca5980",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "qualified",
+      "reason": "放大核对Fig4i图例仅G′，再读S13双模量和P18；集合图注指标不套到i。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/0/title",
+      "text_sha256": "eca0ca01ef74f19078f652937da2c362ab74b42d05b99acd909483f455e180d9",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/0/role",
+      "text_sha256": "da37f967cfb427c62c5750658a3957a7f5469164cd7a4c1deaf7bfe91cdeb905",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/0/finding",
+      "text_sha256": "5bc517eaa9cdb62395fc0bbeff4fa39eaf9228ac7c7156a8f1d57617db456afb",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/1/title",
+      "text_sha256": "65e003451d2277a663109da23e7ad2644131e89d02adf45ba3c52b6d6bf46eee",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/1/role",
+      "text_sha256": "f27b173d8137a061abed85241697a86943f6472d8984b7c27d4010d47ec4203b",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/1/finding",
+      "text_sha256": "140915f5d1bc85d84bcb9ecfac097e83122b07897b222dd028f98b7e26618d3a",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/2/title",
+      "text_sha256": "d9f74e791b0c6cc71698ae709103943c89a1183221843f278431667e4f76c896",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/2/role",
+      "text_sha256": "a1a6cd39e42ed3a44d513e08e0a5b0873c404cf08c1bfe8c549ce67d8f6610f9",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/2/finding",
+      "text_sha256": "efe0ee0bfee08d14dfbfc2a02f15bbaba5f315e918507bc498218eb5aec471ea",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/3/title",
+      "text_sha256": "9eb8254ac8b25ed1d4508189b21105b9e625ae413d3bf498666839c157e7a606",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/3/role",
+      "text_sha256": "0708c3c5cf47d964d3bab77dfed2a37aa2cfea0ea7da731fbcc0934da74db4b1",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/3/finding",
+      "text_sha256": "6c7c376ead3bd737acf8fb6f6882e1c5aa846d02e6afe5de02120766925cc0f1",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/4/title",
+      "text_sha256": "e6105761e3973c6b3320b2fb8cca6db61edb7d7a95980cf5308f41a0f798cb32",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/4/role",
+      "text_sha256": "c6b4e1c48643114601273255738895d4c4ecedfe1dae67ffaa73b4116964ce16",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/4/finding",
+      "text_sha256": "4261e1f82d720ffacb11433336c08445fd422d6bb950a0f7d564447561fb5d41",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/5/title",
+      "text_sha256": "da499394357acc1406e65562cde923465b5c2fa6a39bfb2d2872b50562d97738",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/5/role",
+      "text_sha256": "3f025d5e4bd5f3cdad539101dd4678bdaa9808c84c888a4132d9360b0c0acf6b",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/5/finding",
+      "text_sha256": "35901adc5d097fcbab60a64d886d31b949f1ab8268b2762c6f545a9b97d1e2e7",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/6/title",
+      "text_sha256": "988be03c18ee39dcaa49b7acea51ddcb2b789dd4fe7555c9282b86247b49cc84",
+      "kind": "factual",
+      "claim_ids": [
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/6/role",
+      "text_sha256": "5816451cdd834a3fe578ebb8d1162f4d0f50f322fe37737ac3487ef397c293c8",
+      "kind": "factual",
+      "claim_ids": [
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/research_graph/nodes/6/finding",
+      "text_sha256": "d7a63e471c58b050edfaf6f2d4bfabaeb378fafde0ff93c0f491ff0503cabdef",
+      "kind": "factual",
+      "claim_ids": [
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/0/label",
+      "text_sha256": "869c26d2db95be0f571140355c804d7b31f6369f45879bb7c53b65b3bb4edd32",
+      "kind": "factual",
+      "claim_ids": [
+        "C5",
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "回看S5a/b/c与P7，谱变化和成胶分别作判断；c只至10min，未拼接宏观60min状态。 回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/0/kind",
+      "text_sha256": "a18603086e5bdf9df88ccc9f5a083fed093e819976e87456b74dafcbd7011114",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "记录材料覆盖、阅读动作或关系线型标签；不增加材料性能、机理或实验结果判断。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/1/label",
+      "text_sha256": "7c3a59d0456e336bc0f03d6975b0a150d6b715082580666d8b520867287a54c3",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/1/kind",
+      "text_sha256": "a18603086e5bdf9df88ccc9f5a083fed093e819976e87456b74dafcbd7011114",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "记录材料覆盖、阅读动作或关系线型标签；不增加材料性能、机理或实验结果判断。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/2/label",
+      "text_sha256": "73769fdd4e5d0730e1b222d9f4dae97244d083f544228e9ae235095ce900396d",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "核对Fig2a/b的实/空符号、Hz标法、阈值及P9–11；健康黏液范围保留为引文比较。 核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/2/kind",
+      "text_sha256": "6e0534af16e1fe990db04f7be375d4a0d743a315cbc9866523cec7c15d253c62",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "记录材料覆盖、阅读动作或关系线型标签；不增加材料性能、机理或实验结果判断。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/3/label",
+      "text_sha256": "43eb899b8cdf27724417794c409d4fc21f3a785ae17748c9e19ff00c9aa68d81",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Scheme1与Fig1a：TA-NHS侧基偶联及光敏环设计，与自由基/交联解释分层。 回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/3/kind",
+      "text_sha256": "6e0534af16e1fe990db04f7be375d4a0d743a315cbc9866523cec7c15d253c62",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "记录材料覆盖、阅读动作或关系线型标签；不增加材料性能、机理或实验结果判断。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/4/label",
+      "text_sha256": "219a21d515d6e17225f8127ba214ce98396ecfd3018e3250dd27f44613a65b65",
+      "kind": "factual",
+      "claim_ids": [
+        "C9",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Fig3a–f及P15，掩膜、照后染料、局部/均匀力学分别对应，几何展示不扩成防御功能。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/4/kind",
+      "text_sha256": "a18603086e5bdf9df88ccc9f5a083fed093e819976e87456b74dafcbd7011114",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "记录材料覆盖、阅读动作或关系线型标签；不增加材料性能、机理或实验结果判断。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/5/label",
+      "text_sha256": "2e77f835e1018b3506a0c60ed26abf0fdd7149dd9118ec6e5399cf979dacc065",
+      "kind": "factual",
+      "claim_ids": [
+        "C11",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "回看Fig4b与S9照前控制及P17；两组分共同参与保留为有证据支持的作者解释。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/5/kind",
+      "text_sha256": "6e0534af16e1fe990db04f7be375d4a0d743a315cbc9866523cec7c15d253c62",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "记录材料覆盖、阅读动作或关系线型标签；不增加材料性能、机理或实验结果判断。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/6/label",
+      "text_sha256": "8195306cad614be65c103c7cef128632c3a33b38f29c5998a492c9fe734a9c5a",
+      "kind": "factual",
+      "claim_ids": [
+        "C7",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "核对P12独立样品方法与Fig2c/d；组内光时变化和跨配方多变量比较分开，趋缓不当完全转化。 按P19–20与全文已测对象收束；应用和后续验证用条件表达，没有添加实验成绩。"
+    },
+    {
+      "pointer": "/case/research_graph/edges/6/kind",
+      "text_sha256": "a18603086e5bdf9df88ccc9f5a083fed093e819976e87456b74dafcbd7011114",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "记录材料覆盖、阅读动作或关系线型标签；不增加材料性能、机理或实验结果判断。"
+    }
+  ],
+  "reviewer": {
+    "method": "same_agent_second_pass",
+    "identity": "A-with-1 同一执行代理",
+    "source_first_summary": "成稿后重新读取正文P1–2、P5–7、P9–13、P15–20、全部主图图注与SI p2/5/6/9/10/11/13/14相关文字；对实际看过的图及放大局部逐项比较14条规范判断和103个可见单元。未进行独立代理审阅、读者试验或原始实验复算。",
+    "unresolved_items": []
+  }
+}

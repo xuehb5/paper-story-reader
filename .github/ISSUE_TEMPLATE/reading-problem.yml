@@ -1,0 +1,22 @@
+name: Paper interpretation or navigation problem
+description: Report a concrete source mismatch, reading difficulty, or interaction bug.
+body:
+  - type: textarea
+    id: source
+    attributes:
+      label: Paper and source location
+      description: DOI, figure/panel, page or section; share only materials you can legally share.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened and what should happen?
+      description: Quote the reader statement and relevant source evidence, or provide interaction steps.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Skill version and environment
+      description: For interpretation issues, name the Agent/model if known. For UI issues, browser and screen width help.

@@ -1,0 +1,641 @@
+{
+  "schema_version": 1,
+  "input_sha256": "957fa978d09f69491c980e4804f045489fa574ee8085db5a1334b8a447ae335e",
+  "review_sha256": "ae01cc9453a129d5a0ec90daad0b6f39be2681d8a172a11c6fdfb3626bb6b80e",
+  "comparisons": [
+    {
+      "id": "vial",
+      "pointers": [
+        "/case/sections/2/blocks/0"
+      ],
+      "groups": [
+        {
+          "label": "Fig1b",
+          "conditions": {
+            "TA": "15个/文中命名",
+            "concentration": "5% w/v",
+            "duration": "5 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "buffer": "10 mM PBS pH7.4"
+          }
+        },
+        {
+          "label": "Fig1c",
+          "conditions": {
+            "TA": "3个/文中命名",
+            "concentration": "10% w/v",
+            "duration": "60 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "buffer": "10 mM PBS pH7.4"
+          }
+        }
+      ],
+      "classification": "multi_condition",
+      "source_claim_ids": [
+        "C4"
+      ],
+      "qualification": {
+        "pointer": "/case/sections/2/blocks/0",
+        "quote": "这组照片的 TA 数、浓度和照射时间同时不同"
+      }
+    },
+    {
+      "id": "cgc6",
+      "pointers": [
+        "/case/sections/3/blocks/2"
+      ],
+      "groups": [
+        {
+          "label": "7% w/v",
+          "conditions": {
+            "material": "6TA",
+            "concentration": "7% w/v",
+            "duration": "5 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "strain": "1%",
+            "frequency": "1 Hz"
+          }
+        },
+        {
+          "label": "7.5% w/v",
+          "conditions": {
+            "material": "6TA",
+            "concentration": "7.5% w/v",
+            "duration": "5 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "strain": "1%",
+            "frequency": "1 Hz"
+          }
+        }
+      ],
+      "classification": "controlled",
+      "source_claim_ids": [
+        "C6"
+      ]
+    },
+    {
+      "id": "cgc15",
+      "pointers": [
+        "/case/sections/3/blocks/2"
+      ],
+      "groups": [
+        {
+          "label": "3.5% w/v",
+          "conditions": {
+            "material": "15TA",
+            "concentration": "3.5% w/v",
+            "duration": "5 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "strain": "1%",
+            "frequency": "1 Hz"
+          }
+        },
+        {
+          "label": "4% w/v",
+          "conditions": {
+            "material": "15TA",
+            "concentration": "4% w/v",
+            "duration": "5 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "strain": "1%",
+            "frequency": "1 Hz"
+          }
+        }
+      ],
+      "classification": "controlled",
+      "source_claim_ids": [
+        "C6"
+      ]
+    },
+    {
+      "id": "cross_formula",
+      "pointers": [
+        "/case/sections/3/blocks/3"
+      ],
+      "groups": [
+        {
+          "label": "6TA",
+          "conditions": {
+            "material": "6TA",
+            "concentration": "8% w/v",
+            "duration": "0–10 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "15TA",
+          "conditions": {
+            "material": "15TA",
+            "concentration": "5% w/v",
+            "duration": "0–10 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        }
+      ],
+      "classification": "multi_condition",
+      "source_claim_ids": [
+        "C7"
+      ],
+      "qualification": {
+        "pointer": "/case/sections/3/blocks/3",
+        "quote": "跨 c/d 时 TA 数和聚合物质量浓度同时变化"
+      }
+    },
+    {
+      "id": "hybrid_light",
+      "pointers": [
+        "/case/sections/5/blocks/2"
+      ],
+      "groups": [
+        {
+          "label": "S9a混合照前",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "0 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "strain": "1%"
+          }
+        },
+        {
+          "label": "Fig4b混合照后",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "5 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "strain": "1%"
+          }
+        }
+      ],
+      "classification": "controlled",
+      "source_claim_ids": [
+        "C11"
+      ]
+    },
+    {
+      "id": "hybrid_concentration",
+      "pointers": [
+        "/case/sections/5/blocks/5"
+      ],
+      "groups": [
+        {
+          "label": "4% w/v",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "4.5% w/v",
+          "conditions": {
+            "polymer": "4.5% w/v",
+            "BSM": "2% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "5% w/v",
+          "conditions": {
+            "polymer": "5% w/v",
+            "BSM": "2% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        }
+      ],
+      "classification": "controlled",
+      "source_claim_ids": [
+        "C13"
+      ]
+    },
+    {
+      "id": "BSM_concentration",
+      "pointers": [
+        "/case/sections/5/blocks/5"
+      ],
+      "groups": [
+        {
+          "label": "0.5% w/v",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "0.5% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "1% w/v",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "1% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "2% w/v",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        }
+      ],
+      "classification": "controlled",
+      "source_claim_ids": [
+        "C13"
+      ]
+    },
+    {
+      "id": "time_hybrid",
+      "pointers": [
+        "/case/sections/5/blocks/6"
+      ],
+      "groups": [
+        {
+          "label": "3 min",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "3 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "5 min",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "8 min",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "8 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        }
+      ],
+      "classification": "controlled",
+      "source_claim_ids": [
+        "C12"
+      ]
+    }
+  ],
+  "scopes": [
+    {
+      "claim_id": "C3",
+      "stage": "最终lPGS-nTA光交联，而非前体合成",
+      "visible_scope": {
+        "pointer": "/case/sections/1/blocks/2",
+        "quote": "“无需另加光引发剂或氧化剂”指最终 lPGS-nTA 的光交联成胶"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "stage": "干燥SEM与湿态力学分别评价",
+      "visible_scope": {
+        "pointer": "/case/sections/3/blocks/4",
+        "quote": "它们与湿态流变互补，不能直接显示水凝胶工作时的孔网"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "stage": "模型平台向生物应用的外推",
+      "visible_scope": {
+        "pointer": "/case/sections/6/blocks/1",
+        "quote": "抗病原能力、活细胞条件下的光照兼容性、长期稳定与多轮恢复能力仍需要各自的实验"
+      }
+    }
+  ],
+  "panels": [
+    {
+      "asset": "scheme",
+      "panel": "a/b/c",
+      "subject_state": "天然黏蛋白示意、合成骨架示意、TA开环/交联设计图",
+      "metrics": [],
+      "conditions": "设计而非实际中间体测量",
+      "source_locator": "正文Scheme1",
+      "pointers": [
+        "/case/sections/0/blocks/1",
+        "/case/sections/0/blocks/3"
+      ]
+    },
+    {
+      "asset": "f1",
+      "panel": "a",
+      "subject_state": "TA-NHS偶联侧基结构",
+      "metrics": [],
+      "conditions": "DMF:H2O、Et3N、室温24h",
+      "source_locator": "Fig1a",
+      "pointers": [
+        "/case/sections/1/blocks/0"
+      ]
+    },
+    {
+      "asset": "f1",
+      "panel": "b/c/d",
+      "subject_state": "b15TA5%照5min；c3TA10%照60min；d系列趋势",
+      "metrics": [],
+      "conditions": "pH7.4、370nm25mW/cm²、25°C；各配方条件不同",
+      "source_locator": "Fig1b–d",
+      "pointers": [
+        "/case/sections/2/blocks/0",
+        "/case/sections/2/blocks/5"
+      ]
+    },
+    {
+      "asset": "s5a",
+      "panel": "S5a",
+      "subject_state": "3%15TA不同照时NMR",
+      "metrics": [
+        "化学位移ppm"
+      ],
+      "conditions": "0/2/4/5/8/10min",
+      "source_locator": "SI物理p9下部",
+      "pointers": [
+        "/case/sections/2/blocks/2"
+      ]
+    },
+    {
+      "asset": "s5bc",
+      "panel": "S5b/c",
+      "subject_state": "6%15TA和10%3TA不同照时NMR",
+      "metrics": [
+        "化学位移ppm"
+      ],
+      "conditions": "b0/2/4/6/8/10min；c0/3/6/10min",
+      "source_locator": "SI物理p10",
+      "pointers": [
+        "/case/sections/2/blocks/2",
+        "/case/sections/2/blocks/6/detail/paragraphs/0"
+      ]
+    },
+    {
+      "asset": "f2",
+      "panel": "a/b",
+      "subject_state": "6TA及15TA浓度系列、光照后湿态流变",
+      "metrics": [
+        "G' Pa",
+        "G'' Pa",
+        "ω Hz"
+      ],
+      "conditions": "5minUV、370nm25mW/cm²、1%应变",
+      "source_locator": "Fig2a/b",
+      "pointers": [
+        "/case/sections/3/blocks/0",
+        "/case/sections/3/blocks/2"
+      ]
+    },
+    {
+      "asset": "f2",
+      "panel": "c/d",
+      "subject_state": "6TA8%、15TA5%独立样瓶照时系列",
+      "metrics": [
+        "G' Pa",
+        "G'' Pa",
+        "UV time min"
+      ],
+      "conditions": "1Hz、1%应变、0–10min",
+      "source_locator": "Fig2c/d",
+      "pointers": [
+        "/case/sections/3/blocks/3"
+      ]
+    },
+    {
+      "asset": "f2",
+      "panel": "e/f",
+      "subject_state": "15TA5%、6TA8%照前照后的干燥样品",
+      "metrics": [
+        "干态形貌，标尺50μm"
+      ],
+      "conditions": "0/5minUV，冻干/高真空干燥及镀金",
+      "source_locator": "Fig2e/f；SI方法p2",
+      "pointers": [
+        "/case/sections/3/blocks/4"
+      ]
+    },
+    {
+      "asset": "f3",
+      "panel": "a/b/c/d",
+      "subject_state": "掩膜装置示意、局部成胶照片",
+      "metrics": [],
+      "conditions": "4%15TA、370nm25mW/cm²5min、照后亚甲基蓝",
+      "source_locator": "Fig3a–d",
+      "pointers": [
+        "/case/sections/4/blocks/0"
+      ]
+    },
+    {
+      "asset": "f3",
+      "panel": "e/f",
+      "subject_state": "局部取出与均匀成胶样品",
+      "metrics": [
+        "G' Pa",
+        "G'' Pa",
+        "ω Hz"
+      ],
+      "conditions": "4%15TA，5minUV，e/f三次重复",
+      "source_locator": "Fig3e/f",
+      "pointers": [
+        "/case/sections/4/blocks/2"
+      ]
+    },
+    {
+      "asset": "f4",
+      "panel": "a",
+      "subject_state": "4%BSM母液、8%15TA母液、2%+4%混合液及其照后样",
+      "metrics": [],
+      "conditions": "母液与混合后的浓度分开；最终5minUV",
+      "source_locator": "Fig4a，实际放大view-f4a.png",
+      "pointers": [
+        "/case/sections/5/blocks/0"
+      ]
+    },
+    {
+      "asset": "f4",
+      "panel": "b",
+      "subject_state": "2%BSM、4%15TA及其混合物光照后",
+      "metrics": [
+        "G' Pa",
+        "G'' Pa",
+        "ω Hz"
+      ],
+      "conditions": "5minUV、370nm25mW/cm²、1%应变",
+      "source_locator": "Fig4b",
+      "pointers": [
+        "/case/sections/5/blocks/2"
+      ]
+    },
+    {
+      "asset": "f4",
+      "panel": "c/d/e/f",
+      "subject_state": "无光聚合物/BSM/混合物与照后混合物的干燥样品",
+      "metrics": [
+        "干态SEM形貌"
+      ],
+      "conditions": "c/d50μm、e100μm、f30μm标尺；f照5min",
+      "source_locator": "Fig4c–f",
+      "pointers": [
+        "/case/sections/5/blocks/4"
+      ]
+    },
+    {
+      "asset": "f4",
+      "panel": "g/h",
+      "subject_state": "固定一组分改变另一组分的独立浓度系列",
+      "metrics": [
+        "G' Pa",
+        "G'' Pa",
+        "% w/v"
+      ],
+      "conditions": "gBSM2%；h15TA4%；5minUV、1Hz",
+      "source_locator": "Fig4g/h",
+      "pointers": [
+        "/case/sections/5/blocks/5"
+      ]
+    },
+    {
+      "asset": "f4",
+      "panel": "i",
+      "subject_state": "4%15TA与4%15TA+2%BSM两体系",
+      "metrics": [
+        "G' Pa",
+        "UV time min"
+      ],
+      "conditions": "3/5/8minUV、1Hz；只画G′",
+      "source_locator": "Fig4i，实际图例核对",
+      "pointers": [
+        "/case/sections/5/blocks/6"
+      ]
+    },
+    {
+      "asset": "s9",
+      "panel": "S9a/b/c",
+      "subject_state": "4/4.5/5%15TA与2%BSM及混合物照前",
+      "metrics": [
+        "G' Pa",
+        "G'' Pa",
+        "ω Hz"
+      ],
+      "conditions": "无光，1%应变，三次重复",
+      "source_locator": "SI物理p13上部",
+      "pointers": [
+        "/case/sections/5/blocks/2"
+      ]
+    },
+    {
+      "asset": "s13",
+      "panel": "S13a/b",
+      "subject_state": "4%15TA和4%15TA+2%BSM在不同光时后",
+      "metrics": [
+        "G' Pa",
+        "G'' Pa",
+        "ω Hz"
+      ],
+      "conditions": "黑/红/蓝3/5/8min；实/空为两模量",
+      "source_locator": "SI物理p14下部；放大view-S13.png",
+      "pointers": [
+        "/case/sections/5/blocks/7",
+        "/case/sections/5/blocks/8/detail/paragraphs/0"
+      ]
+    }
+  ],
+  "source_first_review": {
+    "method": "same_agent_second_pass",
+    "checked_claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "summary": "按正文P1–20科学内容、全部主图和SI相关方法/对照回源再核对。特别检查Fig4a母液身份、Fig4i实际指标、c/d跨配方比较及干燥形貌边界；审阅为同一代理第二遍，未冒充独立审查。",
+    "findings": [
+      {
+        "id": "metric-caption",
+        "issue": "Fig4集合图注称G′/G″，而i实际仅G′，需保留面板口径。",
+        "resolution": "retained_qualified",
+        "visible_resolution": {
+          "pointer": "/case/sections/5/blocks/7",
+          "quote": "Fig.4i 实际只画 G′"
+        },
+        "evidence_claim_ids": [
+          "C12"
+        ]
+      },
+      {
+        "id": "stock-identity",
+        "issue": "Fig4a前两张照片是母液，不能当作最终混合物照前状态。",
+        "resolution": "retained_qualified",
+        "visible_resolution": {
+          "pointer": "/case/sections/5/blocks/0",
+          "quote": "最左是 4% BSM 母液，第二幅是 8% lPGS-15TA 母液"
+        },
+        "evidence_claim_ids": [
+          "C10"
+        ]
+      }
+    ]
+  },
+  "waivers": []
+}
