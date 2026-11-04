@@ -60,5 +60,4 @@ Original code, skill instructions and project documentation are MIT licensed. Ar
 ## Contact
 
 - Email: [2430112282@qq.com](mailto:2430112282@qq.com)
-- - WeChat: `XHB18085285748`
-  - 
+- WeChat: `XHB18085285748`
