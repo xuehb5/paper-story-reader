@@ -2,6 +2,8 @@
 import argparse,hashlib,json,re
 from pathlib import Path
 from html.parser import HTMLParser
+SKILL=Path(__file__).resolve().parents[1]
+DEFAULT_LANGUAGE=json.loads((SKILL/'reader-defaults.json').read_text('utf-8')).get('language','zh') if (SKILL/'reader-defaults.json').exists() else 'zh'
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 class Visible(HTMLParser):
     def __init__(self):super().__init__(convert_charrefs=True);self.skip=0;self.parts=[]
@@ -11,13 +13,13 @@ class Visible(HTMLParser):
         if tag in ['script','style']:self.skip=max(0,self.skip-1)
     def handle_data(self,data):
         if not self.skip:self.parts.append(data)
-def check_text(text,language='zh'):
+def check_text(text,language=DEFAULT_LANGUAGE):
     problems=[];han=len(re.findall('[\u3400-\u9fff]',text));questions=text.count('?')
     if '\ufffd' in text:problems.append('Unicode replacement character in delivered text')
     if re.search(r'\?{4,}',text) or (len(text)>100 and questions/max(1,len(text))>.04):problems.append('probable lossy text transfer: repeated question-mark replacements')
     if language=='zh' and len(text)>300 and han<20:problems.append('Chinese delivery requested but decoded reader text has too little Chinese')
     return {'passed':not problems,'characters':len(text),'han_characters':han,'question_marks':questions,'errors':problems}
-def verify(files,language='zh',manifest=None):
+def verify(files,language=DEFAULT_LANGUAGE,manifest=None):
     rows=[];errors=[]
     for name in files:
         p=Path(name);text=p.read_text('utf-8',errors='strict')
@@ -30,7 +32,7 @@ def verify(files,language='zh',manifest=None):
             if not target.is_relative_to(p.parent.resolve()) or not target.is_file() or sha(target)!=h:errors.append('post-build output changed or absent: '+rel)
     return {'passed':not errors,'checks':rows,'errors':errors,'scientific_correctness_judged':False}
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('files',nargs='+');p.add_argument('--language',choices=['zh','en'],default='zh');p.add_argument('--manifest');p.add_argument('--output');a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('files',nargs='+');p.add_argument('--language',choices=['zh','en'],default=DEFAULT_LANGUAGE);p.add_argument('--manifest');p.add_argument('--output');a=p.parse_args()
     try:r=verify(a.files,a.language,a.manifest)
     except (OSError,ValueError,KeyError) as e:r={'passed':False,'errors':[str(e)]}
     if a.output:Path(a.output).write_text(json.dumps(r,ensure_ascii=False,indent=2),'utf-8')

@@ -1,5 +1,7 @@
 'use strict';
 const config=JSON.parse(document.getElementById('reader-data').textContent);
+const uiEntries=Object.entries(config.ui||{}).sort((a,b)=>b[0].length-a[0].length);
+const T=fragment=>{if(config.language!=='en')return fragment;for(const [original,translated] of uiEntries)fragment=fragment.split(original).join(translated);return fragment;};
 document.documentElement.classList.add('reader-enhanced');
 const route=document.getElementById('route'),sidebar=document.querySelector('.sidebar'),reading=document.getElementById('reading');
 if(matchMedia('(max-width:1250px)').matches){route.open=false;if(document.getElementById('panel-nav'))document.getElementById('panel-nav').open=false;}
@@ -44,9 +46,9 @@ function setCurrent(sectionId,branchId=''){
  branchDetails.forEach(detail=>detail.classList.toggle('active-branch',detail.id===branchId));
  document.querySelectorAll('.paper-connections [data-branch-id]').forEach(path=>path.classList.toggle('active-link',path.dataset.branchId===branchId));
  const main=config.readingGraph.nodes.find(n=>n.id===sectionId),role=main?main.code+' · '+main.title:sectionId;
- const branch=document.getElementById(branchId),where=branch?(branch.dataset.side==='left'?'左侧枝':'右侧枝'):'主干';
+ const branch=document.getElementById(branchId),where=branch?(branch.dataset.side==='left'?T('左侧枝'):T('右侧枝')):T('主干');
  const selected=config.readingGraph.nodes.find(n=>n.id===branchId);
- document.getElementById('current-location').textContent='正在读：'+(selected?selected.code+' · '+selected.title:role);
+ document.getElementById('current-location').textContent=T('正在读：')+(selected?selected.code+' · '+selected.title:role);
  document.getElementById('route-current').textContent=' · '+role.split(' · ')[0];
  document.getElementById('paper-position').textContent=(selected?selected.code:main?.code||'')+' · '+where;
  const finding=document.getElementById('current-finding');finding.textContent=main?.finding||'';finding.hidden=!finding.textContent;
@@ -117,14 +119,14 @@ function restoreReadingPosition(){
  }
  Object.assign(camera,clampPose(pose));
  wheelZoom=saved.wheelZoom===true;
- const modeButton=document.getElementById('paper-wheel-mode');modeButton.setAttribute('aria-pressed',String(wheelZoom));modeButton.textContent=wheelZoom?'滚轮：缩放':'滚轮：阅读';
+ const modeButton=document.getElementById('paper-wheel-mode');modeButton.setAttribute('aria-pressed',String(wheelZoom));modeButton.textContent=wheelZoom?T('滚轮：缩放'):T('滚轮：阅读');
  overviewReturnPose=saved.overviewReturnPose;
  if(saved.branch){
   const entry=document.querySelector('[data-open-branch="'+saved.branch+'"]');
   returnPoint={pose:saved.returnPose||poseAt(document.getElementById(target.dataset.storySection)),focus:entry,hash:saved.returnHash};
  }
  paintCamera();syncFromCamera();
- document.getElementById('reader-status').textContent='已恢复上次阅读位置。';
+ document.getElementById('reader-status').textContent=T('已恢复上次阅读位置。');
 }
 document.addEventListener('pointerdown',cancelReadingRecovery,{capture:true,once:true});
 document.addEventListener('wheel',cancelReadingRecovery,{capture:true,once:true});
@@ -218,7 +220,7 @@ function returnToMain(){
  const focus=saved?.focus||(branch?document.querySelector('[data-open-branch="'+branch.id+'"]'):trunk);
  history.replaceState(null,'',location.pathname+location.search+(saved?.hash||(origin?'#'+origin.id:'')));
  returnPoint=null;document.getElementById('paper-return').disabled=true;
- flyTo(end,focus).then(()=>{document.getElementById('reader-status').textContent='镜头已移回主干原阅读位置。';});
+ flyTo(end,focus).then(()=>{document.getElementById('reader-status').textContent=T('镜头已移回主干原阅读位置。');});
 }
 document.addEventListener('click',event=>{
  const toggle=event.target.closest?.('[data-map-toggle]');if(toggle){event.preventDefault();const key=toggle.dataset.mapToggle+'|'+toggle.dataset.mapSide;mapOverrides.set(key,!mapNodeExpanded(toggle.dataset.mapToggle,toggle.dataset.mapSide));renderReadingMap();return;}
@@ -228,7 +230,7 @@ document.addEventListener('click',event=>{
  navigateTarget(target,link);if(location.hash!=='#'+target.id)history.pushState(null,'','#'+target.id);
  if(link.classList.contains('outline-link')){document.querySelectorAll('.outline-link').forEach(e=>e.classList.remove('active'));link.classList.add('active');}
  if(matchMedia('(max-width:1250px)').matches)route.open=false;
- document.getElementById('reader-status').textContent='镜头正在移向：'+(link.getAttribute('aria-label')||link.textContent.trim());
+ document.getElementById('reader-status').textContent=T('镜头正在移向：')+(link.getAttribute('aria-label')||link.textContent.trim());
 });
 document.getElementById('map-expand-all').onclick=()=>{const allVisible=config.readingGraph.nodes.filter(n=>n.type==='branch').every(n=>mapNodeExpanded(n.section,n.side));mapAllBranches=!allVisible;mapOverrides.clear();renderReadingMap();};
 document.getElementById('paper-mini-map').addEventListener('click',event=>{
@@ -256,12 +258,12 @@ function contextBranch(){
 }
 document.getElementById('paper-context').onclick=()=>{
  const detail=contextBranch();
- if(!detail){document.getElementById('reader-status').textContent='本文没有可定位的侧枝。';return;}
+ if(!detail){document.getElementById('reader-status').textContent=T('本文没有可定位的侧枝。');return;}
  overviewReturnPose=null;
  const r=worldRect(detail),source=worldRect(document.querySelector('[data-open-branch="'+detail.id+'"]'));
  const x1=Math.min(r.x,source.x),x2=Math.max(r.x+r.width,source.x+source.width),y1=Math.min(r.y,source.y),y2=Math.max(r.y+Math.min(100,r.height),source.y+source.height);
  world.dataset.contextBranch=detail.id;
- document.getElementById('reader-status').textContent='镜头正在展示主干与侧枝的连接：'+detail.querySelector('.branch-title').textContent;
+ document.getElementById('reader-status').textContent=T('镜头正在展示主干与侧枝的连接：')+detail.querySelector('.branch-title').textContent;
  flyTo({cx:(x1+x2)/2,cy:(y1+y2)/2,scale:Math.min(.75,viewport.clientWidth/(x2-x1+100),viewport.clientHeight/(y2-y1+100))});
 };
 function zoomAt(scale,sx=viewport.clientWidth/2,sy=viewport.clientHeight/2){
@@ -275,7 +277,7 @@ function restoreReadingScale(){const pose={...(overviewReturnPose||camera),scale
 document.getElementById('paper-scale').onclick=restoreReadingScale;
 document.getElementById('paper-zoom-slider').addEventListener('input',event=>zoomAt(scaleForSlider(event.target.value)));
 document.getElementById('paper-fit').onclick=()=>{if(!overviewReturnPose)overviewReturnPose=copyPose();flyTo({cx:paper.width/2,cy:paper.height/2,scale:fitPaperScale()});};
-document.getElementById('paper-wheel-mode').onclick=event=>{wheelZoom=!wheelZoom;event.currentTarget.setAttribute('aria-pressed',String(wheelZoom));event.currentTarget.textContent=wheelZoom?'滚轮：缩放':'滚轮：阅读';};
+document.getElementById('paper-wheel-mode').onclick=event=>{wheelZoom=!wheelZoom;event.currentTarget.setAttribute('aria-pressed',String(wheelZoom));event.currentTarget.textContent=wheelZoom?T('滚轮：缩放'):T('滚轮：阅读');};
 viewport.addEventListener('wheel',event=>{
  event.preventDefault();cancelFlight();
  if(event.ctrlKey||event.metaKey||wheelZoom){const rect=viewport.getBoundingClientRect();zoomAt(camera.scale*Math.exp(-event.deltaY*.004),event.clientX-rect.left,event.clientY-rect.top);return;}
@@ -341,6 +343,7 @@ function mapSvgElement(tag,attributes={},text=''){
 }
 function mapWrap(text,limit){
  const lines=[];let line='',units=0;
+ if(config.language==='en'){const max=Math.max(8,Math.floor(limit/.55));for(const word of String(text).split(/\s+/)){if(!word)continue;const next=line?line+' '+word:word;if(next.length>max&&line){lines.push(line);line=word;}else line=next;}if(line)lines.push(line);return lines;}
  for(const char of text){const size=/[\x00-\xff]/.test(char)?.55:1;if(units+size>limit&&line){lines.push(line);line='';units=0;}line+=char;units+=size;}
  if(line)lines.push(line);return lines;
 }
@@ -361,7 +364,7 @@ function renderReadingMap(){
   const link=mapSvgElement('a',{href:'#'+node.target,class:'flow-node map-node '+(node.type==='main'?'main-map-node':'branch-map-node'),tabindex:'0','data-graph-node':node.id,'data-story-section':node.section,'data-branch-id':node.type==='branch'?node.id:'','aria-label':node.code+' · '+node.title+(node.figures?' · '+node.figures:'')});
   link.append(mapSvgElement('title',{},node.code+' · '+node.title+(node.figures?'\n'+node.figures:'')));
   link.append(mapSvgElement('rect',{x,y:top,width,height,rx:10}));
-  link.append(mapSvgElement('text',{x:x+width/2,y:top+25,class:'node-role'},node.code+(node.type==='branch'?(node.kind==='si'?' · SI':' · 细讲'):' · 主干')));
+  link.append(mapSvgElement('text',{x:x+width/2,y:top+25,class:'node-role'},node.code+(node.type==='branch'?(node.kind==='si'?' · SI':T(' · 细讲')):T(' · 主干'))));
   const text=mapSvgElement('text',{class:'map-title',x:x+width/2,y:top+54});
   lines.forEach((line,index)=>text.append(mapSvgElement('tspan',{x:x+width/2,y:top+54+index*29},line)));link.append(text);
   const notes=mapWrap(node.figures,(width-50)/17),note=(notes[0]||'')+(notes.length>1?'…':'');
@@ -375,7 +378,7 @@ function renderReadingMap(){
   for(const side of ['left','right']){
    const siblings=children.filter(child=>child.side===side);if(!siblings.length)continue;
    const open=expanded.includes(main.id+'|'+side),left=side==='left',x=left?194:444;
-   const label=(open?'收起':'展开')+main.code+'阶段'+(left?'左侧':'右侧')+siblings.length+'条细讲';
+   const label=(open?T('收起'):T('展开'))+main.code+T('阶段')+(left?T('左侧'):T('右侧'))+siblings.length+T('条细讲');
    const toggle=mapSvgElement('a',{href:'#'+main.target,tabindex:'0',role:'button','data-map-toggle':main.id,'data-map-side':side,'aria-expanded':String(open),'aria-label':label,class:'map-toggle'});
    toggle.append(mapSvgElement('title',{},label));toggle.append(mapSvgElement('rect',{x,y:y+mainHeight/2-15,width:22,height:30,rx:5}));
    toggle.append(mapSvgElement('text',{x:x+11,y:y+mainHeight/2+8},left?(open?'→':'←'):(open?'←':'→')));pieces.push(toggle);
@@ -391,11 +394,11 @@ function renderReadingMap(){
   const d=side?`M${x1} ${y1} C${(x1+x2)/2} ${y1} ${(x1+x2)/2} ${y2} ${x2} ${y2}`:`M${x1} ${y1} L${x2} ${y2}`;
   paths.push(mapSvgElement('path',{d,class:'reading-map-edge '+(side?'detail-edge':'order-edge'),'data-from':edge.from,'data-to':edge.to}));
  });
- svg.setAttribute('viewBox','0 0 660 '+(y-22));svg.replaceChildren(mapSvgElement('title',{},'与主画布一致的阅读顺序与侧枝'),...paths,...pieces);
+ svg.setAttribute('viewBox','0 0 660 '+(y-22));svg.replaceChildren(mapSvgElement('title',{},T('与主画布一致的阅读顺序与侧枝')),...paths,...pieces);
  if(focusedId)svg.querySelector('[data-graph-node="'+focusedId+'"]')?.focus({preventScroll:true});
  else if(focusedToggle)svg.querySelector('[data-map-toggle="'+focusedToggle+'"][data-map-side="'+focusedSide+'"]')?.focus({preventScroll:true});
  const allVisible=graph.nodes.filter(n=>n.type==='branch').every(n=>mapNodeExpanded(n.section,n.side));
- document.getElementById('map-expand-all').textContent=allVisible?'按当前阶段展开':'展开全部侧枝';
+ document.getElementById('map-expand-all').textContent=allVisible?T('按当前阶段展开'):T('展开全部侧枝');
  document.getElementById('map-expand-all').setAttribute('aria-pressed',String(allVisible));selectReadingMapNode();
 }
 function selectReadingMapNode(){
@@ -429,8 +432,8 @@ function updatePaperOverview(){
 function setMapOverview(){
  if(document.body.dataset.mapOverview==='true')return;
  document.body.dataset.mapOverview='true';selectReadingMapNode();updatePaperOverview();
- document.getElementById('current-location').textContent='全景：主干和全部侧枝都在当前视窗内';
- document.getElementById('paper-position').textContent='全景 · 同一张纸';document.getElementById('route-current').textContent=' · 全景';
+ document.getElementById('current-location').textContent=T('全景：主干和全部侧枝都在当前视窗内');
+ document.getElementById('paper-position').textContent=T('全景 · 同一张纸');document.getElementById('route-current').textContent=T(' · 全景');
 }
 
 const dialog=document.getElementById('figure-dialog'),image=document.getElementById('modal-image');
@@ -439,15 +442,15 @@ function displayImage(reset=true){
  const f=config.figures[activeFigure];
  const parent=f.parent?config.composites[f.parent]:null;
  image.src=mode==='page'?config.pages[f.page_key]:mode==='whole'?parent.image:document.getElementById('figure-'+activeFigure).querySelector('img').src;
- image.alt=mode==='page'?f.location+(f.full_view_description||'原页'):mode==='whole'?parent.label+'完整复合图':f.title;
+ image.alt=mode==='page'?f.location+(f.full_view_description||T('原页')):mode==='whole'?parent.label+T('完整复合图'):f.title;
  image.style.width=(zoom*100)+'%';
  document.getElementById('modal-title').textContent=mode==='whole'?parent.label+' · '+parent.title:f.label+' · '+f.title;
- document.getElementById('modal-source').textContent=f.location+(mode==='page'?' · '+(f.full_view_description||'完整PDF页面'):mode==='whole'?' · 完整原复合图':' · 原图局部');
- document.getElementById('modal-crop').textContent=parent?'当前面板':'图表';
+ document.getElementById('modal-source').textContent=f.location+(mode==='page'?' · '+(f.full_view_description||T('完整PDF页面')):mode==='whole'?T(' · 完整原复合图'):T(' · 原图局部'));
+ document.getElementById('modal-crop').textContent=parent?T('当前面板'):T('图表');
  document.getElementById('modal-whole').hidden=!parent;
  document.getElementById('modal-crop').setAttribute('aria-pressed',String(mode==='crop'));
  document.getElementById('modal-whole').setAttribute('aria-pressed',String(mode==='whole'));
- document.getElementById('modal-page').textContent=f.full_view_label||'查看完整原页';
+ document.getElementById('modal-page').textContent=f.full_view_label||T('查看完整原页');
  document.getElementById('modal-page').setAttribute('aria-pressed',String(mode==='page'));
  if(reset){document.getElementById('image-stage').scrollTop=0;document.getElementById('image-stage').scrollLeft=0;}
 }

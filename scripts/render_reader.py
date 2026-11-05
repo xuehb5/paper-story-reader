@@ -1,12 +1,16 @@
 """Build a portable single-paper reader from evidence-reviewed JSON. No model API required."""
-import argparse, copy, hashlib, html, importlib.util, json, re, shutil
+import argparse, copy, hashlib, html, importlib.util, json, re, shutil, textwrap
 from pathlib import Path
 
 SKILL=Path(__file__).resolve().parents[1]
+DEFAULT_LANGUAGE=json.loads((SKILL/'reader-defaults.json').read_text('utf-8')).get('language','zh') if (SKILL/'reader-defaults.json').exists() else 'zh'
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def build(input_file,output,review_file=None,draft=False,context_file=None,link_assets=False):
     input_file=Path(input_file).resolve();base=input_file.parent
     data=json.loads(input_file.read_text(encoding='utf-8'));case=copy.deepcopy(data['case'])
+    language=case.get('language',DEFAULT_LANGUAGE).split('-')[0].lower()
+    if language not in ['zh','en']:raise ValueError('supported reader languages are zh and en')
+    case['language']=language
     assets=copy.deepcopy(data['assets']);sources=copy.deepcopy(data['sources']);output=Path(output).resolve()
     if output.exists() and any(output.iterdir()):raise ValueError('output directory must be empty; use a new revision directory to retain previous builds and failures')
     review_path=Path(review_file).resolve() if review_file else base/'evidence-review.json'
@@ -22,7 +26,7 @@ def build(input_file,output,review_file=None,draft=False,context_file=None,link_
         release_result=release.validate(input_file,review_path,context_path)
         if not release_result['passed']:raise ValueError('context/wording/encoding blocks final build: '+'; '.join(release_result['errors'][:12]))
     else:
-        case['draft_notice']='草稿：来源核查尚未完成，内容可能有误，不能作为已复核读本。'
+        case['draft_notice']=('Draft: source review is incomplete. Content may be incorrect and must not be presented as reviewed.' if language=='en' else '草稿：来源核查尚未完成，内容可能有误，不能作为已复核读本。')
     required=['id','short','title','category','paper_title','doi','citation','thesis','audience','coverage']
     for key in required:
         if not isinstance(case.get(key),str) or not case[key].strip():raise ValueError('case: missing '+key)
@@ -82,7 +86,7 @@ def build(input_file,output,review_file=None,draft=False,context_file=None,link_
                 if not f.get(k):raise ValueError(fid+': missing '+k)
         if a.get('source') not in sources:raise ValueError(fid+': unknown source')
         if not a.get('locator'):raise ValueError(fid+': explicit PDF or JATS locator required')
-        if sources[a['source']].get('format')=='jats' and a.get('full_view_description')!='完整原始图像':raise ValueError(fid+': JATS must not pretend to have PDF pages')
+        if sources[a['source']].get('format')=='jats' and a.get('full_view_description') not in ['完整原始图像','Complete original image']:raise ValueError(fid+': JATS must identify the complete original image, not invent PDF pages')
         for key in ['image','page_image']:
             p=(base/a[key]).resolve()
             if not p.is_file():raise ValueError(fid+': missing '+key)
@@ -100,7 +104,8 @@ def build(input_file,output,review_file=None,draft=False,context_file=None,link_
         for n in graph.get('nodes',[]):
             title=n.get('title','');column=n.get('column','center');row=n.get('row')
             if not title or column not in ['left','right','center'] or not isinstance(row,int) or row<0:raise ValueError('research node requires title, row and column')
-            nodes.append({**n,'lines':[title[i:i+9] for i in range(0,len(title),9)],'x':{'left':5,'center':90,'right':175}[column],'y':12+row*112})
+            lines=textwrap.wrap(title,width=21,break_long_words=True,break_on_hyphens=False) if language=='en' else [title[i:i+9] for i in range(0,len(title),9)]
+            nodes.append({**n,'lines':lines,'x':{'left':5,'center':90,'right':175}[column],'y':12+row*112})
         case['nodes']=nodes;case['edges']=graph.get('edges',[]);case['flow_height']=max((n['y']+92 for n in nodes),default=100)
         rows={n['row'] for n in nodes}
         for row in rows:
@@ -112,7 +117,7 @@ def build(input_file,output,review_file=None,draft=False,context_file=None,link_
     for node in case['nodes']:
         if node.get('target') not in paragraph_targets:raise ValueError('research target must be an existing prose paragraph')
         if not node.get('role') or not node.get('finding'):raise ValueError('research node requires role and finding')
-        if len(node.get('lines',[]))>2:raise ValueError('research title too long; use a short label and full finding')
+        if len(node.get('lines',[]))>(3 if language=='en' else 2):raise ValueError('research title too long; use a short label and full finding')
     for edge in case['edges']:
         if edge.get('from') not in node_ids or edge.get('to') not in node_ids or not edge.get('label') or edge['from']==edge['to']:raise ValueError('invalid/unlabelled research relationship')
     if not case['nodes'] and not case.get('omit_research_graph_reason'):raise ValueError('research graph missing: provide an authored graph or explicit omission reason')
@@ -142,15 +147,16 @@ def build(input_file,output,review_file=None,draft=False,context_file=None,link_
             a[key]=dest.relative_to(output).as_posix()
     core.ROOT=output;core.assets=assets;core.sources=sources;core.cases=navigation.get('papers') or [case];core.LINK_ASSETS=link_assets
     report=core.render(case)
-    entry=case['id']+'.html'+('?v=0.20.2' if link_assets else '')
-    (output/'index.html').write_text('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url='+entry+'"><title>PaperStory · '+html.escape(case['title'])+'</title><a href="'+entry+'">打开交互读本：'+html.escape(case['title'])+'</a></html>',encoding='utf-8')
-    report.update({'renderer_version':'v0.20.2','input_sha256':digest(input_file),'source_hashes_verified':True,'images_hashes':{fid:digest(output/a['image']) for fid,a in assets.items() if fid in used},'asset_mode':'linked' if link_assets else 'embedded','external_runtime_dependencies':0,'scientific_sufficiency_automatically_judged':False,'content_review_status':'draft_unreviewed' if draft else 'review_record_complete','source_review':review_result,'context_review':release_result})
+    entry=case['id']+'.html'+('?v=0.21.0' if link_assets else '')
+    entry_label='Open the interactive reader: ' if language=='en' else '打开交互读本：'
+    (output/'index.html').write_text('<!doctype html><html lang="'+language+'"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url='+entry+'"><title>PaperStory · '+html.escape(case['title'])+'</title><a href="'+entry+'">'+entry_label+html.escape(case['title'])+'</a></html>',encoding='utf-8')
+    report.update({'renderer_version':'v0.21.0','language':language,'input_sha256':digest(input_file),'source_hashes_verified':True,'images_hashes':{fid:digest(output/a['image']) for fid,a in assets.items() if fid in used},'asset_mode':'linked' if link_assets else 'embedded','external_runtime_dependencies':0,'scientific_sufficiency_automatically_judged':False,'content_review_status':'draft_unreviewed' if draft else 'review_record_complete','source_review':review_result,'context_review':release_result})
     (output/'build-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     spec=importlib.util.spec_from_file_location('verify_delivery',SKILL/'scripts/verify_delivery.py');delivery=importlib.util.module_from_spec(spec);spec.loader.exec_module(delivery)
     encoding=delivery.verify([output/(case['id']+'.html'),output/(case['id']+'.md')],case.get('language','zh'))
     if not encoding['passed']:raise ValueError('generated delivery encoding invalid: '+'; '.join(encoding['errors']))
     files={p.relative_to(output).as_posix():digest(p) for p in output.rglob('*') if p.is_file() and p.name!='delivery-manifest.json'}
-    (output/'delivery-manifest.json').write_text(json.dumps({'renderer_version':'v0.20.2','input_sha256':digest(input_file),'files':files,'notice':'Any later byte change requires regeneration and renewed review for content changes. Hashes verify bytes, not scientific truth.'},ensure_ascii=False,indent=2)+'\n','utf-8')
+    (output/'delivery-manifest.json').write_text(json.dumps({'renderer_version':'v0.21.0','input_sha256':digest(input_file),'files':files,'notice':'Any later byte change requires regeneration and renewed review for content changes. Hashes verify bytes, not scientific truth.'},ensure_ascii=False,indent=2)+'\n','utf-8')
     return report
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('input');p.add_argument('--output',required=True);p.add_argument('--review');p.add_argument('--context-audit');p.add_argument('--draft',action='store_true');p.add_argument('--link-assets',action='store_true',help='Use local relative image files for static web hosting; keep the generated directory together. The reader UI is unchanged.');a=p.parse_args()

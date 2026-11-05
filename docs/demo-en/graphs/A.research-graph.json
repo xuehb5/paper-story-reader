@@ -1,0 +1,165 @@
+{
+  "nodes": [
+    {
+      "id": "design",
+      "title": "Design the connections",
+      "role": "Design rationale",
+      "target": "question-p2",
+      "finding": "Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking.",
+      "claim_id": "C2",
+      "row": 0,
+      "column": "center",
+      "figure_note": "Scheme 1",
+      "lines": [
+        "Design the",
+        "connections"
+      ],
+      "x": 90,
+      "y": 12
+    },
+    {
+      "id": "chemistry",
+      "title": "Chemistry versus gelation",
+      "role": "Chemical response",
+      "target": "threshold-p2",
+      "finding": "NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately.",
+      "claim_id": "C5",
+      "row": 1,
+      "column": "left",
+      "figure_note": "Fig. S5",
+      "lines": [
+        "Chemistry versus",
+        "gelation"
+      ],
+      "x": 5,
+      "y": 124
+    },
+    {
+      "id": "rheology",
+      "title": "Find a fixed-time CGC",
+      "role": "Wet mechanics",
+      "target": "mechanics-p2",
+      "finding": "After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v).",
+      "claim_id": "C6",
+      "row": 1,
+      "column": "right",
+      "figure_note": "Fig. 2a/b",
+      "lines": [
+        "Find a fixed-time CGC"
+      ],
+      "x": 175,
+      "y": 124
+    },
+    {
+      "id": "tunable",
+      "title": "Tune within a formula",
+      "role": "Material response",
+      "target": "mechanics-p3",
+      "finding": "At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration.",
+      "claim_id": "C7",
+      "row": 2,
+      "column": "center",
+      "figure_note": "Fig. 2c/d",
+      "lines": [
+        "Tune within a formula"
+      ],
+      "x": 90,
+      "y": 236
+    },
+    {
+      "id": "local",
+      "title": "Pattern local gelation",
+      "role": "Spatial control",
+      "target": "space-p1",
+      "finding": "Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel.",
+      "claim_id": "C9",
+      "row": 3,
+      "column": "left",
+      "figure_note": "Fig. 3",
+      "lines": [
+        "Pattern local",
+        "gelation"
+      ],
+      "x": 5,
+      "y": 348
+    },
+    {
+      "id": "biohybrid",
+      "title": "Test joint participation",
+      "role": "Interpretation + controls",
+      "target": "hybrid-p2",
+      "finding": "The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation.",
+      "claim_id": "C11",
+      "row": 3,
+      "column": "right",
+      "figure_note": "Fig. 4b / S9",
+      "lines": [
+        "Test joint",
+        "participation"
+      ],
+      "x": 175,
+      "y": 348
+    },
+    {
+      "id": "bounded",
+      "title": "Keep the model bounded",
+      "role": "Bounded synthesis",
+      "target": "limits-p2",
+      "finding": "The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation.",
+      "claim_id": "C14",
+      "row": 4,
+      "column": "center",
+      "figure_note": "Fig. 1–4",
+      "lines": [
+        "Keep the model",
+        "bounded"
+      ],
+      "x": 90,
+      "y": 460
+    }
+  ],
+  "edges": [
+    {
+      "from": "chemistry",
+      "to": "design",
+      "label": "supports the photosensitive design",
+      "kind": "support"
+    },
+    {
+      "from": "rheology",
+      "to": "design",
+      "label": "supplies wet-state gelation evidence",
+      "kind": "support"
+    },
+    {
+      "from": "rheology",
+      "to": "tunable",
+      "label": "next test: exposure at fixed formulation",
+      "kind": "interpretation"
+    },
+    {
+      "from": "design",
+      "to": "biohybrid",
+      "label": "proposes joint connections with BSM",
+      "kind": "interpretation"
+    },
+    {
+      "from": "local",
+      "to": "bounded",
+      "label": "sets the tested spatial-control scope",
+      "kind": "support"
+    },
+    {
+      "from": "biohybrid",
+      "to": "bounded",
+      "label": "supports hybrid gelation; bond identity remains qualified",
+      "kind": "interpretation"
+    },
+    {
+      "from": "tunable",
+      "to": "bounded",
+      "label": "sets the measured modulus-tuning scope",
+      "kind": "support"
+    }
+  ]
+}

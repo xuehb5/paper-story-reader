@@ -10,7 +10,9 @@ The supplied article's own license statement says: “This article is licensed u
 
 The original article XML, same-paper Supporting Information PDF, full figures, source-page images, and figure crops in `examples/hydrogel/sources/` and `examples/hydrogel/figures/` retain that license and their original attribution. These materials come from the article and its SI. Some page images are rendered from the PDF and some images are cropped for explanation; the source files, original full-view links and hashes are retained. Figures were not redrawn and numerical data were not altered.
 
-The Chinese reading text and evidence annotations are AI-assisted explanatory work by this project. They are not the paper authors' endorsement or independent experimental validation. Reuse must retain the attribution for the underlying article materials.
+The Chinese and English reading text and evidence annotations are AI-assisted explanatory work by this project. They are not the paper authors' endorsement or independent experimental validation. Reuse must retain the attribution for the underlying article materials.
+
+The English worked example in `examples/hydrogel-en/` adapts the same source-grounded story and reuses the hash-identical images and original quotations. It introduces no new experimental data. Its internal ledger retains earlier original-language source/visual observations for provenance and records the English adaptation review separately.
 
 ## Design references
 

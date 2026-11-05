@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "English entrypoint and all bundled references contain no Chinese prose",
+    "All local instruction links resolve inside the package",
+    "All packaged scripts parse with Python 3.10 grammar",
+    "Installed package builds the complete reviewed English example",
+    "Omitting case.language in the English package defaults to English without requiring a Chinese intermediate"
+  ],
+  "reviewed_build": {
+    "language": "en",
+    "sections": 7,
+    "figures": 25,
+    "question_branches": 11,
+    "optional_panel_explanations": 14
+  }
+}

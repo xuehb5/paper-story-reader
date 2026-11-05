@@ -37,6 +37,27 @@ class ReaderContracts(unittest.TestCase):
         out=self.root/'reader';self.build(out)
         p=out/'A.md';p.write_text(p.read_text('utf-8')+'\nchanged\n','utf-8')
         self.assertFalse(delivery.verify([p],manifest=out/'delivery-manifest.json')['passed'])
+    def test_english_reviewed_reader_retains_complete_story_and_english_ui(self):
+        import re
+        example=ROOT/'examples/hydrogel-en';out=self.root/'english'
+        report=renderer.build(example/'reader-input.json',out,example/'evidence-review.json',False,example/'context-audit.json',link_assets=True)
+        self.assertEqual(report['language'],'en')
+        self.assertEqual((report['sections'],report['figures'],report['question_branches'],report['optional_panel_explanations']),(7,25,11,14))
+        text=(out/'A.html').read_text('utf-8');visible=delivery.Visible();visible.feed(text)
+        self.assertIn('<html lang="en">',text)
+        self.assertIsNone(re.search('[\u3400-\u9fff]',' '.join(visible.parts)))
+        self.assertTrue(delivery.verify([out/'A.html',out/'A.md'],'en',out/'delivery-manifest.json')['passed'])
+    def test_ui_localization_preserves_an_original_language_quotation(self):
+        example=ROOT/'examples/hydrogel-en';data=json.loads((example/'reader-input.json').read_text('utf-8'))
+        data['case']['thesis']='Original-language quotation: “主干”. Do not translate the quoted wording.'
+        for a in data['assets'].values():
+            for k in ['image','page_image']:a[k]=str((example/a[k]).resolve())
+        for source in data['sources'].values():source['file']=str((example/source['file']).resolve())
+        inp=self.root/'input.json';inp.write_text(json.dumps(data,ensure_ascii=False),'utf-8')
+        out=self.root/'draft';renderer.build(inp,out,draft=True,link_assets=True)
+        text=(out/'A.html').read_text('utf-8')
+        self.assertIn('Original-language quotation: “主干”.',text)
+        self.assertIn('Draft: source review is incomplete.',text)
     def test_hosted_reader_uses_same_prose_graphs_and_renderer_without_embedded_images(self):
         import re
         embedded=self.root/'embedded';linked=self.root/'linked'
@@ -75,6 +96,18 @@ class ReaderContracts(unittest.TestCase):
     def test_gprime_only_panel_rejects_invented_second_modulus(self):
         result=self.context_with_caption('两种符号同时给出G′和G″曲线。')
         self.assertTrue(any('panel metric map conflicts' in e for e in result['errors']))
+    def test_english_metric_absence_is_not_an_invented_measurement(self):
+        result=self.context_with_caption('The two symbols show G′ for two systems. No G″ curve is shown.')
+        self.assertTrue(result['passed'],result['errors'])
+    def test_english_invented_modulus_is_blocked(self):
+        result=self.context_with_caption('Both G′ and G″ increase with irradiation time in this panel.')
+        self.assertTrue(any('panel metric map conflicts' in e for e in result['errors']))
+    def test_english_interpretation_cannot_be_promoted_to_proof(self):
+        result=self.context_with_caption('These data prove that interchain disulfide bonds are the sole cause of the modulus.')
+        self.assertTrue(any('categorical' in e or 'proof/exclusion' in e for e in result['errors']))
+    def test_english_negative_proof_statement_remains_qualified(self):
+        result=self.context_with_caption('This panel does not prove a unique interchain bonding mechanism; it shows G′ for the two systems.')
+        self.assertTrue(result['passed'],result['errors'])
     def test_explicit_draft_is_visibly_marked(self):
         out=self.root/'draft';r=renderer.build(EXAMPLE/'reader-input.json',out,draft=True)
         self.assertEqual(r['content_review_status'],'draft_unreviewed')

@@ -8,10 +8,11 @@ E=load_module('release_evidence','validate_evidence.py');V=load_module('delivery
 sha=E.sha
 def negated(text,pos):
     clause=re.split(r'[。！？!?；;，,：:]',text[max(0,pos-30):pos])[-1]
-    return bool(re.search(r'不(?:能|足以|等于|代表|应|意味着)?|并未|未(?!来)|无法|尚无|没有|并非|不是|而非',clause))
+    english_clause=re.split(r'[.!?;,\n]',text[max(0,pos-100):pos])[-1]
+    return bool(re.search(r'不(?:能|足以|等于|代表|应|意味着)?|并未|未(?!来)|无法|尚无|没有|并非|不是|而非',clause) or re.search(r"\b(?:not(?!\s+only)|never|cannot|can['’]t|no|fails? to|insufficient to|unable to)\b",english_clause,re.I))
 def strong_assertions(text):
     if text.endswith(('？','?')):return []
-    return [m.group() for m in re.finditer(r'证明|排除|必然|唯一原因|唯一机制|直接鉴定|完全确定',text) if not negated(text,m.start())]
+    return [m.group() for m in re.finditer(r'证明|排除|必然|唯一原因|唯一机制|直接鉴定|完全确定|\b(?:prove[sd]?|proven|proof|rules? out|excludes?|sole (?:cause|mechanism)|only (?:cause|mechanism)|directly identif(?:y|ies)|unambiguously establishes?)\b',text,re.I) if not negated(text,m.start())]
 def initialize(inp,review):
     d=json.loads(Path(inp).read_text('utf-8'));r=json.loads(Path(review).read_text('utf-8'))
     return {'schema_version':1,'input_sha256':sha(inp),'review_sha256':sha(review),'comparisons':[], 'scopes':[], 'panels':[{'asset':fid,'panel':'','subject_state':'','metrics':[],'conditions':'','source_locator':'','pointers':[]} for fid in d['case'].get('figures',{})],'source_first_review':{'method':'','checked_claim_ids':[],'findings':[],'summary':''},'waivers':[]}
@@ -39,7 +40,7 @@ def validate(inp,review,context):
             if kind=='controlled':err('multiple conditions differ but comparison is declared controlled: '+','.join(different))
             text_ref(c.get('qualification'), 'multi-condition comparison')
             for p in ptrs:
-                for m in re.finditer(r'单变量|唯一差别|唯一不同|只改变|只相差|只差',u[p]):
+                for m in re.finditer(r'单变量|唯一差别|唯一不同|只改变|只相差|只差|\bsingle[- ]variable\b|\bonly (?:difference|change|variable)\b|\bdiffers? only\b|\bchanges? only\b',u[p],re.I):
                     if not negated(u[p],m.start()):flag(p,'multi-condition experiment described as isolated change')
         if not c.get('source_claim_ids') or any(i not in claims for i in c['source_claim_ids']):err('comparison lacks source-backed claim references')
     if not a.get('comparisons') and len(a.get('no_comparisons_reason',''))<30:err('record actual key comparisons, or explain why this paper has none')
@@ -71,17 +72,23 @@ def validate(inp,review,context):
         p=unit.get('pointer');t=u.get(p,'')
         if unit.get('kind')!='factual':continue
         linked=[claims[i] for i in unit.get('claim_ids',[]) if i in claims]
-        for m in re.finditer(r'排除|唯一原因|唯一机制',t):
+        for m in re.finditer(r'排除|唯一原因|唯一机制|\b(?:rules? out|excludes?|sole (?:cause|mechanism)|only (?:cause|mechanism))\b',t,re.I):
             if not negated(t,m.start()) and not t.endswith(('？','?')):flag(p,'categorical exclusion requires direct source-grounded justification, irrespective of assigned evidence level')
         if any(c['level'] in ['author_interpretation','model_result','author_claim'] for c in linked):
             if strong_assertions(t):flag(p,'interpretive evidence expressed as categorical proof/exclusion')
             inference=re.search(r'(?:这说明|表明|意味着|因此|从而|指向).{0,35}(?:链间|二硫键|共价|机理|机制|拥挤|拓扑)',t)
             if inference and not negated(t,inference.start()) and not re.search(r'作者|解释|支持|提示|提出|推测|假设|认为|模型|可能|不能|并未|不等于',t):flag(p,'inferential connection claim lacks visible attribution or qualification')
+            en_inference=re.search(r'\b(?:this|these|the results?|the data)\s+(?:shows?|demonstrates?|means?|indicates?|implies?).{0,70}\b(?:interchain|disulfide|covalent|mechanism|topology)\b',t,re.I)
+            if en_inference and not negated(t,en_inference.start()) and not re.search(r"\b(?:authors?|interpret\w*|support\w*|suggest\w*|propos\w*|hypothes\w*|models?|may|might|not|cannot)\b|consistent with",t,re.I):flag(p,'inferential connection claim lacks visible attribution or qualification')
         for m in re.finditer(r'(?:整个|全程|全部).{0,12}(?:无需|不需要|无引发剂|无金属)',t):
             if not negated(t,m.start()):flag(p,'stage-limited advantage expanded to entire process')
         for m in re.finditer(r'(?:NMR|核磁|谱峰|SEM|显微).{0,30}(?:证明|说明|直接鉴定).{0,25}(?:链间|二硫(?:键|交联)|连接拓扑|湿态网)',t):
             if not negated(t,m.start()) and not re.search(r'不能|并未|不等于|不足以|不是',m.group()) and not re.search(r'解释为|据此解释|作者认为|作者将|推测|支持',t):flag(p,'indirect measurement promoted to direct connection/topology proof')
-    encoding=V.check_text('\n'.join(u.values()),d['case'].get('language','zh'));errors.extend(encoding['errors'])
+        for m in re.finditer(r'\b(?:NMR|SEM|microscopy|spectral peaks?).{0,70}\b(?:proves?|directly identif(?:y|ies)|directly demonstrates?).{0,70}\b(?:interchain|disulfide (?:bonds?|crosslinks?)|topology|hydrated network)\b',t,re.I):
+            if not negated(t,m.start()) and not re.search(r'\b(?:not|cannot|authors?|interpret\w*|support\w*|suggest\w*|may|might)\b',m.group(),re.I):flag(p,'indirect measurement promoted to direct connection/topology proof')
+        for m in re.finditer(r'\b(?:entire|whole)\s+(?:synthe\w*|process|route).{0,55}\b(?:without|free of|no added)\b',t,re.I):
+            if not negated(t,m.start()):flag(p,'stage-limited advantage expanded to entire process')
+    encoding=V.check_text('\n'.join(u.values()),d['case'].get('language',V.DEFAULT_LANGUAGE));errors.extend(encoding['errors'])
     return {'passed':not errors,'errors':errors,'warnings':warnings,'input_sha256':sha(inp),'context_sha256':sha(context),'comparisons':len(a.get('comparisons',[])),'panels':len(a.get('panels',[])),'scientific_entailment_automatically_judged':False,'encoding':encoding}
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('input');p.add_argument('--review',required=True);g=p.add_mutually_exclusive_group(required=True);g.add_argument('--context');g.add_argument('--init');p.add_argument('--output');a=p.parse_args()

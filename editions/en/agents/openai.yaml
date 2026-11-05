@@ -1,0 +1,4 @@
+interface:
+  display_name: "PaperStory"
+  short_description: "Read papers as evidence-grounded research stories"
+  default_prompt: "Use $paper-story-reader to explain this paper and its matching SI in English, with a coherent research story, close figure reading and an interactive story map."

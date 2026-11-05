@@ -1,0 +1,739 @@
+{
+  "schema_version": 1,
+  "input_sha256": "c846af84478ef717b578a2b4f89834090f3f3b0b0e156e1b88a3c7ee7cab7754",
+  "review_sha256": "2670fb45e021a7251aacee3b979c22700f81ff85ea8e4488e891c858f004e938",
+  "comparisons": [
+    {
+      "id": "vial",
+      "pointers": [
+        "/case/sections/2/blocks/0"
+      ],
+      "groups": [
+        {
+          "label": "Fig1b",
+          "conditions": {
+            "TA": "15个/文中命名",
+            "concentration": "5% w/v",
+            "duration": "5 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "buffer": "10 mM PBS pH7.4"
+          }
+        },
+        {
+          "label": "Fig1c",
+          "conditions": {
+            "TA": "3个/文中命名",
+            "concentration": "10% w/v",
+            "duration": "60 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "buffer": "10 mM PBS pH7.4"
+          }
+        }
+      ],
+      "classification": "multi_condition",
+      "source_claim_ids": [
+        "C4"
+      ],
+      "qualification": {
+        "pointer": "/case/sections/2/blocks/0",
+        "quote": "Start with the macroscopic question in Fig. 1b/c: does the liquid still flow when the vial is tilted? In 10 mM PBS at pH 7.4, 5% (w/v) lPGS-15TA forms a self-supporting gel after 5 min at 370 nm and 25 mW/cm². A 10% lPGS-3TA solution remains a solution even after 60 min. The percentages are mass/volume concentrations: 5% w/v means 5 g polymer per 100 mL solution, not the mass fraction of TA in the polymer. These photographs differ simultaneously in TA loading, concentration and irradiation time. They show outcomes for the tested formulations, not the isolated causal effect of TA loading."
+      }
+    },
+    {
+      "id": "cgc6",
+      "pointers": [
+        "/case/sections/3/blocks/2"
+      ],
+      "groups": [
+        {
+          "label": "7% w/v",
+          "conditions": {
+            "material": "6TA",
+            "concentration": "7% w/v",
+            "duration": "5 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "strain": "1%",
+            "frequency": "1 Hz"
+          }
+        },
+        {
+          "label": "7.5% w/v",
+          "conditions": {
+            "material": "6TA",
+            "concentration": "7.5% w/v",
+            "duration": "5 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "strain": "1%",
+            "frequency": "1 Hz"
+          }
+        }
+      ],
+      "classification": "controlled",
+      "source_claim_ids": [
+        "C6"
+      ]
+    },
+    {
+      "id": "cgc15",
+      "pointers": [
+        "/case/sections/3/blocks/2"
+      ],
+      "groups": [
+        {
+          "label": "3.5% w/v",
+          "conditions": {
+            "material": "15TA",
+            "concentration": "3.5% w/v",
+            "duration": "5 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "strain": "1%",
+            "frequency": "1 Hz"
+          }
+        },
+        {
+          "label": "4% w/v",
+          "conditions": {
+            "material": "15TA",
+            "concentration": "4% w/v",
+            "duration": "5 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "strain": "1%",
+            "frequency": "1 Hz"
+          }
+        }
+      ],
+      "classification": "controlled",
+      "source_claim_ids": [
+        "C6"
+      ]
+    },
+    {
+      "id": "cross_formula",
+      "pointers": [
+        "/case/sections/3/blocks/4"
+      ],
+      "groups": [
+        {
+          "label": "6TA",
+          "conditions": {
+            "material": "6TA",
+            "concentration": "8% w/v",
+            "duration": "0–10 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "15TA",
+          "conditions": {
+            "material": "15TA",
+            "concentration": "5% w/v",
+            "duration": "0–10 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        }
+      ],
+      "classification": "multi_condition",
+      "source_claim_ids": [
+        "C7"
+      ],
+      "qualification": {
+        "pointer": "/case/sections/3/blocks/4",
+        "quote": "Fig. 2c/d asks a different question: with each formulation fixed, how does irradiation time change elasticity? Each point comes from a separately irradiated vial followed by rheology, not continuous in-situ measurement of one vial. G′ rises markedly after about 3 min for 8% 6TA and from about 2 min for 5% 15TA, then increases more slowly. The authors describe saturation, but this does not establish complete reaction of every TA group. Comparing c with d changes both TA loading and polymer mass concentration; their modulus difference cannot be assigned wholly to one variable."
+      }
+    },
+    {
+      "id": "hybrid_light",
+      "pointers": [
+        "/case/sections/5/blocks/2"
+      ],
+      "groups": [
+        {
+          "label": "S9a混合照前",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "0 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "strain": "1%"
+          }
+        },
+        {
+          "label": "Fig4b混合照后",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "5 min",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²",
+            "strain": "1%"
+          }
+        }
+      ],
+      "classification": "controlled",
+      "source_claim_ids": [
+        "C11"
+      ]
+    },
+    {
+      "id": "hybrid_concentration",
+      "pointers": [
+        "/case/sections/5/blocks/7"
+      ],
+      "groups": [
+        {
+          "label": "4% w/v",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "4.5% w/v",
+          "conditions": {
+            "polymer": "4.5% w/v",
+            "BSM": "2% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "5% w/v",
+          "conditions": {
+            "polymer": "5% w/v",
+            "BSM": "2% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        }
+      ],
+      "classification": "controlled",
+      "source_claim_ids": [
+        "C13"
+      ]
+    },
+    {
+      "id": "BSM_concentration",
+      "pointers": [
+        "/case/sections/5/blocks/7"
+      ],
+      "groups": [
+        {
+          "label": "0.5% w/v",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "0.5% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "1% w/v",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "1% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "2% w/v",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        }
+      ],
+      "classification": "controlled",
+      "source_claim_ids": [
+        "C13"
+      ]
+    },
+    {
+      "id": "time_hybrid",
+      "pointers": [
+        "/case/sections/5/blocks/9"
+      ],
+      "groups": [
+        {
+          "label": "3 min",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "3 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "5 min",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "5 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        },
+        {
+          "label": "8 min",
+          "conditions": {
+            "polymer": "4% w/v",
+            "BSM": "2% w/v",
+            "duration": "8 min",
+            "frequency": "1 Hz",
+            "strain": "1%",
+            "wavelength": "370 nm",
+            "intensity": "25 mW/cm²"
+          }
+        }
+      ],
+      "classification": "controlled",
+      "source_claim_ids": [
+        "C12"
+      ]
+    }
+  ],
+  "scopes": [
+    {
+      "claim_id": "C3",
+      "stage": "最终lPGS-nTA光交联，而非前体合成",
+      "visible_scope": {
+        "pointer": "/case/sections/1/blocks/4",
+        "quote": "A stage distinction matters here. The statement that no additional photoinitiator or oxidant is needed concerns photo-crosslinking of the final lPGS-nTA building block. For preparation of lPGS-NH₂, SI physical p. 5 explicitly adds 65 mg of a photoinitiator labeled Irgacure 259, followed by 3 h irradiation and dialysis. TA coupling also uses DMF/water and triethylamine. An advantage of the terminal crosslinking step cannot be extended to the entire preparation route, nor does it establish biological safety of the final product."
+      }
+    },
+    {
+      "claim_id": "C8",
+      "stage": "干燥SEM与湿态力学分别评价",
+      "visible_scope": {
+        "pointer": "/case/sections/3/blocks/7",
+        "quote": "Fig. 2e/f adds morphology. Within each material, dried samples change from irregular structures before irradiation to more evident fibrous/network-like structures afterward, with the 15TA set appearing denser. However, the caption specifies lyophilization; the SI method also lists high-vacuum drying and gold coating. These images complement wet-state rheology but do not directly show the hydrogel's working hydrated pore network or identify disulfide bonds. Chemical response, macroscopic gelation, wet mechanics and dry morphology answer different parts of the problem, together supporting the authors' network-design interpretation."
+      }
+    },
+    {
+      "claim_id": "C14",
+      "stage": "模型平台向生物应用的外推",
+      "visible_scope": {
+        "pointer": "/case/sections/6/blocks/1",
+        "quote": "The best-supported meaning of 'mucus-inspired' is that selected structural features, a disulfide-crosslinking design and measured viscoelastic behavior are combined in one platform. The authors' prospects for biological models and other macromolecular materials warrant further testing. Pathogen defense, irradiation compatibility with live cells, long-term stability and repeated recovery require their own experiments; none follows from a G′ value near a natural-mucus range. A next close reading should inspect original rheology and sample replication for the intended application before designing tests of hydrated structure, linkage specificity and biological function."
+      }
+    }
+  ],
+  "panels": [
+    {
+      "asset": "design-ab",
+      "panel": "a/b",
+      "subject_state": "天然黏液与黏蛋白、拟构建的模型",
+      "metrics": [],
+      "conditions": "引言讨论天然黏液的来源、纯化与动态网络",
+      "source_locator": "正文 JATS · Scheme 1（d4sc08284b-s1）",
+      "pointers": [
+        "/case/figures/design-ab/caption"
+      ]
+    },
+    {
+      "asset": "design-c",
+      "panel": "c",
+      "subject_state": "光照前的 lPGS-nTA 大分子",
+      "metrics": [],
+      "conditions": "370 nm 光触发端点成胶；TA 数 n=3、5、6、15",
+      "source_locator": "正文 JATS · Scheme 1（d4sc08284b-s1）",
+      "pointers": [
+        "/case/figures/design-c/caption"
+      ]
+    },
+    {
+      "asset": "synthesis-a",
+      "panel": "a",
+      "subject_state": "光照前的 lPGS-nTA 大分子",
+      "metrics": [],
+      "conditions": "370 nm 光触发端点成胶；TA 数 n=3、5、6、15",
+      "source_locator": "正文 JATS · Fig. 1（d4sc08284b-f1）",
+      "pointers": [
+        "/case/figures/synthesis-a/caption"
+      ]
+    },
+    {
+      "asset": "s4-identity",
+      "panel": "S4d及S4图注",
+      "subject_state": "光照成胶前的lPGS-nTA构件",
+      "metrics": [],
+      "conditions": "Fig.1a合成阶段及SI中D2O核磁；参照骨架邻硫酸基亚甲基",
+      "source_locator": "SI PDF 物理 p9 · Fig. S4d 与整组图注",
+      "pointers": [
+        "/case/figures/s4-identity/caption"
+      ]
+    },
+    {
+      "asset": "gel-vials",
+      "panel": "b/c",
+      "subject_state": "lPGS-15TA 5% 与 lPGS-3TA 10%；补充5TA/6TA",
+      "metrics": [],
+      "conditions": "pH7.4、10 mM PBS；370 nm、25 mW/cm²、25°C；不同时间",
+      "source_locator": "正文 JATS · Fig. 1（d4sc08284b-f1）",
+      "pointers": [
+        "/case/figures/gel-vials/caption"
+      ]
+    },
+    {
+      "asset": "gel-series",
+      "panel": "d",
+      "subject_state": "lPGS-15TA 5% 与 lPGS-3TA 10%；补充5TA/6TA",
+      "metrics": [],
+      "conditions": "pH7.4、10 mM PBS；370 nm、25 mW/cm²、25°C；不同时间",
+      "source_locator": "正文 JATS · Fig. 1（d4sc08284b-f1）",
+      "pointers": [
+        "/case/figures/gel-series/caption"
+      ]
+    },
+    {
+      "asset": "nmr-low",
+      "panel": "a",
+      "subject_state": "15TA 3%/6%，3TA 10% 的照前照后NMR；对应宏观状态",
+      "metrics": [
+        "chemical shift (ppm)"
+      ],
+      "conditions": "Fig.S5 0–10 min；正文另报告3TA 60min不成胶",
+      "source_locator": "SI PDF 物理 p9 · Fig. S5a",
+      "pointers": [
+        "/case/figures/nmr-low/caption"
+      ]
+    },
+    {
+      "asset": "nmr-comparison",
+      "panel": "b/c",
+      "subject_state": "15TA 3%/6%，3TA 10% 的照前照后NMR；对应宏观状态",
+      "metrics": [
+        "chemical shift (ppm)"
+      ],
+      "conditions": "Fig.S5 0–10 min；正文另报告3TA 60min不成胶",
+      "source_locator": "SI PDF 物理 p10 · Fig. S5b/c",
+      "pointers": [
+        "/case/figures/nmr-comparison/caption"
+      ]
+    },
+    {
+      "asset": "nmr-3ta",
+      "panel": "c",
+      "subject_state": "15TA 3%/6%，3TA 10% 的照前照后NMR；对应宏观状态",
+      "metrics": [
+        "chemical shift (ppm)"
+      ],
+      "conditions": "Fig.S5 0–10 min；正文另报告3TA 60min不成胶",
+      "source_locator": "SI PDF 物理 p10 · Fig. S5b/c",
+      "pointers": [
+        "/case/figures/nmr-3ta/caption"
+      ]
+    },
+    {
+      "asset": "rheology-ab",
+      "panel": "a/b",
+      "subject_state": "6TA/15TA 不同浓度光照后湿态样品",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "370nm、25mW/cm²；1%应变；横轴ω标Hz；主要比较1Hz",
+      "source_locator": "正文 JATS · Fig. 2（d4sc08284b-f2）",
+      "pointers": [
+        "/case/figures/rheology-ab/caption"
+      ]
+    },
+    {
+      "asset": "rheology-cd",
+      "panel": "c/d",
+      "subject_state": "6TA8%、15TA5%分别照射后取样流变",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "各瓶独立照射；1Hz、1%应变；0–10min",
+      "source_locator": "正文 JATS · Fig. 2（d4sc08284b-f2）",
+      "pointers": [
+        "/case/figures/rheology-cd/caption"
+      ]
+    },
+    {
+      "asset": "rheology-read",
+      "panel": "a/b",
+      "subject_state": "6TA/15TA 不同浓度光照后湿态样品",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "370nm、25mW/cm²；1%应变；横轴ω标Hz；主要比较1Hz",
+      "source_locator": "正文 JATS · Fig. 2（d4sc08284b-f2）",
+      "pointers": [
+        "/case/figures/rheology-read/caption"
+      ]
+    },
+    {
+      "asset": "rheology-time",
+      "panel": "c/d",
+      "subject_state": "6TA8%、15TA5%分别照射后取样流变",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "各瓶独立照射；1Hz、1%应变；0–10min",
+      "source_locator": "正文 JATS · Fig. 2（d4sc08284b-f2）",
+      "pointers": [
+        "/case/figures/rheology-time/caption"
+      ]
+    },
+    {
+      "asset": "morphology-ef",
+      "panel": "e/f",
+      "subject_state": "Fig2e/f、Fig4c–f及S10 干燥样品",
+      "metrics": [],
+      "conditions": "正文图2注称冻干；SI p2记高真空干燥、镀金5nm",
+      "source_locator": "正文 JATS · Fig. 2（d4sc08284b-f2）",
+      "pointers": [
+        "/case/figures/morphology-ef/caption"
+      ]
+    },
+    {
+      "asset": "local-ab",
+      "panel": "a/b",
+      "subject_state": "35mm培养皿中的4%15TA；掩膜孔直径8mm",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "370nm、25mW/cm²、5min；照后加亚甲基蓝；与均匀凝胶比较",
+      "source_locator": "正文 JATS · Fig. 3（d4sc08284b-f3）",
+      "pointers": [
+        "/case/figures/local-ab/caption"
+      ]
+    },
+    {
+      "asset": "local-cd",
+      "panel": "c/d",
+      "subject_state": "35mm培养皿中的4%15TA；掩膜孔直径8mm",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "370nm、25mW/cm²、5min；照后加亚甲基蓝；与均匀凝胶比较",
+      "source_locator": "正文 JATS · Fig. 3（d4sc08284b-f3）",
+      "pointers": [
+        "/case/figures/local-cd/caption"
+      ]
+    },
+    {
+      "asset": "local-ef",
+      "panel": "e/f",
+      "subject_state": "35mm培养皿中的4%15TA；掩膜孔直径8mm",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "370nm、25mW/cm²、5min；照后加亚甲基蓝；与均匀凝胶比较",
+      "source_locator": "正文 JATS · Fig. 3（d4sc08284b-f3）",
+      "pointers": [
+        "/case/figures/local-ef/caption"
+      ]
+    },
+    {
+      "asset": "hybrid-a",
+      "panel": "a",
+      "subject_state": "BSM母液、15TA母液、混合液、光照后混合物",
+      "metrics": [],
+      "conditions": "图4a标签；pH7.4最终照射370nm25mW/cm²5min",
+      "source_locator": "正文 JATS · Fig. 4（d4sc08284b-f4）",
+      "pointers": [
+        "/case/figures/hybrid-a/caption"
+      ]
+    },
+    {
+      "asset": "hybrid-b",
+      "panel": "b",
+      "subject_state": "15TA4%、BSM2%、二者混合，照前/照后分别比较",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "1%应变；5minUV；Fig4b为照后，S9为照前；1Hz取点",
+      "source_locator": "正文 JATS · Fig. 4（d4sc08284b-f4）",
+      "pointers": [
+        "/case/figures/hybrid-b/caption"
+      ]
+    },
+    {
+      "asset": "hybrid-dark",
+      "panel": "a/b/c",
+      "subject_state": "15TA4%、BSM2%、二者混合，照前/照后分别比较",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "1%应变；5minUV；Fig4b为照后，S9为照前；1Hz取点",
+      "source_locator": "SI PDF 物理 p13 · Fig. S9a–c",
+      "pointers": [
+        "/case/figures/hybrid-dark/caption"
+      ]
+    },
+    {
+      "asset": "hybrid-c",
+      "panel": "c",
+      "subject_state": "Fig2e/f、Fig4c–f及S10 干燥样品",
+      "metrics": [],
+      "conditions": "正文图2注称冻干；SI p2记高真空干燥、镀金5nm",
+      "source_locator": "正文 JATS · Fig. 4（d4sc08284b-f4）",
+      "pointers": [
+        "/case/figures/hybrid-c/caption"
+      ]
+    },
+    {
+      "asset": "hybrid-def",
+      "panel": "d/e/f",
+      "subject_state": "Fig2e/f、Fig4c–f及S10 干燥样品",
+      "metrics": [],
+      "conditions": "正文图2注称冻干；SI p2记高真空干燥、镀金5nm",
+      "source_locator": "正文 JATS · Fig. 4（d4sc08284b-f4）",
+      "pointers": [
+        "/case/figures/hybrid-def/caption"
+      ]
+    },
+    {
+      "asset": "hybrid-gh",
+      "panel": "g/h",
+      "subject_state": "图4g固定BSM2%；图4h固定15TA4%",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "g聚合物4/4.5/5%；h BSM0.5/1/2%；5minUV；1Hz",
+      "source_locator": "正文 JATS · Fig. 4（d4sc08284b-f4）",
+      "pointers": [
+        "/case/figures/hybrid-gh/caption"
+      ]
+    },
+    {
+      "asset": "hybrid-i",
+      "panel": "i",
+      "subject_state": "4%15TA及4%15TA+2%BSM",
+      "metrics": [
+        "G' (Pa)"
+      ],
+      "conditions": "3/5/8minUV；Fig4i取1Hz；S13给全频率双模量",
+      "source_locator": "正文 JATS · Fig. 4（d4sc08284b-f4）",
+      "pointers": [
+        "/case/figures/hybrid-i/caption"
+      ]
+    },
+    {
+      "asset": "hybrid-full-frequency",
+      "panel": "a/b",
+      "subject_state": "4%15TA及4%15TA+2%BSM",
+      "metrics": [
+        "G' (Pa)",
+        "G'' (Pa)"
+      ],
+      "conditions": "3/5/8minUV；Fig4i取1Hz；S13给全频率双模量",
+      "source_locator": "SI PDF 物理 p14 · Fig. S13a/b",
+      "pointers": [
+        "/case/figures/hybrid-full-frequency/caption"
+      ]
+    }
+  ],
+  "source_first_review": {
+    "method": "same_agent_second_pass",
+    "checked_claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "summary": "English reader-visible comparisons and scope qualifications were re-read after adaptation: concentration/loading/exposure differences, synthesis versus terminal crosslinking, dry SEM versus wet mechanics, BSM specimen identities, and G-prime-only Fig.4i versus the complete SI curves. Original quotations and visual records were retained; no independent review or new experiment is claimed.",
+    "findings": [
+      {
+        "id": "metric-caption",
+        "issue": "Fig4集合图注称G′/G″，而i实际仅G′，需保留面板口径。",
+        "resolution": "retained_qualified",
+        "visible_resolution": {
+          "pointer": "/case/sections/5/blocks/11",
+          "quote": "An aggregate caption can hide an important metric distinction here: Fig. 4i actually plots G′ only. Black squares represent polymer and red circles the hybrid. There is no G″ curve, so this panel cannot establish that G″ is unchanged with time. To see both moduli, read Fig. S13a/b on SI physical p. 14: at the same 3, 5 and 8 min times, filled/open symbols distinguish G′/G″ across a full frequency range. SI therefore supplies both a dark control and the missing metric context for the time comparison, rather than serving as a decorative attachment."
+        },
+        "evidence_claim_ids": [
+          "C12"
+        ]
+      },
+      {
+        "id": "stock-identity",
+        "issue": "Fig4a前两张照片是母液，不能当作最终混合物照前状态。",
+        "resolution": "retained_qualified",
+        "visible_resolution": {
+          "pointer": "/case/sections/5/blocks/0",
+          "quote": "The final transition brings a natural component into the model. The authors describe limited gelation of commercial bovine submaxillary mucin (BSM) at physiological pH and cite substantially higher concentrations needed to approach healthy-sputum viscoelasticity. They therefore test whether the synthetic polymer can assist BSM. First identify the specimens in Fig. 4a: the leftmost vial is 4% BSM stock and the second is 8% lPGS-15TA stock. Only after mixing do the labels read 2% BSM + 4% polymer; the fourth image is the irradiated mixture gel. The first two photographs are not successive time points of the final mixture. [Fig. 4a; Results P16]"
+        },
+        "evidence_claim_ids": [
+          "C10"
+        ]
+      },
+      {
+        "id": "figure-band-legend",
+        "issue": "初版矩形窗口会截掉Fig4b右端图例，且整页S5b/c过小。",
+        "resolution": "revised",
+        "visible_resolution": {
+          "pointer": "/case/figures/hybrid-b/caption",
+          "quote": "Read the three groups in left-hand panel b first. Adjacent panel c is retained so that b's full legend remains visible in context."
+        },
+        "evidence_claim_ids": [
+          "C11"
+        ]
+      }
+    ]
+  },
+  "waivers": []
+}

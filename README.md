@@ -2,6 +2,8 @@
 
 [**在线体验**](https://xuehb5.github.io/paper-story-reader/demo/) · [**下载 Skill**](https://github.com/xuehb5/paper-story-reader/releases/latest) · [English](README.en.md) · [使用流程](docs/usage.md) · [数据契约](references/portable-reader.md) · [可运行示例](examples/hydrogel/README.md)
 
+**v0.21.0 新增英文版**：面向英文读者直接成文，指令、参考资料、故事正文、图解、脑图与按钮均支持英文，无需先译为中文。[英文 Skill 安装包](https://github.com/xuehb5/paper-story-reader/releases/download/v0.21.0/paper-story-reader-en-v0.21.0.zip) · [完整英文交互示例](https://xuehb5.github.io/paper-story-reader/demo-en/A.html?v=0.21.0)。中文入口继续保留，两版共用同一套画布和生成器。
+
 **读懂藏在专业术语与复杂图表背后的研究故事。**
 
 阅读论文常常让人感到枯燥：陌生的缩写、密集的实验描述、层层嵌套的复合图，还有需要来回翻找的补充信息。读者花了很久看完这些细节，仍可能说不清作者为什么做这项研究、为什么选择这种方法，以及结果究竟回答了什么。

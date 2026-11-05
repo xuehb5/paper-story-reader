@@ -1,0 +1,3008 @@
+{
+  "schema_version": 1,
+  "input_sha256": "c846af84478ef717b578a2b4f89834090f3f3b0b0e156e1b88a3c7ee7cab7754",
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "Mucin disulfide connections and source-dependent mucus variability motivate the authors' design of a tunable synthetic mucus model.",
+      "level": "background",
+      "subject": "天然黏液与黏蛋白、拟构建的模型",
+      "conditions": "引言讨论天然黏液的来源、纯化与动态网络",
+      "scope": "研究动机，不是本文已完成的免疫功能测量",
+      "support": "天然体系的二硫键与来源不确定性说明模型设计目标",
+      "limit": "结构模仿不等于全部生物功能被重建",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Introduction，正文科学段 P1–P3",
+          "quote": "The poorly defined structures and source-dependent composition of mucus also restrict its research."
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Introduction，P2",
+          "quote": "Therefore, a synthetic building block whose viscoelastic behavior in the gel state can be tuned through controlled intermolecular disulfide bond formation would pave a broader path for developing mucus-mimetic hydrogels."
+        },
+        {
+          "kind": "figure",
+          "asset": "scheme",
+          "panels": "a–c",
+          "axes": "示意图，无测量坐标",
+          "legend": "a 天然黏蛋白；b 合成聚甘油；c TA 开环/交联示意",
+          "conditions": "设计示意；非直接观测中间体",
+          "observation": "a 末端硫醇/二硫键连接；b 硫酸化链与光敏单元；c 环状二硫键、自由基式及交联结构以可逆箭头相接"
+        },
+        {
+          "kind": "figure",
+          "asset": "design-ab",
+          "panels": "a/b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Natural mucin connections in a and the synthetic backbone in b are retained together; blue pentagons and pink connection marks are interpreted in the original figure's context.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "a以端部二硫键连接天然黏蛋白；b以带光敏单元的合成链呈现连接和成胶设计。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C2",
+      "statement": "Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking.",
+      "level": "author_interpretation",
+      "subject": "光照前的 lPGS-nTA 大分子",
+      "conditions": "370 nm 光触发端点成胶；TA 数 n=3、5、6、15",
+      "scope": "材料选择与作者提出的二硫键交联解释",
+      "support": "亲水多官能骨架、硫酸基和光敏 TA 被整合在同一构件",
+      "limit": "Scheme 1 的自由基/动态连接是化学设计图，不是中间体直接鉴定或循环寿命测定",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P5",
+          "quote": "The motivations for choosing linear polyglycerol sulfate (lPGS) as the macromolecular building block are its ease of synthesis, multifunctionality, low intrinsic viscosity, and superior biocompatibility."
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P5",
+          "quote": "This family has gained enormous attention, as the 1,2-dithiolane group can undergo intermolecular crosslinking upon UV irradiation without photo-initiators"
+        },
+        {
+          "kind": "figure",
+          "asset": "f1",
+          "panels": "a",
+          "axes": "合成结构图，无测量轴",
+          "legend": "lPGS-NH2、TA-NHS、lPGS-nTA；n=3,5,6,15",
+          "conditions": "DMF:H2O；Et3N；RT；24 h",
+          "observation": "TA-NHS 与侧基胺形成酰胺连接，TA 的五元二硫环保留于产物侧基"
+        },
+        {
+          "kind": "figure",
+          "asset": "design-ab",
+          "panels": "a/b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Natural mucin connections in a and the synthetic backbone in b are retained together; blue pentagons and pink connection marks are interpreted in the original figure's context.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "a以端部二硫键连接天然黏蛋白；b以带光敏单元的合成链呈现连接和成胶设计。"
+        },
+        {
+          "kind": "figure",
+          "asset": "design-c",
+          "panels": "c",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "The complete chemical scheme and reversible arrows are retained. This is the authors' design picture.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "左侧TA环状二硫键，中间含自由基式，右侧画出连接结构；箭头为作者机制示意。"
+        },
+        {
+          "kind": "figure",
+          "asset": "synthesis-a",
+          "panels": "a",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Reactants, arrow conditions and product labels are retained together; this detail belongs to the preparation stage.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "左为lPGS-NH2，中为TA活化酯；右侧聚合物上增加含环状二硫键的酰胺侧基，n标3、5、6、15。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C3",
+      "statement": "The absence of an additional photoinitiator or oxidant applies to terminal photo-crosslinking; precursor amination used a photoinitiator.",
+      "level": "observation",
+      "subject": "lPGS→lPGS-NH2→lPGS-nTA；最终交联与前体合成是不同阶段",
+      "conditions": "SI p5 370 nm 3 h；p6 NHS 偶联室温24 h；p9 NMR积分",
+      "scope": "不将末端成胶优势推广至整条合成路线",
+      "support": "SI明确列出Irgacure及透析，最终交联条件另列",
+      "limit": "没有残留定量与本读本独立生物相容性测量；n是文中命名，不作逐链单分子计数",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-si",
+          "locator": "SI p5，Synthesis of aminated lPGS",
+          "quote": "methylpropiophenon (65 mg, Irgacure 259) was added and the reaction was conducted under the",
+          "page": 5
+        },
+        {
+          "kind": "text",
+          "source": "A-si",
+          "locator": "SI p6，Synthesis of lPGS-nTA",
+          "quote": "The number of thioctic acid (TA) coupled to lPGS-nTA could be well controlled through tuning the equivalents of TA- NHS as this reaction step is quantitative.",
+          "page": 6
+        },
+        {
+          "kind": "text",
+          "source": "A-si",
+          "locator": "SI p9，Fig. S4 图注",
+          "quote": "The integral of protons from -CH2- group adjacent to the -OSO3- on the backbone (a) was used as a reference.",
+          "page": 9
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Conclusion，P20",
+          "quote": "Moreover, the photo-regulated crosslinking reaction requires no photo-initiators or oxidizing reagents"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results P6，合成路线",
+          "quote": "First, we synthesized a linear polyglycerol backbone by anionic ring-opening polymerization of ethoxyethyl glycidyl ether and allyl glycidyl ether, followed by deprotection in slightly acidic media. 43  Next, the polymer was sulfated by following a reported protocol. 46  The allyl glycidyl units on the backbone were then functionalized with cysteamine through thiol–ene chemistry and characterized by NMR (Scheme S1 and Fig. S1–S3 † ). 43"
+        },
+        {
+          "kind": "figure",
+          "asset": "synthesis-a",
+          "panels": "a",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Reactants, arrow conditions and product labels are retained together; this detail belongs to the preparation stage.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "左为lPGS-NH2，中为TA活化酯；右侧聚合物上增加含环状二硫键的酰胺侧基，n标3、5、6、15。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C4",
+      "statement": "The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison.",
+      "level": "observation",
+      "subject": "lPGS-15TA 5% 与 lPGS-3TA 10%；补充5TA/6TA",
+      "conditions": "pH7.4、10 mM PBS；370 nm、25 mW/cm²、25°C；不同时间",
+      "scope": "瓶倒置/肉眼状态；表S1列举条件，不是穷尽相图或所有最小浓度",
+      "support": "高TA样品在较低质量浓度和较短照时下成胶，低TA反例仍流动",
+      "limit": "浓度与照时同时变化；没有从照片算TA独立效应",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P6",
+          "quote": "A 5% (w/v) free flowing solution of lPGS-15TA in PBS buffer, upon UV light irradiation for 5 min, formed a free-standing hydrogel"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P6",
+          "quote": "whereas a 10% (w/v) solution of lPGS-3TA could not form a hydrogel even after 60 min of UV light exposure"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P7",
+          "quote": "We found that lPGS-5TA, at 10% (w/v) solution in PBS buffer, transformed into a free-standing hydrogel upon 10 min UV irradiation."
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P7",
+          "quote": "Interestingly, lPGS-6TA, at 8% (w/v) solution in PBS buffer, formed a hydrogel after just 5 min of UV exposure"
+        },
+        {
+          "kind": "figure",
+          "asset": "f1",
+          "panels": "b、c、d",
+          "axes": "瓶照片/趋势示意，无测量轴",
+          "legend": "b 15TA；c 3TA；d 3/5/6/15TA系列",
+          "conditions": "b 5%、5min；c10%、60min；370nm 25mW/cm² pH7.4 25°C",
+          "observation": "b照后不沿瓶流动，c照后仍聚于下侧；d楔形箭头概括TA增多、用量/照时降低趋势，不是数值曲线"
+        },
+        {
+          "kind": "figure",
+          "asset": "gel-vials",
+          "panels": "b/c",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Photographs b/c, exposure times and illumination conditions are retained together. See the adjacent prose for the formulations.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "b的15TA5%在5min后不再自由流动，c的3TA10%在60min后仍流动。"
+        },
+        {
+          "kind": "figure",
+          "asset": "gel-series",
+          "panels": "d",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Panel d summarizes the series schematically; actual tested successful and unsuccessful formulations require the main text and Table S1.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "四种nTA材料并列；蓝色TA数量、橙色照时及绿色所需用量以楔形变化概括关系。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C5",
+      "statement": "NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately.",
+      "level": "author_interpretation",
+      "subject": "15TA 3%/6%，3TA 10% 的照前照后NMR；对应宏观状态",
+      "conditions": "Fig.S5 0–10 min；正文另报告3TA 60min不成胶",
+      "scope": "谱变化支持作者开环/交联解释；不直接数出链间交联密度",
+      "support": "15TA两浓度及3TA均发生局部谱峰变化，只有部分配方成胶，作者据此提出网络不足",
+      "limit": "NMR不能独立区分全部连接拓扑或量化贯通网络；S5c不含60min谱",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P7",
+          "quote": "The difference in the macroscopic outcome is presumably because 3% (w/v) lPGS-15TA developed an insufficient crosslinked network and consequently remained in solution."
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P7",
+          "quote": "By contrast, 6% lPGS-15TA formed a sufficiently extensive, crosslinked network, resulting in a free-standing hydrogel."
+        },
+        {
+          "kind": "figure",
+          "asset": "s5a",
+          "panels": "Fig.S5a（SI物理p9下部）",
+          "axes": "1H位移 f1(ppm)，堆叠谱；非成胶率轴",
+          "legend": "15TA 3%；0、2、4、5、8、10min",
+          "conditions": "来源标为UV暴露；正文对应低浓度不成胶",
+          "observation": "黄色环相关谱峰衰减，蓝色标区细分峰并合；纵向堆叠为不同照时，非同一峰沿空间移动"
+        },
+        {
+          "kind": "figure",
+          "asset": "s5bc",
+          "panels": "Fig.S5b/c（SI物理p10）",
+          "axes": "1H位移 f1(ppm)，堆叠谱",
+          "legend": "b 15TA 6%：0、2、4、6、8、10min；c 3TA10%：0、3、6、10min",
+          "conditions": "光照时间按各面板独立标签",
+          "observation": "两面板黄色标区峰降低、蓝区分裂变得不清；c时间至10min，不能将其当60min谱"
+        },
+        {
+          "kind": "figure",
+          "asset": "gel-series",
+          "panels": "d",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Panel d summarizes the series schematically; actual tested successful and unsuccessful formulations require the main text and Table S1.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "四种nTA材料并列；蓝色TA数量、橙色照时及绿色所需用量以楔形变化概括关系。"
+        },
+        {
+          "kind": "figure",
+          "asset": "nmr-low",
+          "panels": "a",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "3% lPGS-15TA: irradiation time increases upward from 0 min. Chemical shifts and the original highlighted regions are retained.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "黄色和蓝色区域的特征谱随照时减弱或并合；该配方正文报告不成胶。"
+        },
+        {
+          "kind": "figure",
+          "asset": "nmr-comparison",
+          "panels": "b/c",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Panel b on SI physical p. 10 retains the chemical-shift axis, time labels and highlighted regions; the full caption is available in the source-page view.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "6%15TA和10%3TA均有照时相关谱变化，正文报告两者宏观成胶结果不同。"
+        },
+        {
+          "kind": "figure",
+          "asset": "nmr-3ta",
+          "panels": "c",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Panel c on SI physical p. 10 retains the 0, 3, 6 and 10 min labels and the chemical-shift axis.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "10%3TA的局部谱随照时发生变化，正文报告该配方仍不成胶。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C6",
+      "statement": "After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v).",
+      "level": "observation",
+      "subject": "6TA/15TA 不同浓度光照后湿态样品",
+      "conditions": "370nm、25mW/cm²；1%应变；横轴ω标Hz；主要比较1Hz",
+      "scope": "操作性CGC，依照时及测量口径；文献黏液范围不是同批天然对照",
+      "support": "7→7.5%及3.5→4%跨过低频模量占优的组间变化",
+      "limit": "高频均上扬，不能只挑高频认胶；不把Hz默改rad/s",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P9",
+          "quote": "indicating a value of around 7.5% (w/v) for the CGC of lPGS-6TA"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P10",
+          "quote": "Interestingly, here the CGC dropped to 4% (w/v)"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P11",
+          "quote": "G ′ values were observed in the range of 7–10 Pa, while G ′′ remained around 1 Pa at 1 Hz."
+        },
+        {
+          "kind": "figure",
+          "asset": "f2",
+          "panels": "a/b",
+          "axes": "横轴ω(Hz)0.1–100；纵轴G′,G″(Pa)，双对数",
+          "legend": "实心G′/空心G″；a 7/7.5/8/10%；b3.5/4/4.5/5%",
+          "conditions": "5minUV；370nm25mW/cm²；1%应变",
+          "observation": "低频红色阈值组G′明显高于G″；更高浓度两模量提高；高频上扬；不是全频率常数"
+        },
+        {
+          "kind": "figure",
+          "asset": "rheology-ab",
+          "panels": "a/b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Panels a/b retain paired axes, concentration legends and filled/open symbols; exposure is 5 min and strain 1%.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "6TA7→7.5%、15TA3.5→4%时低频G′占优，G′和G″用成对实心/空心符号区分。"
+        },
+        {
+          "kind": "figure",
+          "asset": "rheology-read",
+          "panels": "a/b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "The same data are used in the main story. Here the task is to identify axes, paired symbols and the comparison order.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "相同颜色与符号形状的实心/空心标记构成同一浓度的G′/G″配对。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C7",
+      "statement": "At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration.",
+      "level": "observation",
+      "subject": "6TA8%、15TA5%分别照射后取样流变",
+      "conditions": "各瓶独立照射；1Hz、1%应变；0–10min",
+      "scope": "图2c/d描述G′随时间，非实时原位单瓶聚合转化率",
+      "support": "6TA约3min后、15TA约2min起明显提高，较晚增长趋缓",
+      "limit": "作者称饱和，不直接当作所有TA完全反应；图2d末端仍有差异",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P12",
+          "quote": "we prepared a series of vials containing a fixed concentration of lPGS- n TA and irradiated them independently with UV light for different time spans before performing rheology measurements."
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P12",
+          "quote": "G ′ did not change noticeably in the beginning, but after 3 min, G ′ rapidly increased until becoming saturated at the 5 min mark"
+        },
+        {
+          "kind": "figure",
+          "asset": "f2",
+          "panels": "c/d",
+          "axes": "横轴UV time(min)；纵轴G′,G″(Pa)，0–500",
+          "legend": "c6TA8%、d15TA5%；黑方块G′，红点G″",
+          "conditions": "1Hz、1%应变，各瓶独立照时",
+          "observation": "G′明显上升、G″贴近底部；d总体高于c；后段趋缓但d10min仍比中段高，避免绝对恒定"
+        },
+        {
+          "kind": "figure",
+          "asset": "rheology-cd",
+          "panels": "c/d",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Panel c is 8% 6TA and d is 5% 15TA. Both vertical-axis ranges, irradiation-time axes and error bars are retained.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "两组G′随照时增加再趋缓，G″较低；配方质量浓度不同，不能作单因素归因。"
+        },
+        {
+          "kind": "figure",
+          "asset": "rheology-time",
+          "panels": "c/d",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Each point comes from an independently irradiated sample. Check both formulation and vertical-axis range across panels.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "c约3min后明显增大，d约2min起增大，晚期增长趋缓；两图y轴量程不同。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C8",
+      "statement": "SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material.",
+      "level": "synthesis",
+      "subject": "Fig2e/f、Fig4c–f及S10 干燥样品",
+      "conditions": "正文图2注称冻干；SI p2记高真空干燥、镀金5nm",
+      "scope": "微米级干态形貌与流变互补",
+      "support": "光照后网络状/纤维或多孔形貌改变与宏观变化相伴",
+      "limit": "不以干态SEM直接鉴定共价键，也不把干燥孔尺寸转为湿态孔径",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Fig.2图注",
+          "quote": "All the samples for SEM were lyophilized polymer aqueous solutions or hydrogels that were prepared in PBS (pH 7.4) buffer at 25 °C."
+        },
+        {
+          "kind": "text",
+          "source": "A-si",
+          "locator": "SI p2，SEM",
+          "quote": "The samples were dried under high vacuum and coated with a 5 nm gold layer",
+          "page": 2
+        },
+        {
+          "kind": "figure",
+          "asset": "f2",
+          "panels": "e/f",
+          "axes": "SEM标尺50μm",
+          "legend": "e 15TA5%；f6TA8%；各为0/5minUV",
+          "conditions": "干燥后SEM，非湿态原位",
+          "observation": "e照后较致密纤维状网络；f照后网络状结构；两组浓度不同"
+        },
+        {
+          "kind": "figure",
+          "asset": "f4",
+          "panels": "c/d/e/f",
+          "axes": "SEM：c/d50μm；e100μm；f30μm",
+          "legend": "c4%15TA无UV；d2%BSM无UV；e混合无UV；f混合5minUV",
+          "conditions": "干燥、镀金SEM；不同图倍率/标尺不同",
+          "observation": "c片状不规则；d纤维；e不规则混合结构；f多孔网状；四幅不是同一溶液连续时间轨迹"
+        },
+        {
+          "kind": "figure",
+          "asset": "morphology-ef",
+          "panels": "e/f",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Each row retains before/after irradiation and its 50 μm scale bar. The caption identifies the specimens as lyophilized.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "e/f各自照前与照后形貌发生变化；15TA一行照后纤维网络更致密，不能据图直接读湿态孔径或键型。"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-c",
+          "panels": "c",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Read the polymer morphology and 50 μm scale bar in right-hand panel c; the neighboring b is the rheology panel.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "未照光4%聚合物的干态形貌，配对阅读需回到其样品身份。"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-def",
+          "panels": "d/e/f",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Panel d is BSM, e the unirradiated mixture and f the irradiated mixture; all three scale bars are retained.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "照后混合样品出现多孔形貌；d/e/f不是同一份样品的等比例连续时间录像。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C9",
+      "statement": "Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel.",
+      "level": "observation",
+      "subject": "35mm培养皿中的4%15TA；掩膜孔直径8mm",
+      "conditions": "370nm、25mW/cm²、5min；照后加亚甲基蓝；与均匀凝胶比较",
+      "scope": "几何成胶与模量展示，未直接检测病原防御或输运功能",
+      "support": "局部透明区域与掩膜几何对应，取出后G′>G″",
+      "limit": "蓝色深浅不是交联密度定量；不从示意双箭头推导反复可逆实测",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P15",
+          "quote": "After 5 min of UV irradiation through the photomask, a transparent gel “island” was indeed obtained at the center of the Petri dish, while the other areas remained in solution"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P15",
+          "quote": "After 5 min of UV irradiation, we added 10 μL of methylene blue (2 mM) to the Petri dish to better visualize the local gel formation."
+        },
+        {
+          "kind": "figure",
+          "asset": "f3",
+          "panels": "a–f",
+          "axes": "a示意；b–d照片；e/f横ω(Hz)0.1–10，纵G′,G″(Pa)",
+          "legend": "e局部；f均匀；黑方块G′，红点G″",
+          "conditions": "4%15TA；UV370nm25mW/cm²5min；e/f三次重复",
+          "observation": "b圆形透明区；c双圆；d圆/矩形/三角；e/f低频G′高于G″，约十Pa量级且高频上扬"
+        },
+        {
+          "kind": "figure",
+          "asset": "local-ab",
+          "panels": "a/b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "The setup schematic and actual dish/mask photographs are retained; b shows the outcome after local irradiation.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "a中央8mm孔限定照射，b中央透明凝胶区与掩膜开孔对应。"
+        },
+        {
+          "kind": "figure",
+          "asset": "local-cd",
+          "panels": "c/d",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Circular, rectangular and triangular masks remain paired with their corresponding gel regions.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "不同掩膜开孔与培养皿中的凝胶区域在几何上对应；蓝色水相用作显示。"
+        },
+        {
+          "kind": "figure",
+          "asset": "local-ef",
+          "panels": "e/f",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Panel e is the locally extracted gel and f the uniformly formed sample. Their axes and modulus legends are retained.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "两组中黑方块G′高于红点G″；这是与局部形状照片互补的流变信息。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C10",
+      "statement": "The stock solutions in Fig. 4a are 4% BSM and 8% polymer; the mixture is labeled 2% BSM and 4% polymer.",
+      "level": "observation",
+      "subject": "BSM母液、15TA母液、混合液、光照后混合物",
+      "conditions": "图4a标签；pH7.4最终照射370nm25mW/cm²5min",
+      "scope": "照片身份与最终浓度；母液不套到图4b测试组",
+      "support": "四照片配对上方示意标签，前两份独立母液不是混合液照前照后",
+      "limit": "不把所有照片都解释成4%15TA+2%BSM的不同时间点",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P16",
+          "quote": "mixing BSM (2% w/v) with lPGS-15TA (4% w/v) formed a hybrid hydrogel with significant viscoelasticity upon UV exposure"
+        },
+        {
+          "kind": "figure",
+          "asset": "f4",
+          "panels": "a",
+          "axes": "示意/瓶照片，无定量轴",
+          "legend": "BSM4%、lPGS-15TA8%、混合BSM2%+聚合物4%、光照后混合物",
+          "conditions": "前两图母液；混合后浓度减半；UV作用于混合样",
+          "observation": "前两幅分别是棕色BSM和浅色聚合物溶液；第三混合仍流动；第四倾斜仍保形"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results P16，BSM模型瓶颈",
+          "quote": "Commercially available bovine submaxillary mucin (BSM), which is regarded as the model system for human mucus"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results P16，文献高浓度背景",
+          "quote": "It has been shown that BSM only begins to exhibit viscoelasticity comparable to healthy sputum at a concentration range of 10–14% (w/v)."
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-a",
+          "panels": "a",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "The 4% BSM and 8% polymer stock labels and the mixed 2% BSM + 4% polymer label are retained.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "最左两份是母液，第三份为混合液，第四份为同配方照后凝胶；不把母液标签当作最终配方。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C11",
+      "statement": "The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation.",
+      "level": "author_interpretation",
+      "subject": "15TA4%、BSM2%、二者混合，照前/照后分别比较",
+      "conditions": "1%应变；5minUV；Fig4b为照后，S9为照前；1Hz取点",
+      "scope": "支持生物杂化网络解释，不直接鉴定特定BSM–聚合物连接",
+      "support": "无光控制及光后非简单叠加的弹性增强约束了仅混合即成胶的解释",
+      "limit": "总体流变和SEM不能独立排除全部物理相互作用或直接分配每条共价连接",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P17",
+          "quote": "These two observations suggest the joint participation of both lPGS-15TA and BSM in the hybrid hydrogel formation"
+        },
+        {
+          "kind": "figure",
+          "asset": "f4",
+          "panels": "b",
+          "axes": "横ω(Hz)；纵G′,G″(Pa)，双对数",
+          "legend": "黑方块BSM2%；红圆15TA4%；蓝三角混合；实心G′/空心G″",
+          "conditions": "各组5minUV；1%应变",
+          "observation": "混合组低频G′明显高于单组分；BSM单独低模量；高频各有上扬"
+        },
+        {
+          "kind": "figure",
+          "asset": "s9",
+          "panels": "S9a/b/c；SI p13上部",
+          "axes": "横ω(Hz)0.1–100；纵G′,G″(Pa)",
+          "legend": "a聚合物4%；b4.5%；c5%；各与2%BSM及混合对照",
+          "conditions": "照前；三次重复，误差棒省略",
+          "observation": "低频各组模量较低；没有光后混合物高的G′平台；不能以高频上扬代替低频判断"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-b",
+          "panels": "b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Read the three groups in left-hand panel b first. Adjacent panel c is retained so that b's full legend remains visible in context.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "三组同受光照后，混合组低频G′高于对应单组分；实心/空心表示G′/G″。"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-dark",
+          "panels": "a/b/c",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "SI physical p. 13: a/b/c show dark controls with 4%, 4.5% and 5% polymer, respectively, at fixed 2% BSM.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "无光下三组的G′/G″均较低，未出现照后混合物那样的高弹性平台。"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-def",
+          "panels": "d/e/f",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Panel d is BSM, e the unirradiated mixture and f the irradiated mixture; all three scale bars are retained.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "照后混合样品出现多孔形貌；d/e/f不是同一份样品的等比例连续时间录像。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C12",
+      "statement": "Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little.",
+      "level": "author_interpretation",
+      "subject": "4%15TA及4%15TA+2%BSM",
+      "conditions": "3/5/8minUV；Fig4i取1Hz；S13给全频率双模量",
+      "scope": "光时响应支持BSM参与的作者解释；非直接键型鉴定",
+      "support": "固定各自组成后的时间依赖不同，补充浓度系列",
+      "limit": "Fig4集合图注泛称G′/G″，i图例实际仅G′；不能让图i承担G″不变判断",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P18",
+          "quote": "We found that, with increased UV exposure time, G ′ of lPGS-15TA alone changed only slightly, whereas G ′ of the hybrid system increased significantly"
+        },
+        {
+          "kind": "figure",
+          "asset": "f4",
+          "panels": "i",
+          "axes": "横UV irradiation(min)3/5/8；纵G′(Pa)",
+          "legend": "黑方块4%15TA G′；红点15TA+2%BSM G′",
+          "conditions": "1Hz，各组成固定；照时变化",
+          "observation": "红点上升，黑方块低位变化小；没有G″曲线"
+        },
+        {
+          "kind": "figure",
+          "asset": "s13",
+          "panels": "S13a/b；SI p14下部",
+          "axes": "横ω(Hz)；纵G′,G″(Pa)，双对数",
+          "legend": "a4%15TA；b4%15TA+2%BSM；黑/红/蓝为3/5/8min，实/空分两模量",
+          "conditions": "各体系独立照3/5/8min；三次重复，误差棒省略",
+          "observation": "a低频G′随照时改变较小；b各时G′均高于相应G″并随照时上移；包含图4i未画的G″"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-i",
+          "panels": "i",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "The two symbols show G′ for two systems. No G″ curve is shown.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "红圆点混合体系G′随照时显著提高，黑方块聚合物单独变化较小。"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-full-frequency",
+          "panels": "a/b",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "SI physical p. 14: a is polymer and b the hybrid; filled/open symbols distinguish G′/G″.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "3、5、8min在两体系中的频率曲线；混合体系随照时的G′变化显著，补足Fig.4i未显示的指标与频率维度。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C13",
+      "statement": "Increasing polymer or BSM concentration while holding the other component fixed increases the measured hybrid-gel G′.",
+      "level": "observation",
+      "subject": "图4g固定BSM2%；图4h固定15TA4%",
+      "conditions": "g聚合物4/4.5/5%；h BSM0.5/1/2%；5minUV；1Hz",
+      "scope": "有限浓度系列，非任意浓度普遍规律",
+      "support": "两个独立配方系列给出可调性；h中G″变化较小",
+      "limit": "不跨g/h量程直接比斜率或赋予线性定律",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P18",
+          "quote": "with the lPGS-15TA concentration fixed at 4% (w/v), increasing the concentration of BSM led to a significant increase in G ′ with negligible change in G ′′"
+        },
+        {
+          "kind": "figure",
+          "asset": "f4",
+          "panels": "g/h",
+          "axes": "g横lPGS-15TA(%w/v)、纵G′,G″Pa至1000；h横BSM(%w/v)、纵G′,G″Pa至200",
+          "legend": "黑方G′；红点G″；两个独立配方系列",
+          "conditions": "1Hz、5minUV；g固定BSM2%；h固定15TA4%",
+          "observation": "g黑方上升；h黑方上升，红点较低变化小；g/h纵轴量程不同"
+        },
+        {
+          "kind": "figure",
+          "asset": "hybrid-gh",
+          "panels": "g/h",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Panel g varies polymer at fixed BSM; h varies BSM at fixed polymer. Their y-axis ranges differ.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "两组G′均随所改变组分浓度提高而增加，h中的G″变化较小。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C14",
+      "statement": "The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation.",
+      "level": "synthesis",
+      "subject": "lPGS-nTA合成及其水凝胶模型",
+      "conditions": "正文Fig1–4，SI方法/NMR/流变/SEM",
+      "scope": "所展示的合成、形貌和流变范围；作者应用展望与实验结果分开",
+      "support": "主文证据组合回答可控成胶，不把天然黏液防御背景移植成本文测试",
+      "limit": "不以模量接近推断抗感染、活细胞兼容、长期稳定、恢复循环或所有天然黏液功能",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Conclusion，P20",
+          "quote": "This versatile approach of photo-regulated disulfide crosslinking strategy creates new opportunities, not only in developing artificial mucus but also in designing new biomimetic and biohybrid materials"
+        },
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results，P19",
+          "quote": "It is a challenging task for a single synthetic building block to capture all of these structural features along with functional macroscopic properties such as viscoelasticity."
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    },
+    {
+      "id": "C15",
+      "statement": "The authors prepare the nTA series by coupling TA-NHS to aminated lPGS and use assignable NMR integrals to support TA grafting.",
+      "level": "derived",
+      "subject": "光照成胶前的lPGS-nTA构件",
+      "conditions": "Fig.1a合成阶段及SI中D2O核磁；参照骨架邻硫酸基亚甲基",
+      "scope": "构件制备与系列身份，不是单链接枝数分布的独立测定",
+      "support": "主文给出偶联路线和nTA系列，S4图注说明参照积分和特征质子归属",
+      "limit": "部分烷基峰与溶剂或骨架重叠，不能以任意单峰独立定量每条链",
+      "evidence": [
+        {
+          "kind": "text",
+          "source": "A-main",
+          "locator": "Results：构件合成",
+          "quote": "by linking different numbers of TA units within the backbone in a controlled way"
+        },
+        {
+          "kind": "text",
+          "source": "A-si",
+          "page": 9,
+          "locator": "SI物理p9，Fig.S4图注",
+          "quote": "The integral of protons from -CH2- group adjacent to the -OSO3- on the backbone (a) was used as a reference."
+        },
+        {
+          "kind": "figure",
+          "asset": "synthesis-a",
+          "panels": "a",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "Reactants, arrow conditions and product labels are retained together; this detail belongs to the preparation stage.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "左为lPGS-NH2，中为TA活化酯；右侧聚合物上增加含环状二硫键的酰胺侧基，n标3、5、6、15。"
+        },
+        {
+          "kind": "figure",
+          "asset": "s4-identity",
+          "panels": "S4d及S4图注",
+          "axes": "按原图保留坐标和图例；示意/照片无测量坐标",
+          "legend": "The 15TA spectrum on physical p. 9 and the full set's caption are retained; one spectrum is not presented as the entire series.",
+          "conditions": "实际对照原图及三组逐图视觉联系表；SVG只改变视窗，原位保留对应坐标、图例、标尺和面板身份。具体配方与状态见相邻解释及context-audit。",
+          "observation": "图中给出15TA的结构字母、化学位移和积分；图注说明以骨架邻硫酸基亚甲基作参照，部分峰受重叠影响。"
+        }
+      ],
+      "english_adaptation_note": "English statement checked for the same objects, states, conditions and inferential level as the original source-backed claim; original evidence records retained."
+    }
+  ],
+  "units": [
+    {
+      "pointer": "/case/title",
+      "text_sha256": "6fca347bcc7e90c41ca5aae837dede022057ab723d6a61827943783d42b1718e",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C6",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/thesis",
+      "text_sha256": "ff1ac904aab78fd5a1fbb7a6cc66ad6083268805ae564054b99b1a35edd1817a",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C5",
+        "C6",
+        "C9",
+        "C11",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/coverage",
+      "text_sha256": "966d0016f3a471a9f798a4e47742e70a502408aa7470fc46bd4a52e80a78d992",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "Reading/navigation wording only; it introduces no scientific assertion. English wording and target context checked."
+    },
+    {
+      "pointer": "/case/sections/0/title",
+      "text_sha256": "1f995a604ac913c2673e90376645de9642273662d202b436e8a385553ba976eb",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Mucin disulfide connections and source-dependent mucus variability motivate the authors' design of a tunable synthetic mucus model. Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/0/blocks/0",
+      "text_sha256": "53e270633ee259d5df6794fe2341be58f1cc5e10a5044844529714dfe1035650",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Mucin disulfide connections and source-dependent mucus variability motivate the authors' design of a tunable synthetic mucus model. The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/0/blocks/1",
+      "text_sha256": "9a7445be50ef3b4e9ca4d76612753cbdc7ee3441fcb970837750174b34b46209",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C2",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Mucin disulfide connections and source-dependent mucus variability motivate the authors' design of a tunable synthetic mucus model. Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/0/blocks/3",
+      "text_sha256": "5c2060bdd18423dcbc551b5b1707284a9786f039847d3b6527d8fe5ed80a9d17",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C5",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/0/blocks/4/detail/title",
+      "text_sha256": "f63c633ba98697d39ad130c86a8be8ee6e605e15d401bbf22585e9651e59cdcc",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/0/blocks/4/detail/blocks/0/walkthrough/title",
+      "text_sha256": "7f9cd3a246b6d25db8a19bff01ae17c597729d08ba023182f66e4be1f625b065",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/0/blocks/4/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "6a0bccab7961651e734945c57305e7f1ca34763daa5e9c14980e8dbee3c292eb",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/0/blocks/4/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "3c9040142c51c6385efbaf3979cd22b739c6c8525435c2a0e4fb08983ded4280",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/0/blocks/4/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "7d5deb0471826d11a21320c44d4367f34490b90f90f9093b4313ae7a3143a6be",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/1/title",
+      "text_sha256": "744ce6f3e6ee39a34f0c17120eecf43cda56717d181f965fb1c3365f4a6f9f58",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C3"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The absence of an additional photoinitiator or oxidant applies to terminal photo-crosslinking; precursor amination used a photoinitiator. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/1/blocks/0",
+      "text_sha256": "48f4e8c91c45e25bf63872d91793f8ec574a909ecf0109c06396e6fdb33f8444",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C3"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The absence of an additional photoinitiator or oxidant applies to terminal photo-crosslinking; precursor amination used a photoinitiator. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/1/blocks/2",
+      "text_sha256": "876f35fea554593182472169b83c9125a9766d5440f3f35bacd9a033adb7147b",
+      "kind": "factual",
+      "claim_ids": [
+        "C3"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The absence of an additional photoinitiator or oxidant applies to terminal photo-crosslinking; precursor amination used a photoinitiator. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/1/blocks/3/detail/title",
+      "text_sha256": "0ad2f944941b21ab3e7f31ebbd4551cd4d70f900afa7336ddaca22a5d8c59e9b",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The authors prepare the nTA series by coupling TA-NHS to aminated lPGS and use assignable NMR integrals to support TA grafting. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/1/blocks/3/detail/blocks/0/walkthrough/title",
+      "text_sha256": "87725bdaba764a51658e510f4f4d8942c31282f45e2ebceb94dbb81bc1421da7",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The authors prepare the nTA series by coupling TA-NHS to aminated lPGS and use assignable NMR integrals to support TA grafting. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/1/blocks/3/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "b8d65b0e386e9cb0b9fac014e73d865d1eb4d7a0fbb494225afaa99d243948d9",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The authors prepare the nTA series by coupling TA-NHS to aminated lPGS and use assignable NMR integrals to support TA grafting. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/1/blocks/3/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "c50ebcb8873b77b98b148c61efa3d5e78bd40d4f46732611bbe6fdcd2a0402a4",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The authors prepare the nTA series by coupling TA-NHS to aminated lPGS and use assignable NMR integrals to support TA grafting. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/1/blocks/3/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "4b91ec515c2790fb9c3ec195bbfa89192c824ee9ba225b1ae419d50de92baf60",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The authors prepare the nTA series by coupling TA-NHS to aminated lPGS and use assignable NMR integrals to support TA grafting. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/1/blocks/4",
+      "text_sha256": "1ec3b5afb8fc711b58ca00c059b542dbc031b0ba720887f93453cf203590d16d",
+      "kind": "factual",
+      "claim_ids": [
+        "C3",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The absence of an additional photoinitiator or oxidant applies to terminal photo-crosslinking; precursor amination used a photoinitiator. The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/title",
+      "text_sha256": "16c9fecedae507e3151192976be3494c3989c2e1c9b89f68292e3a8f44204adf",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/0",
+      "text_sha256": "8817204dc7e44a0acd43c5e8a83409fec0f73048d214ec93ea2a15aecec0515e",
+      "kind": "factual",
+      "claim_ids": [
+        "C4"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/2",
+      "text_sha256": "e33e406751a6496044835672b55c477719b21e88927504e69f6bcd515e98ed1a",
+      "kind": "factual",
+      "claim_ids": [
+        "C5",
+        "C4"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/title",
+      "text_sha256": "e92528eb72b6eafda670b5d0077d4246cbe10b256b61a9e8555088d330415a2c",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/0/walkthrough/title",
+      "text_sha256": "c102ba5091374342d02ac0d4d8d460310ecaa9adced4a61283ad84589bb0eccd",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "b1d722ec1fa38d1b4ec0645bff3dd8e837c3c0845c6afc14cbd76bd235856ea5",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "4227230ce1bf06e4698c93fdbb9f3a854407bea4f3ccbd74c46f4ef0591e2113",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "a1aa3f9bd7581a99e4826ffe591e9d142c919d364f05653bf9170db0e5f92b93",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/1/walkthrough/title",
+      "text_sha256": "83ef072f9ca63955e1e01fe2b98ce34321a58555a31965173675bc19caf664fb",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/1/walkthrough/lead",
+      "text_sha256": "3f7e110524c9c1c5cdd9ceadd73b176e1e332617c2477312f0d1f16c86bf578b",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/1/walkthrough/paragraphs/0",
+      "text_sha256": "bb08c84eb0ca31745c04ceaed5f70d438fb053dd94a633c8ed22c70c3cee22b3",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/2/walkthrough/title",
+      "text_sha256": "dab83b3418c512155f999598c53b7f3c85d3c1024fd4a648c729f3eb56f91023",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/2/walkthrough/lead",
+      "text_sha256": "8cf5562a083903fb66ad1c33d4e287ab6ea6863b9f587894bf5522c6c9abcc9b",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/3/detail/blocks/2/walkthrough/paragraphs/0",
+      "text_sha256": "0babe8c9994f790fe7d0156e33372129d859e7021e72ce542cfd866dc1b7f75c",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/4",
+      "text_sha256": "ec24137652d152aabe03fe8b4cd76e4d25a0c51f8cd3d1d9f25660fd108bed55",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/5/detail/title",
+      "text_sha256": "46235718743e0d7b44d5f1516c75f24e37d96f30d75a34a0c3a2b27ab7c5e593",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/5/detail/blocks/0/walkthrough/title",
+      "text_sha256": "fe1fa89d59ab1781aa86bd761a5b3dcd67ee6981ebe4ecdaec1258fb5c6e36cf",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/5/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "faf17961d9db2ac533c1c5bdd640030974d4eb8684010bd7c9e66961db914757",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/5/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "b23a1d4b8a86904c3cce1282033c033c52ac39bcc47369b955362d60bb6efc9d",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/2/blocks/5/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "d9fb5003a06504912ff3e0e0441bddd1add1bc1ab8d1a43e2e1600dabc5ff68f",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/title",
+      "text_sha256": "064ba8c0fab3b8be6cf84695370fd0d4648b2a044db01ac2c982c87790639939",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/0",
+      "text_sha256": "5248f218b1f9d45143a2874d8caf548fb50a172e0891030c2743edfbf09419a0",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/2",
+      "text_sha256": "19e2fb926fe71bf6e0a46e0570942a2a01e379e596340b80d76016c3dff29022",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/3/detail/title",
+      "text_sha256": "33cc7d77d921124c736177f07ad8b16ff3687a0e0b4f3ce50354757c45a90c35",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/3/detail/blocks/0/walkthrough/title",
+      "text_sha256": "9f1008bbe5f9ee8181b0c51f8e30840bdae7a768a74214cd836288d05031d72c",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/3/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "d7d44b8937a164e2a1d8fe764acd9238ae72da99f3d6ddd86946c1669613d5b8",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/3/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "ad92efe0cce2920abd973bf6d595487f487e2a7ab9b6f9e5fd0d14a630b37c10",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/3/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "70e8037e79f0164f0ad20ab01b8326c19ff5e9e26601d8aca54d8eff3167ac70",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/4",
+      "text_sha256": "e091ea92ae69ca1149e7dd2ebc0ee89dd8de15f43e7f5c4fe883f76edf7ea371",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/6/detail/title",
+      "text_sha256": "7669db2d7581aea6d0a464341378045068407c1f27de139975545f039edcf046",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/6/detail/blocks/0/walkthrough/title",
+      "text_sha256": "3992d6715fdcb35ed2ebfae1c9fd1db11bfb9b7e3b7b1a655212ea47fd1cd663",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/6/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "b3be95634ef6da457596f2bf61c960071de48f04c282c93075f942777d5f9d70",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/6/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "b89f1a0223ee41670f4a479dca821da8b778d0791fffd872025bdb4eb50c3a1a",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/6/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "40db2355b5376aa295834f73db8c0b4e8eec57fe45927ced4314a5504cf72d8c",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/7",
+      "text_sha256": "6a0628722f67740fcd166d812dae0e519f5c30108c9b8d67a580a758a045d971",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C5",
+        "C7"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/8/detail/title",
+      "text_sha256": "53904c1c56caffb4ec9256effe7139983de18a13fe07e0ece73839056c7c1791",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/8/detail/blocks/0/walkthrough/title",
+      "text_sha256": "a5c24e78318dbc8dba528e8a275a99200f08d45b871f7c00bedfec5621df689f",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/8/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "5d3d7a05326bf15f33bcdbc9985767367d0473f453b746ba332a454a2b191593",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/8/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "067f8b2540db338c17c64c7a621eb6d1c87887f04f4be0dc72633cf5a40f3cc4",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/3/blocks/8/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "2bc84a64852e7be055f31b30681ff56624364a20a5078d43e11748e36bfb1659",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/4/title",
+      "text_sha256": "cd58deb31aca719f5a78d0b89d7267c198b7295fc91e35ceeaab1a57494c2bec",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/4/blocks/0",
+      "text_sha256": "f9c5a6c73f71bd0c7e44ebff2a04a75c1cfd3dcac7d67c3d1c6f279b96f810f4",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/4/blocks/2/detail/title",
+      "text_sha256": "9aa75617871b5deb8f376203405cc050e52b4fcd160bef1b26726d4d0351837a",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/4/blocks/2/detail/blocks/0/walkthrough/title",
+      "text_sha256": "1af5d43f4c136093de128c17a06afbd83d6123c40c3476c79c4a3a0526773409",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/4/blocks/2/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "3bfe5bb599845326495dcbac607ecb75b548dd6e2cdcea1bec031de3cd98847f",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/4/blocks/2/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "232ac81db3594b2be290164c398038a4a8f59d2643c96d551bf4bb466ef3496e",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/4/blocks/2/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "74898b5c5dcfd81a26db97c70cb76cd135e3f4bcb763b4b2514f224985d4b826",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/4/blocks/3",
+      "text_sha256": "bfec36db8981dd63894625e203508eaa5bc83894fcfca4d0144815631129ba42",
+      "kind": "factual",
+      "claim_ids": [
+        "C9",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/title",
+      "text_sha256": "2ff09a04b32ace034e08499f9fffca5302581c59138255ba3b61d0d54daaba9c",
+      "kind": "factual",
+      "claim_ids": [
+        "C10",
+        "C11",
+        "C12",
+        "C13"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The stock solutions in Fig. 4a are 4% BSM and 8% polymer; the mixture is labeled 2% BSM and 4% polymer. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. Increasing polymer or BSM concentration while holding the other component fixed increases the measured hybrid-gel G′. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/0",
+      "text_sha256": "121aaff8e2633fa145f7b92fb29ab3d7b90282dc019bf859e35b6c331cdebb52",
+      "kind": "factual",
+      "claim_ids": [
+        "C10",
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The stock solutions in Fig. 4a are 4% BSM and 8% polymer; the mixture is labeled 2% BSM and 4% polymer. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/2",
+      "text_sha256": "2bc7e167ab4c8261e7916ddf9fefedac085dae8fe9efb2e3f92b4e11870755bc",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/4/detail/title",
+      "text_sha256": "973577ec53808087d1bfab565768f6f40245f2bfa9d0d18caaf2a55b6288c5d2",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/4/detail/blocks/0/walkthrough/title",
+      "text_sha256": "fd25f7ed9adebd3d0b7be56e550e0180e3f326f2cde1ac9269d3f57459f2b919",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/4/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "21b68a8c4ff0584b9d7d30ab92c00aa4939c876839066e10ce5c19a03a01d71d",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/4/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "b2eb4eb12216bcc4272401518f0ccf0c9df4315def6f63dca231faa9db4d870b",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/4/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "10d150b0bd7bf16f3ea217be44657b42ffcceb824ad6edbe914f95f6a0e8c151",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/5",
+      "text_sha256": "3933ba8577922d17984c4b700347b3d4a1c2b6c5414a0536c3d660ec401a9781",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/title",
+      "text_sha256": "626553a2354ff3e7ac94ead6860f38df255659f777bb2a3b44ae9263ae295ef2",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/blocks/0/walkthrough/title",
+      "text_sha256": "e44f1e844b75cc25ddf2140ff0e1e9ce24bf7c51d76a4a3c23d04053694b9669",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "c55d78c2fdee4117010831176bbed03fb1a1e3d2aab3d56131e34308b709e692",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "b05665cc1c71a3c3ab8db58352fe8d4ed52804906d0dd26c1dfd10f2ab457670",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/blocks/1/walkthrough/title",
+      "text_sha256": "e3e63fd7cb8a298ec00337eadf96e82dc3ac499b9da9555a3ed5e1b1660c0aa1",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/blocks/1/walkthrough/lead",
+      "text_sha256": "11ed6d5f5dcc0db18af8c1e7d6a8eec5cc52fa71189006df50345f129b30bcbe",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/6/detail/blocks/1/walkthrough/paragraphs/0",
+      "text_sha256": "8ab7e7cbb817c4cc0aae3d20c0e153b5a346a903cc4d0c4def19c4d55a2b2453",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/7",
+      "text_sha256": "c58055578fae9b54c9e08e886d3585fb347984528c3bbba78be4319d98281a05",
+      "kind": "factual",
+      "claim_ids": [
+        "C13"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Increasing polymer or BSM concentration while holding the other component fixed increases the measured hybrid-gel G′. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/9",
+      "text_sha256": "458a791c9b68191431219379b8d38101fb79d7bd205e38dfdc3b54c54eefe2e7",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/11",
+      "text_sha256": "9f55247f4b55b76d0572a301b1fe616b2ca5d21776125681b575778d00cf911f",
+      "kind": "factual",
+      "claim_ids": [
+        "C12",
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/12/detail/title",
+      "text_sha256": "f8866d3624ecdf269daee448b3858370f266224e65eb7f8a53b0f8fd8b6176a3",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/12/detail/blocks/0/walkthrough/title",
+      "text_sha256": "ea15a60e1908088ad1fcc57da0eda1fe43bed8eaf2e20881dad0f1eeed98e207",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/12/detail/blocks/0/walkthrough/lead",
+      "text_sha256": "92cb7fb0df508854f85730d328d8ea47c4cd54a1d015947373a5d63b37fe5b57",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/12/detail/blocks/0/walkthrough/paragraphs/0",
+      "text_sha256": "d13af971f3ecf6a9f81666d28389d06de344331c08d0fe47daadc6ec94c3eb3e",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/5/blocks/12/detail/blocks/0/walkthrough/paragraphs/1",
+      "text_sha256": "cfebfdecee2b17811b40c6ed68ec0a908f91e296d90fbaff75a4fd6500625014",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/6/title",
+      "text_sha256": "9e724be07e4fcb8b5ecd5f9110b6d4a6608527acf2776027074db37392804046",
+      "kind": "factual",
+      "claim_ids": [
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/6/blocks/0",
+      "text_sha256": "e95aff9e0d7c821f411845d1e8b8797fc212202ae0c56b231dde4197dbc844c8",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C9",
+        "C11",
+        "C13",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. Increasing polymer or BSM concentration while holding the other component fixed increases the measured hybrid-gel G′. The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/sections/6/blocks/1",
+      "text_sha256": "e6d3b139769b529fde509418ec82348caea71a50da52f512c7baf8ace16572dd",
+      "kind": "factual",
+      "claim_ids": [
+        "C14",
+        "C6",
+        "C8",
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/design-ab/title",
+      "text_sha256": "a45e21d13f72c1ddea5a33d4630327165cffb1411dad661c32d296ed6b6e9e94",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Mucin disulfide connections and source-dependent mucus variability motivate the authors' design of a tunable synthetic mucus model. Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/design-ab/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/design-ab/caption",
+      "text_sha256": "19aebde71967b1e3d185617d2cc255a300e4a8c3a380bb558d5659944839c1f3",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Mucin disulfide connections and source-dependent mucus variability motivate the authors' design of a tunable synthetic mucus model. Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/design-c/title",
+      "text_sha256": "cbb4eaa5a683fe7eea753124e34d947fabb51a5d156dc25b11cf92a37bc7e337",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/design-c/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/design-c/caption",
+      "text_sha256": "7bd7e2c0d91655b5d0850364b386844e05ea3c4f30d42787addea720dc91282d",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/synthesis-a/title",
+      "text_sha256": "09ca386617c3016f0e0553923989ee7d399d2f8dbb2eece39b71628c9200ed15",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C3",
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The absence of an additional photoinitiator or oxidant applies to terminal photo-crosslinking; precursor amination used a photoinitiator. The authors prepare the nTA series by coupling TA-NHS to aminated lPGS and use assignable NMR integrals to support TA grafting. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/synthesis-a/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/synthesis-a/caption",
+      "text_sha256": "93096c1e9eeabf6271f4e584ce7a8175e5781deaae0003d667a559aa3ba7a70f",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C3",
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The absence of an additional photoinitiator or oxidant applies to terminal photo-crosslinking; precursor amination used a photoinitiator. The authors prepare the nTA series by coupling TA-NHS to aminated lPGS and use assignable NMR integrals to support TA grafting. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/s4-identity/title",
+      "text_sha256": "0fcebe52c9f0a5ddd624a9383136131585e14576fedcdf77f5940618127b6c68",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The authors prepare the nTA series by coupling TA-NHS to aminated lPGS and use assignable NMR integrals to support TA grafting. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/s4-identity/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/s4-identity/caption",
+      "text_sha256": "0d43a4553288b0cf41f9fe7ee66d172facbe7fbba08e7970e78a64b0e19a4cff",
+      "kind": "factual",
+      "claim_ids": [
+        "C15"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The authors prepare the nTA series by coupling TA-NHS to aminated lPGS and use assignable NMR integrals to support TA grafting. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/gel-vials/title",
+      "text_sha256": "7ab4dfe4f1725e23b915e58fedc3413ed3945132aad0467f16c3fddc942f393b",
+      "kind": "factual",
+      "claim_ids": [
+        "C4"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/gel-vials/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/gel-vials/caption",
+      "text_sha256": "25d928ebc10e6584f6cac5eea1097a2028949921be6d098e3ec3a71d84927e48",
+      "kind": "factual",
+      "claim_ids": [
+        "C4"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/gel-series/title",
+      "text_sha256": "2213819780fab54b64143e396e26adee1d64350199ae3dd00d541ffe5afea3bd",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/gel-series/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/gel-series/caption",
+      "text_sha256": "fc87ed9a0ef0eaeb8558d91dbb54a07a2e96c71b67bbfaa95d33dd09690b1136",
+      "kind": "factual",
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/nmr-low/title",
+      "text_sha256": "d015242a7331ba499247bd6951d4d2fa0bb0b527e678a73a81bc22c01df4891d",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/nmr-low/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/nmr-low/caption",
+      "text_sha256": "637a1c417aa0b44cbbb3e5dc15d07804349f3e467ff3b2497db64c0afd5b7b7b",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/nmr-comparison/title",
+      "text_sha256": "a0e83189f56733de0f1add3b9da8a173ea39dc9f513f30eaca97b3a461200973",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/nmr-comparison/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/nmr-comparison/caption",
+      "text_sha256": "e786211ac96accf88259915d2937c2176143be50912c708baaa5225c2518a1fc",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/nmr-3ta/title",
+      "text_sha256": "11b12d91e48c5582243f565311686cefb03f06eeabc35c78de1532fc3b9b8c77",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/nmr-3ta/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/nmr-3ta/caption",
+      "text_sha256": "ff354de48709e3013b50bb66708c61c5629a7cd58c305f8bb833e4be46a6c1c3",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/rheology-ab/title",
+      "text_sha256": "5c1055e8ca7db3e1581540954f5068f43ae6c1b64573c3cff821b9d73902f790",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/rheology-ab/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/rheology-ab/caption",
+      "text_sha256": "30ea12242379f318df39848e10b75b39497f891442e9f01cc2a517678d87ac32",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/rheology-cd/title",
+      "text_sha256": "74ae4384539857f5b8ab2440b22e32723b9207ffad17802cc08e511e819175ba",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/rheology-cd/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/rheology-cd/caption",
+      "text_sha256": "42e8c7958c1f09bf12360829f15be99a1b3451e58a62566263590af0389ac41a",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/rheology-read/title",
+      "text_sha256": "e9ba5c222202c1d5c3c244b1f6b086c9b0887544a3007e26d1f8bcb8e06ebb3f",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/rheology-read/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/rheology-read/caption",
+      "text_sha256": "ab294c2a6cc3611f0edb63ee4854ca6a49583bcaa39b2f7835ee0fa782ee8cb1",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/rheology-time/title",
+      "text_sha256": "64a9f2b8c7e5f6528d42d84ae0f6bd620be8e41234760885992dc4661d59e58d",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/rheology-time/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/rheology-time/caption",
+      "text_sha256": "b85b10d396e3d6110b033454cdfb1dfe2e088508d4c41c9e7fad6e4196d77191",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/morphology-ef/title",
+      "text_sha256": "a1b65c190d0abd9456ad37bb08612e931bc64dcb5cd42f624ada67420e6332b8",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/morphology-ef/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/morphology-ef/caption",
+      "text_sha256": "95e82e3b12bc2e80dbb7b0268aa3f86c34f4005ab1abf844a498040508901ba2",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/local-ab/title",
+      "text_sha256": "f833c06d1aabed3e8aa61d2f0e0a74171363a700f694e2743d05b2dc3b28017c",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/local-ab/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/local-ab/caption",
+      "text_sha256": "95634ebe370d7ce12482d70c81f058c2310125ddcacbbf001534a6396970e050",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/local-cd/title",
+      "text_sha256": "3156b1f72e79627518e641f78d23f32704259f02237c9643cb2d7840113beaf5",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/local-cd/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/local-cd/caption",
+      "text_sha256": "581428b95e3feb7eb1c6cf589cd6feca028cb34e5d806fd634df217654bd0aa3",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/local-ef/title",
+      "text_sha256": "f88bacc77c8afb9704458d7d5ade48b5c9f2298f8cccb357b8b5fdcb5fed77b1",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/local-ef/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/local-ef/caption",
+      "text_sha256": "81a43854b2f61c927ae41056c65d99527c0c0c11acf19c2d1e196d6bd63e658d",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-a/title",
+      "text_sha256": "23d6a3d8bc0bc151fbc10440f03d54551baee3eaabf03815dce282dea358c3b6",
+      "kind": "factual",
+      "claim_ids": [
+        "C10"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The stock solutions in Fig. 4a are 4% BSM and 8% polymer; the mixture is labeled 2% BSM and 4% polymer. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-a/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-a/caption",
+      "text_sha256": "9d0fc9755b2bfe1e5866387f72efcac47bbb41eab676aabac811584b69d73c24",
+      "kind": "factual",
+      "claim_ids": [
+        "C10"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The stock solutions in Fig. 4a are 4% BSM and 8% polymer; the mixture is labeled 2% BSM and 4% polymer. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-b/title",
+      "text_sha256": "3468f27eeeaad7cfb9d305b2b4597a7a05d8ee85834d47fbb5300d0df7a2b7f2",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-b/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-b/caption",
+      "text_sha256": "71058355278c533718f07983931aad05bc22799b01db3397361b92d61782ca9e",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-dark/title",
+      "text_sha256": "51ce61b6681ea8ed4fd7bfda6a9baec1b78c7124027d31eb793ef1e93960337f",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-dark/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-dark/caption",
+      "text_sha256": "6ab1823f9a85114bb54dc35ef31511dd28bbf232425190562f668f42e0c9d2dc",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-c/title",
+      "text_sha256": "f2f33bba5c08e57e70dfa15e083ab318698c0be0a61ebf3ef27e00f47e330828",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-c/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-c/caption",
+      "text_sha256": "2e24b1609186e469121e15c5b0018bfd289d9277fe4adb7d5ff827469ee5d3b1",
+      "kind": "factual",
+      "claim_ids": [
+        "C8"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-def/title",
+      "text_sha256": "47a52c60b079f90aa4ba1d1fd8001f0bcc936a37ccba5a5b89ff2cf050be75ea",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-def/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-def/caption",
+      "text_sha256": "b197ea373bac5c22666dbf17a09bbf40f2a268b5484d74ef5c99b0ec6374011b",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C11"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-gh/title",
+      "text_sha256": "15370173b4b3d03d6b6d72cd6ee3d13af61626b6ff13d92afd483cd9b2631bf2",
+      "kind": "factual",
+      "claim_ids": [
+        "C13"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Increasing polymer or BSM concentration while holding the other component fixed increases the measured hybrid-gel G′. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-gh/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-gh/caption",
+      "text_sha256": "e240e6516af2ae20e915116ab1465c93ef972c14fbf74c9ed8d36d7e5dfbf433",
+      "kind": "factual",
+      "claim_ids": [
+        "C13"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Increasing polymer or BSM concentration while holding the other component fixed increases the measured hybrid-gel G′. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-i/title",
+      "text_sha256": "9df923f4f8f231b16dc21ae0309ca7935e0aff72d895fb1124d2377ec41a6329",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-i/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-i/caption",
+      "text_sha256": "4836f4619b5f2f356ac9e3414dfe91c58df30eecd81b67f90f1509990ab01850",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-full-frequency/title",
+      "text_sha256": "be65c1eec7c9f2abb6ccd174bb4f8104e884dbfbd7591cd71d568c022ef4c068",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-full-frequency/role",
+      "text_sha256": "0610d35cb33d22811fe1b2af1c21c6f60cde12f8329033adb12d50b6affed8d1",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/figures/hybrid-full-frequency/caption",
+      "text_sha256": "91f77af900d88e0ccb5eb2db68ed26d8324877638815a1278f338f84e94c1791",
+      "kind": "factual",
+      "claim_ids": [
+        "C12"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/composites/scheme-complete/title",
+      "text_sha256": "7f1944060ed6b45342653c43fe5d01bba3a25c8795f8fe499417f856ccac0570",
+      "kind": "factual",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Mucin disulfide connections and source-dependent mucus variability motivate the authors' design of a tunable synthetic mucus model. Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/composites/f1-complete/title",
+      "text_sha256": "898d8efb226c6acd5d28f3acfacdff55cf8765f58b1495f370c9a4fc9b171d00",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C4"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The Fig. 1 vial outcomes differ in TA loading, concentration and irradiation time and are formulation outcomes rather than a strict single-variable comparison. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/composites/f2-complete/title",
+      "text_sha256": "ad3d91d36b314e39c2256e784d1ba141e32c8760dca626a13d2b242c3869402b",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/composites/f3-complete/title",
+      "text_sha256": "d891e19a4cf1c0307d0e1693facc4bc81b4fdd7eccb90e3f7eea63d500d1d99e",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/composites/f4-complete/title",
+      "text_sha256": "627839a3ecdec281d95304b40f844519b5ace58837258287e4b6185841bf1018",
+      "kind": "factual",
+      "claim_ids": [
+        "C8",
+        "C10",
+        "C11",
+        "C12",
+        "C13"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: SEM compares morphology after drying and cannot directly establish disulfide-link topology in the hydrated material. The stock solutions in Fig. 4a are 4% BSM and 8% polymer; the mixture is labeled 2% BSM and 4% polymer. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. Fig. 4i shows G′ only for two systems: the hybrid increases markedly with irradiation time while polymer alone changes relatively little. Increasing polymer or BSM concentration while holding the other component fixed increases the measured hybrid-gel G′. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/0/title",
+      "text_sha256": "28dd60aa7cb1c8551a37269e81a574c91841ab6abfd44596fe01f9a0d1d1bac7",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/0/role",
+      "text_sha256": "819800e6678a1fcfc1238a807a62d5a7493db446c06b426399a2919d48c3bbe4",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/0/finding",
+      "text_sha256": "b79a0a7798570e20dffae5a1769008bd5352d595445a56ceeeaa67f948171a12",
+      "kind": "factual",
+      "claim_ids": [
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/1/title",
+      "text_sha256": "44a79c34d65e166bff47da0a80e9e104d2c0a3bbeb0c4d6248ac28c8c27ca3b1",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/1/role",
+      "text_sha256": "c2819fb7b4c02a3d412f2ec4f29743fd5b1ef85952e0bf0028c212ec52604417",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/1/finding",
+      "text_sha256": "7638548abd152152d1f98f781807195839c44ce08175b7f4e0153c3bed106bdf",
+      "kind": "factual",
+      "claim_ids": [
+        "C5"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/2/title",
+      "text_sha256": "0a0f83cdd7c810074314547aa48b3a661b117dbd8216f98d787486825357f50b",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/2/role",
+      "text_sha256": "f7fa901d738e098847d82fb8205363b968df4c8753cf5976787182b75ad9dad2",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/2/finding",
+      "text_sha256": "3b5e69985a079a44d6f495b8657beb2b82457c258e398d066a07996c5a967c65",
+      "kind": "factual",
+      "claim_ids": [
+        "C6"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/3/title",
+      "text_sha256": "c51c09f3abd8581020f9ee68be141022f9d4eaf368a88620b3ac677e6ee7c40c",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/3/role",
+      "text_sha256": "6e9b1bde40597be69d2bacfa326715eadcb11f06b034a85195928e72b5515c61",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/3/finding",
+      "text_sha256": "c343d30b014baf1c944b955b7b083440bcbcff19b5e057946d304dffe7afdd47",
+      "kind": "factual",
+      "claim_ids": [
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/4/title",
+      "text_sha256": "b1ea2b3cbf5e794a4aaffba89f16751375fcb68d68983126ea4e3990f2e78db5",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/4/role",
+      "text_sha256": "9909aef0577ceaefc25344708d047b0eff085ab485853a15fc52cc969de602d7",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/4/finding",
+      "text_sha256": "969c8dde4e72fbc354419025ae60999d2d577035e137f1feea17038f25fc1485",
+      "kind": "factual",
+      "claim_ids": [
+        "C9"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/5/title",
+      "text_sha256": "e78781d33a41895eb07a198e41cdff58cbaead6229098cb796fb4a45cd08d7d3",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/5/role",
+      "text_sha256": "a4463b09bb01c20a01c64354ce93c1aed84b15c512d248e4add6d9ffbe94f28c",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/5/finding",
+      "text_sha256": "aa42eae79c803043b585ac26da36d2e23b47cf4a9393e9641398face23252263",
+      "kind": "factual",
+      "claim_ids": [
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/6/title",
+      "text_sha256": "265b9beda1bb74a0fb4dc8ebaa0e1adcc716ece1c323ecbc258d1db7fd618480",
+      "kind": "factual",
+      "claim_ids": [
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/6/role",
+      "text_sha256": "c6280e2aad88d758ba085df6e0963595d107678f272af261d335a445b06c7f09",
+      "kind": "factual",
+      "claim_ids": [
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/nodes/6/finding",
+      "text_sha256": "43570c1753ae1f0677993de10c088a9f3943f91ad51ad5c0202d71be68a4dbd1",
+      "kind": "factual",
+      "claim_ids": [
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/edges/0/label",
+      "text_sha256": "278f6bde14a7e4280d769f780569cc80d7aeb2271fae3788df1677bb449e5bae",
+      "kind": "factual",
+      "claim_ids": [
+        "C5",
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: NMR changes coexist with non-gelation in low-concentration 15TA and in 3TA, so chemical change and macroscopic gelation must be evaluated separately. Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/edges/0/kind",
+      "text_sha256": "a18603086e5bdf9df88ccc9f5a083fed093e819976e87456b74dafcbd7011114",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "Reading/navigation wording only; it introduces no scientific assertion. English wording and target context checked."
+    },
+    {
+      "pointer": "/case/research_graph/edges/1/label",
+      "text_sha256": "8085b0e861c212b0b1016012662214dec7e214bfea82f94235003d16cb91d725",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C2"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/edges/1/kind",
+      "text_sha256": "a18603086e5bdf9df88ccc9f5a083fed093e819976e87456b74dafcbd7011114",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "Reading/navigation wording only; it introduces no scientific assertion. English wording and target context checked."
+    },
+    {
+      "pointer": "/case/research_graph/edges/2/label",
+      "text_sha256": "aaf2dc99f4d998f122c7c1ed6c513d6a8ab6503911b50bcf843fee2aea56b309",
+      "kind": "factual",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "verdict": "aligned",
+      "reason": "English adaptation checked against the retained source evidence: After a fixed 5 min irradiation, the paper's G′-dominance criterion gives CGCs of about 7.5% for 6TA and 4% for 15TA (w/v). At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/edges/2/kind",
+      "text_sha256": "6e0534af16e1fe990db04f7be375d4a0d743a315cbc9866523cec7c15d253c62",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "Reading/navigation wording only; it introduces no scientific assertion. English wording and target context checked."
+    },
+    {
+      "pointer": "/case/research_graph/edges/3/label",
+      "text_sha256": "5406d25996d42b81ef1f5168093cb1652c7ea66956dac1cc4f53f5e9bd254043",
+      "kind": "factual",
+      "claim_ids": [
+        "C2",
+        "C11"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Attaching TA with its 1,2-dithiolane ring to the lPGS backbone provides the design basis for light-triggered crosslinking. The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/edges/3/kind",
+      "text_sha256": "6e0534af16e1fe990db04f7be375d4a0d743a315cbc9866523cec7c15d253c62",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "Reading/navigation wording only; it introduces no scientific assertion. English wording and target context checked."
+    },
+    {
+      "pointer": "/case/research_graph/edges/4/label",
+      "text_sha256": "4208de122e332337db6151f3520d84eb44147a19b77e21e3b67f3400a8aac026",
+      "kind": "factual",
+      "claim_ids": [
+        "C9",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: Masked local irradiation forms a local gel in 4% lPGS-15TA, with a rheological comparison of the extracted gel. The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/edges/4/kind",
+      "text_sha256": "a18603086e5bdf9df88ccc9f5a083fed093e819976e87456b74dafcbd7011114",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "Reading/navigation wording only; it introduces no scientific assertion. English wording and target context checked."
+    },
+    {
+      "pointer": "/case/research_graph/edges/5/label",
+      "text_sha256": "df533b10cef3cbe4a4d701e5a092e046627a1609d3f0941269f6eb68ae0a90ac",
+      "kind": "factual",
+      "claim_ids": [
+        "C11",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: The mixture has low moduli in the dark and higher G′ than the corresponding single components after irradiation, supporting the authors' interpretation of joint participation in gelation. The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/edges/5/kind",
+      "text_sha256": "6e0534af16e1fe990db04f7be375d4a0d743a315cbc9866523cec7c15d253c62",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "Reading/navigation wording only; it introduces no scientific assertion. English wording and target context checked."
+    },
+    {
+      "pointer": "/case/research_graph/edges/6/label",
+      "text_sha256": "6fd19ae3d38749184d28032e1414082c29dd0a8f6eaff98bc29ef5ac3627b889",
+      "kind": "factual",
+      "claim_ids": [
+        "C7",
+        "C14"
+      ],
+      "verdict": "qualified",
+      "reason": "English adaptation checked against the retained source evidence: At each fixed formulation, G′ rises and then levels with exposure time; comparisons across formulations change both TA loading and mass concentration. The paper demonstrates a model platform with tunable modulus, local gelation and BSM hybrids; biological function and long-term cycling require separate validation. The wording preserves the relevant sample/state, comparison conditions and inferential limits."
+    },
+    {
+      "pointer": "/case/research_graph/edges/6/kind",
+      "text_sha256": "a18603086e5bdf9df88ccc9f5a083fed093e819976e87456b74dafcbd7011114",
+      "kind": "navigation",
+      "claim_ids": [],
+      "verdict": "aligned",
+      "reason": "Reading/navigation wording only; it introduces no scientific assertion. English wording and target context checked."
+    }
+  ],
+  "reviewer": {
+    "method": "same_agent_second_pass",
+    "identity": "PaperStory English adaptation source review",
+    "source_first_summary": "English prose, figure instructions, captions and graph wording were checked against the retained original-language quotations, previously inspected hash-identical figures and source context. Numeric conditions, specimen identities, G-prime-only panel limits and author interpretations were preserved. This is a language adaptation review, not an independent reviewer, new experimental reproduction or fresh image measurement. Existing detailed original-language visual observations remain in the internal evidence records.",
+    "unresolved_items": []
+  }
+}

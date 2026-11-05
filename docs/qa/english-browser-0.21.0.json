@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "English content and accessible UI labels; all story stages and close-reading features retained",
+    "All 11 branches and return actions preserve canvas coordinates and synchronize English map location",
+    "English figure controls and original complete composite work",
+    "Connection-aware camera and full-paper zoom remain available",
+    "English scientific argument nodes wrap by words and navigate to prose",
+    "English SI explanation links to complete physical source page",
+    "Dynamic zoom and wheel-mode labels remain English",
+    "430px English layout has no outer document overflow"
+  ],
+  "errors": [],
+  "branches": 11,
+  "reader_language": "en",
+  "notice": "Worked-example browser regression, not a human comprehension or independent-model evaluation"
+}

@@ -1,0 +1,11 @@
+{
+  "edition": "English",
+  "source_reader": "../hydrogel/reader-input.json",
+  "source_reader_sha256": "cafa9d06b7597c5fd9699992bcab302d1cf64ada2c7f74f207b25f9305d66ecf",
+  "english_input_sha256": "c846af84478ef717b578a2b4f89834090f3f3b0b0e156e1b88a3c7ee7cab7754",
+  "unique_visible_texts_adapted": 182,
+  "review_method": "same_agent_second_pass",
+  "source_images_changed": false,
+  "original_source_quotes_changed": false,
+  "note": "Full-story English adaptation; original-language internal evidence observations remain for provenance. It is not a new scientific replication or human reading experiment."
+}

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.21.0 — 2026-11-05
+
+- Add an English-first Skill edition, English reference contracts and a separately installable English package. Read English papers directly in English; no Chinese intermediate is required.
+- Localize static UI, accessible labels, dynamic camera/map status, figure/source controls and draft notices. Preserve authored content and original quotations.
+- Share the same renderer and one-canvas interactions across languages; add English word wrapping and graph-label layout.
+- Add the full English hydrogel companion with all 7 stages, 25 figure occurrences, 11 branches and 14 close-reading steps, preserving original sources and image hashes.
+- Extend limited wording checks to English proof/exclusion, comparison and scope language while retaining source-first review requirements.
+- Add reproducible language-specific packaging and English regressions.
+
 ## 0.20.2 — 2026-11-04
 
 - Serve the public demo with relative local images instead of a huge base64 HTML stream; reuse the exact same reader template, CSS, JavaScript, graphs and reviewed prose as the offline reader.
