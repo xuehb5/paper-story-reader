@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse,hashlib,json,zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
-VERSION='0.21.0'
+VERSION='0.24.0'
 
 def package(output,language='en'):
     output=Path(output);output.parent.mkdir(parents=True,exist_ok=True)

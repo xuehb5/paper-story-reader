@@ -68,3 +68,6 @@ Edges use `from`, `to`, `label` and `kind`. Author a meaningful relationship suc
 Optional `navigation` has `home` and `papers` entries with `id`, `short`, `href`; include the current paper. Links are relative to the generated HTML and must point to actual generated readers. The caller supplies a real collection entry page; do not invent missing readers. Without this object, the single-paper index opens the reader directly.
 
 `scripts/index_source.py article.xml --id PAPER-main --output work/index` creates traceable text and source metadata. Run separately for SI. PDF indexing requires `pypdf`; optional PDF page rendering uses available tools such as `pypdfium2`. JATS uses source anchors. Indexing assists retrieval and does not replace looking at the actual figures.
+
+
+> v0.22 extension: [study-type routing](study-types.md) and [rich evidence/material inventory](evidence-blocks.md) extend this contract. Old inputs retain original checks. New inputs use explicit profiles; formal_result requires original proof status and assumptions. DOI is optional.

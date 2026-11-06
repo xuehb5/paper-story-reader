@@ -1,5 +1,7 @@
 # Internal evidence ledger
 
+v0.23: text evidence for JATS may include `anchor`, the actual original element ID. The quote must occur inside that unambiguous element, not merely somewhere in the article. Keep `locator` as a readable description. Prose, captions, formulas, table cells and graph findings cannot be classified as navigation to skip claim links; see [source conflicts](source-conflicts.md).
+
 The reader does not need to fill in or read this file. Generate a pending inventory only after drafting stable content:
 
 ```bash
@@ -41,3 +43,6 @@ The initializer enumerates JSON Pointer locations and `text_sha256` for scientif
 Each `research_graph` node needs `claim_id`; its `finding` must **exactly equal** that claim's `statement`. Review the title separately. Review edge meaning, direction and evidence level too: two valid nodes do not automatically establish their connection.
 
 The ledger does not prescribe a fixed count of claims, nodes or quotes. One generic abstract quote cannot meaningfully support every sentence. No extra audit website is required: the reading companion remains the default reader entry, with source checking available on demand.
+
+
+> v0.22 extension: [study-type routing](study-types.md) and [rich evidence/material inventory](evidence-blocks.md) extend this contract. Old inputs retain original checks. New inputs use explicit profiles; formal_result requires original proof status and assumptions. DOI is optional.

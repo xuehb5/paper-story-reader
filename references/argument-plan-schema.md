@@ -18,3 +18,7 @@ python -X utf8 <skill>/scripts/validate_argument_plan.py argument-plan.json --ou
 ```
 
 校验器只验证字段、目标及摘录存在，不能判定证据支持强度、错误归因或读者是否读懂。对于短问答无需强制建立此记录。
+
+## v0.22 route extension
+
+The optional plan also accepts derived, background, author_claim, formal_result, assumption, qualitative_finding and textual_interpretation. These labels do not replace the final evidence ledger, source-qualified formal status or source-first review. Follow the study-type guide; retain the existing anchored-text convention only for this optional handoff.

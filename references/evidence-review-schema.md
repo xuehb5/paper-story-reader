@@ -28,3 +28,6 @@ python -X utf8 <skill>/scripts/render_reader.py reader-input.json --review evide
 研究图`case.research_graph.nodes`各加`claim_id`，`finding`必须与该claim.statement完全相同，title仍单独复核。边的含义/方向/证据类型也在units中审查，不能从节点存在自动推导支持关系。正文可自然改述，但核查单元必须关联相同判断及所需限定；脚本不自动解析其语义一致性。
 
 账本不强制固定论文节点数或证据条数。摘录和看图记录必须足以支撑具体句子，不能只填一个总摘要来形式上覆盖全篇。无需另交“原文索引网页”；读本仍是唯一默认阅读入口，原文/图/来源定位按需提供。
+
+
+> v0.22扩展：[研究类型路线](study-types.md)与[新证据/材料清单](evidence-blocks.md)补充本契约。旧输入保留原检查；新输入显式选择路线，形式结果记录原文证明状态与假设；DOI可缺省。

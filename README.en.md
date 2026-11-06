@@ -1,14 +1,16 @@
-# PaperStory · Read papers as research stories
+# PaperStory · Cross-Disciplinary Paper Reading
 
-[**English live demo**](https://xuehb5.github.io/paper-story-reader/demo-en/A.html?v=0.21.0) · [**Download English Skill**](https://github.com/xuehb5/paper-story-reader/releases/download/v0.21.0/paper-story-reader-en-v0.21.0.zip) · [中文说明](README.md)
+**v0.24.0:** follow the research story across experimental, computational, observational, theoretical, evidence-synthesis and interpretive studies. Source-linked figures, tables, equations and passages join a coherent narrative with deeper explanation branches. A semantic story audit checks central-result coverage, definitions, transitions and source fidelity. [Semantic audit scope](docs/semantic-audit-024.md).
+
+[**English live demo**](https://xuehb5.github.io/paper-story-reader/demo-en/A.html?v=0.24.0) · [**Download English Skill**](https://github.com/xuehb5/paper-story-reader/releases/download/v0.24.0/paper-story-reader-en-v0.24.0.zip) · [中文说明](README.md)
 
 **Find the research story beneath dense terminology and complex figures.**
 
 Reading a paper can feel like moving between unfamiliar terms, experimental details, composite figures and supplementary files without seeing how they fit together. Yet the research often follows a compelling line of inquiry: a problem, a design choice, a way to test it, and evidence that changes what we know.
 
-We built **PaperStory** to make that logic visible. Its aim is to help readers understand why a study was undertaken, what was done, how it was tested and what the results mean. The prose follows a story trunk; left and right branches unpack concepts, structures, difficult figures and controls when deeper explanation is useful. The main article and its own Supporting Information contribute to the same explanation.
+We built **PaperStory** to make that logic visible. Its aim is to help readers understand why a study was undertaken, what was done, how it was tested and what the results mean. The prose follows a story trunk; left and right branches unpack concepts, structures, difficult figures and controls when deeper explanation is useful. The main article and relevant matching SI, appendices or supplementary materials contribute to the same explanation.
 
-The current focus is experimental materials and chemistry papers, for readers with relevant subject knowledge who are encountering a paper for the first time. The narrative stays grounded in the sources: uncertainty, missing evidence and limits remain visible.
+Originally developed for materials and chemistry, PaperStory now selects and combines six study-type routes across disciplines. It is written for readers with relevant subject knowledge who are encountering a paper for the first time. The narrative stays grounded in the sources: uncertainty, missing evidence and limits remain visible.
 
 ![Actual English reader interface](docs/images/en-reader.png)
 
@@ -59,11 +61,15 @@ Open `build/hydrogel-en/index.html`. Use a new empty output directory for every 
 
 ## Use with an Agent
 
-Use the English installation above, or read the [English entrypoint](editions/en/SKILL.md) with its linked references and shared scripts. Supply the main paper, its **own matching SI** and clear original figures. If SI or a necessary figure is missing, the Skill asks for it and discloses the gap; it must not invent missing evidence. See the [English data contract](references/en/portable-reader.md).
+Use the English installation above, or read the [English entrypoint](editions/en/SKILL.md) with its linked references and shared scripts. Supply the main paper, relevant **matching SI or appendices**, and clear original figures. A paper with no published SI does not require an invented attachment. If SI or a necessary figure is missing, the Skill asks for it and discloses the gap; it must not invent missing evidence. See the [English data contract](references/en/portable-reader.md).
 
-> Use $paper-story-reader. Explain this materials/chemistry paper and its matching SI directly in English for a reader with subject knowledge who is new to this paper. Build a coherent story of the problem, design, tests, observations and bounded conclusions. Keep the main story readable on its own, with substantial nearby figure/SI branches, a synchronized story map, a separate scientific argument graph and the shared interactive canvas. Preserve original evidence and state material gaps.
+> Use $paper-story-reader. Explain this paper and its relevant matching supplements directly in English for a reader with subject knowledge who is new to this paper. Build a coherent story of the problem, design, tests, observations and bounded conclusions. Keep the main story readable on its own, with substantial nearby figure/SI branches, a synchronized story map, a separate scientific argument graph and the shared interactive canvas. Preserve original evidence and state material gaps.
 
 Complete builds require actual evidence records. `--draft` explicitly marks an unreviewed preview. Hashes, coverage checks and condition checks do not determine scientific entailment or prove that a reader understood the paper.
+
+## Scope and validation
+
+Nine distinct papers have been used in local authored tests, spanning materials/chemistry, biology, machine learning, observational education, meta-analysis, mathematical proof and conceptual philosophy. Four newly added readers received full source-grounded semantic review through three emphasis lenses of one agent. These are not independent-model evaluations or evidence of universal discipline coverage. See [study-type design](docs/cross-disciplinary-candidate.md), [expanded sample checks](docs/expanded-validation-023.md) and [semantic review scope](docs/semantic-audit-024.md).
 
 ## Development and licensing
 

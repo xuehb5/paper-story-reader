@@ -35,3 +35,6 @@ JSON Pointer沿用evidence-review.units；图谱标题、finding、图注、侧�
 ## 缺材料和Windows中文写入
 
 缺SI时可以只交补料报告并停止，不能伪造完整上下文/审核。此时不运行完整读本生成器，但仍运行`verify_delivery.py companion.md index.html`；有问号替换/中文丢失即失败。Windows上用文件写入工具直接保存UTF-8再运行脚本，禁止把含中文源码经PowerShell here-string管道输给Python。`PYTHONIOENCODING`仅管Python输出，不能补回管道上游已丢的字符。实际读回正文开头、关键条件及补料请求，确认文件可读。
+
+
+> v0.22扩展：[研究类型路线](study-types.md)与[新证据/材料清单](evidence-blocks.md)补充本契约。旧输入保留原检查；新输入显式选择路线，形式结果记录原文证明状态与假设；DOI可缺省。

@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.24.0 — cross-disciplinary reading and semantic review, 2026-11-06
+
+- Apply source-grounded reading and three reviewer-emphasis lenses to four new story readers, with a separate limited spot check of earlier biology/ML chains.
+- Repair main-result omissions, an unclosed transfer question, normalized-object notation, a missing strict-inequality step and conceptual classification/conditional-argument compression. Replace software/template branches with explanations of the source papers.
+- Add a reusable semantic story audit: map central source questions/results to trunk/branches, read with branches closed, and recheck definitions, transitions, closure and argument destinations. The audit does not automatically score fidelity or certify comprehension.
+- Preserve original v0.23 inputs/reviews/readers. Corrected local companions and detailed review records remain separate from the installable package; no new scientific source collection is redistributed. Versions 0.22 and 0.23 below were local development stages included in this release.
+
+## 0.23.0 candidate — local development, 2026-11-06
+
+- Expand local authored reading tests to observational education, evidence synthesis, a purely mathematical proof note and conceptual philosophy, including a correction notice and image-free readers.
+- Reproduce and fix two source-review defects: substantive scientific units could be marked navigation; declared JATS anchors were ignored when matching quotes. Preserve compatibility with reviewed older inputs.
+- Add source-conflict instructions: inspect actual symbols, keep original reports and reader-derived repairs distinct, retain analysis units and conditional arguments, and use readable verified source pages.
+- Rebuild previous companions, exercise new evidence/map/recovery paths in Chrome, and add source-derived selected-table checks plus explicit mathematical teaching calculations. These remain same-agent readings, not independent-model or human-comprehension evaluation.
+
+## 0.22.0 candidate — local development, 2026-11-05
+
+- Separate the shared story-reading core from study-type profiles: experimental, computational, observational, theoretical, evidence synthesis and interpretive. Existing v0.21 inputs retain their materials/chemistry checks.
+- Add source-linked tables, equations with definitions/optional restricted MathML, and exact-source quotations to prose, branches, the evidence index and the review inventory.
+- Add material availability records, optional DOI, UTF-8 text and original standalone supporting-image sources, formal-status records and typed argument relationships.
+- Preserve one canvas and both navigation maps across languages. Give short final branches enough camera tail space to reach reading position and synchronize their map selection; include native evidence blocks in recovery anchors.
+- Add mechanical failure cases for provenance, table cells, formulas, unsafe markup, quotations, formal claims and routing. Worked cross-disciplinary readings are local research artifacts; see the validation scope before claiming generality.
+
+
 ## 0.21.0 — 2026-11-05
 
 - Add an English-first Skill edition, English reference contracts and a separately installable English package. Read English papers directly in English; no Chinese intermediate is required.

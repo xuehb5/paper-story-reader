@@ -18,6 +18,7 @@ def initialize(inp,review):
     return {'schema_version':1,'input_sha256':sha(inp),'review_sha256':sha(review),'comparisons':[], 'scopes':[], 'panels':[{'asset':fid,'panel':'','subject_state':'','metrics':[],'conditions':'','source_locator':'','pointers':[]} for fid in d['case'].get('figures',{})],'source_first_review':{'method':'','checked_claim_ids':[],'findings':[],'summary':''},'waivers':[]}
 def validate(inp,review,context):
     d=json.loads(Path(inp).read_text('utf-8'));r=json.loads(Path(review).read_text('utf-8'));a=json.loads(Path(context).read_text('utf-8'));u=E.content_units(d);claims={c['id']:c for c in r['claims']};errors=[];warnings=[]
+    profile=E.P.resolve(d['case']);materials_rules='materials_chemistry' in profile['disciplines']
     def err(x):errors.append(x)
     def text_ref(ref,where):
         if not isinstance(ref,dict) or ref.get('pointer') not in u or not ref.get('quote') or ref['quote'] not in u[ref['pointer']]:err(where+': qualification must quote current reader-visible text');return ''
@@ -53,7 +54,7 @@ def validate(inp,review,context):
         if not isinstance(panel.get('metrics'),list) or not ptrs or any(p not in u for p in ptrs):err('panel map needs metrics list and visible explanation pointers: '+fid)
         # A panel explicitly declared G-prime only cannot be explained as measuring both moduli.
         metrics=' '.join(panel.get('metrics',[])).replace('′',"'").replace('″',"''")
-        if "G'" in metrics and "G''" not in metrics:
+        if materials_rules and "G'" in metrics and "G''" not in metrics:
             for p in ptrs:
                 for match in re.finditer(r'G\s*[″]|G\s*\'\'|G[′\']\s*[/、与和]\s*G?[″]',u[p]):
                     if not negated(u[p],match.start()):flag(p,'panel metric map conflicts with explanation of both moduli')
@@ -72,14 +73,19 @@ def validate(inp,review,context):
         p=unit.get('pointer');t=u.get(p,'')
         if unit.get('kind')!='factual':continue
         linked=[claims[i] for i in unit.get('claim_ids',[]) if i in claims]
+        formal_proved=bool(linked) and all(c['level']=='formal_result' and c.get('formal_status')=='proved_in_source' for c in linked)
         for m in re.finditer(r'排除|唯一原因|唯一机制|\b(?:rules? out|excludes?|sole (?:cause|mechanism)|only (?:cause|mechanism))\b',t,re.I):
-            if not negated(t,m.start()) and not t.endswith(('？','?')):flag(p,'categorical exclusion requires direct source-grounded justification, irrespective of assigned evidence level')
-        if any(c['level'] in ['author_interpretation','model_result','author_claim'] for c in linked):
+            if not formal_proved and not negated(t,m.start()) and not t.endswith(('？','?')):flag(p,'categorical exclusion requires direct source-grounded justification, irrespective of assigned evidence level')
+        if any(c['level'] in ['author_interpretation','model_result','author_claim','textual_interpretation'] for c in linked):
             if strong_assertions(t):flag(p,'interpretive evidence expressed as categorical proof/exclusion')
+        if any(c['level']=='formal_result' and c.get('formal_status')!='proved_in_source' for c in linked) and strong_assertions(t):
+            flag(p,'unproved formal claim expressed as established proof')
+        if materials_rules and any(c['level'] in ['author_interpretation','model_result','author_claim'] for c in linked):
             inference=re.search(r'(?:这说明|表明|意味着|因此|从而|指向).{0,35}(?:链间|二硫键|共价|机理|机制|拥挤|拓扑)',t)
             if inference and not negated(t,inference.start()) and not re.search(r'作者|解释|支持|提示|提出|推测|假设|认为|模型|可能|不能|并未|不等于',t):flag(p,'inferential connection claim lacks visible attribution or qualification')
             en_inference=re.search(r'\b(?:this|these|the results?|the data)\s+(?:shows?|demonstrates?|means?|indicates?|implies?).{0,70}\b(?:interchain|disulfide|covalent|mechanism|topology)\b',t,re.I)
             if en_inference and not negated(t,en_inference.start()) and not re.search(r"\b(?:authors?|interpret\w*|support\w*|suggest\w*|propos\w*|hypothes\w*|models?|may|might|not|cannot)\b|consistent with",t,re.I):flag(p,'inferential connection claim lacks visible attribution or qualification')
+        if not materials_rules:continue
         for m in re.finditer(r'(?:整个|全程|全部).{0,12}(?:无需|不需要|无引发剂|无金属)',t):
             if not negated(t,m.start()):flag(p,'stage-limited advantage expanded to entire process')
         for m in re.finditer(r'(?:NMR|核磁|谱峰|SEM|显微).{0,30}(?:证明|说明|直接鉴定).{0,25}(?:链间|二硫(?:键|交联)|连接拓扑|湿态网)',t):
@@ -89,7 +95,7 @@ def validate(inp,review,context):
         for m in re.finditer(r'\b(?:entire|whole)\s+(?:synthe\w*|process|route).{0,55}\b(?:without|free of|no added)\b',t,re.I):
             if not negated(t,m.start()):flag(p,'stage-limited advantage expanded to entire process')
     encoding=V.check_text('\n'.join(u.values()),d['case'].get('language',V.DEFAULT_LANGUAGE));errors.extend(encoding['errors'])
-    return {'passed':not errors,'errors':errors,'warnings':warnings,'input_sha256':sha(inp),'context_sha256':sha(context),'comparisons':len(a.get('comparisons',[])),'panels':len(a.get('panels',[])),'scientific_entailment_automatically_judged':False,'encoding':encoding}
+    return {'passed':not errors,'errors':errors,'warnings':warnings,'input_sha256':sha(inp),'context_sha256':sha(context),'comparisons':len(a.get('comparisons',[])),'panels':len(a.get('panels',[])),'reading_profile':profile,'scientific_entailment_automatically_judged':False,'encoding':encoding}
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('input');p.add_argument('--review',required=True);g=p.add_mutually_exclusive_group(required=True);g.add_argument('--context');g.add_argument('--init');p.add_argument('--output');a=p.parse_args()
     try:result=initialize(a.input,a.review) if a.init else validate(a.input,a.review,a.context)

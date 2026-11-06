@@ -35,7 +35,7 @@ def validate_plan(plan,plan_file,case=None):
         if ident in ids:errors.append(f'{ident}: duplicate argument id')
         ids.add(ident)
         for field in ['question','claim','test_or_comparison','what_it_does_not_establish','remaining_question']:need(node,field,ident)
-        if node.get('inference_level') not in ['observation','design_rationale','author_interpretation','model_result','synthesis']:errors.append(f'{ident}: invalid inference_level')
+        if node.get('inference_level') not in ['observation','design_rationale','author_interpretation','model_result','synthesis','derived','background','author_claim','formal_result','assumption','qualitative_finding','textual_interpretation']:errors.append(f'{ident}: invalid inference_level')
         if not node.get('story_sections') or any(s not in route for s in node.get('story_sections',[])):errors.append(f'{ident}: unknown story section')
         evidence=node.get('evidence',[])
         if not evidence:errors.append(f'{ident}: no evidence')

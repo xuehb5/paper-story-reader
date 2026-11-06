@@ -33,3 +33,6 @@ Pointers refer to the evidence ledger's visible units. Thesis, titles, captions,
 The renderer supports `case.language: "en"`. The English distribution also defaults to English when the field is omitted; explicit language is recommended for portable input. Lexical checks include English proof/exclusion wording, isolated-variable descriptions, some stage expansion, indirect-measurement claims and negation. These rules have omissions and false positives: passing is not a scientific-semantic certification. Quote and hash verification are language-independent.
 
 If necessary sources are missing, deliver an honest materials-gap note or an explicitly limited draft. Do not fabricate review records. Save UTF-8, read the resulting files back and check key conditions and requests; an existing file or parseable JSON is not proof that prose survived encoding.
+
+
+> v0.22 extension: [study-type routing](study-types.md) and [rich evidence/material inventory](evidence-blocks.md) extend this contract. Old inputs retain original checks. New inputs use explicit profiles; formal_result requires original proof status and assumptions. DOI is optional.

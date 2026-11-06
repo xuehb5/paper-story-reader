@@ -54,3 +54,6 @@ python -X utf8 <skill>/scripts/render_reader.py reader-input.json --review evide
 ## 来源索引辅助
 
 可先用`scripts/index_source.py <原文.pdf或article.xml> --id T-main --output evidence`生成可追溯文本和来源元数据；对SI另执行一次。PDF索引需要当前Python的pypdf，按需渲染用pypdfium2；工具不可用时使用已有PDF工具，无需强装。JATS走标准库，不补造PDF页码。原图取自可信公开附件或本地文件，Agent仍须实际查看。
+
+
+> v0.22扩展：[研究类型路线](study-types.md)与[新证据/材料清单](evidence-blocks.md)补充本契约。旧输入保留原检查；新输入显式选择路线，形式结果记录原文证明状态与假设；DOI可缺省。

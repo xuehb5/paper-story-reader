@@ -11,11 +11,22 @@
   "shared_reading_nodes": 18,
   "shared_reading_edges": 17,
   "original_pages": 9,
-  "html_bytes": 180872,
-  "html_sha256": "2fe199d6764e4941cf19c0d2813c01561c8596d708ac18d2e5b50809f0cf4935",
+  "html_bytes": 183728,
+  "html_sha256": "cf8ec7cdfe7a87f0b02936e595e8a05a07622b2902fc3b39ab4487aedb755976",
   "all_navigation_targets_valid": true,
-  "renderer_version": "v0.21.0",
+  "renderer_version": "v0.24.0",
   "language": "zh",
+  "reading_profile": {
+    "study_types": [
+      "experimental"
+    ],
+    "disciplines": [
+      "materials_chemistry"
+    ],
+    "rationale": "Legacy v0.21 input: retain original experimental/materials checks.",
+    "legacy": true
+  },
+  "rich_evidence_blocks": 0,
   "input_sha256": "cafa9d06b7597c5fd9699992bcab302d1cf64ada2c7f74f207b25f9305d66ecf",
   "source_hashes_verified": true,
   "images_hashes": {
@@ -70,6 +81,16 @@
     "context_sha256": "695d1f27da2c38ec850709428471f3003be06f72360d371e44efd919250d51ed",
     "comparisons": 8,
     "panels": 25,
+    "reading_profile": {
+      "study_types": [
+        "experimental"
+      ],
+      "disciplines": [
+        "materials_chemistry"
+      ],
+      "rationale": "Legacy v0.21 input: retain original experimental/materials checks.",
+      "legacy": true
+    },
     "scientific_entailment_automatically_judged": false,
     "encoding": {
       "passed": true,

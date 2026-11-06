@@ -1,0 +1,21 @@
+/* New evidence forms use the existing story canvas, typography and navigation. */
+.evidence-block{margin:22px 0;border:1px solid var(--line);border-radius:10px;background:#fff;overflow:hidden;scroll-margin-top:105px}
+.evidence-block>header{padding:15px 17px 10px;background:#f5f8fc}
+.evidence-block h3{font-size:17px;line-height:1.6;margin:5px 0 0;overflow-wrap:anywhere}
+.evidence-table-scroll{overflow:auto;max-width:100%;padding:0 8px}
+.evidence-block table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.65}
+.evidence-block th,.evidence-block td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;min-width:80px;overflow-wrap:anywhere}
+.evidence-block th{color:var(--blue);font-weight:700;background:#fafcfe}
+.evidence-caption{font-size:14px;line-height:1.85;margin:14px 17px;overflow-wrap:anywhere}
+.equation-expression{padding:22px 17px;font-family:Cambria,Georgia,serif;font-size:23px;line-height:1.8;overflow:auto;text-align:center;white-space:pre-wrap}
+.equation-expression math{font-size:1.1em;max-width:100%}
+.equation-variables{display:grid;grid-template-columns:minmax(55px,auto) 1fr;gap:8px 14px;margin:0 17px 16px;font-size:14px;line-height:1.8}
+.equation-variables dt{font-family:Cambria,Georgia,serif;font-weight:700}
+.equation-variables dd{margin:0;overflow-wrap:anywhere}
+.evidence-block blockquote{border-left:3px solid #99b2d1;margin:18px;padding:0 0 0 15px;white-space:pre-wrap;font-size:17px;line-height:1.9;overflow-wrap:anywhere}
+.evidence-source{display:block;font-size:12px;line-height:1.8;padding:12px 17px;border-top:1px solid var(--line);overflow-wrap:anywhere}
+.flow-edge.relation-association{stroke-dasharray:2 4}
+.flow-edge.relation-assumption,.flow-edge.relation-next_question{stroke-dasharray:6 4}
+.flow-edge.relation-contradiction{stroke:#a86658;stroke-dasharray:4 3}
+.flow-edge.relation-deduction{stroke:#48766c;stroke-width:2}
+@media(max-width:600px){.evidence-block th,.evidence-block td{font-size:13px;padding:9px}.equation-expression{font-size:20px}.equation-variables{grid-template-columns:55px 1fr}}

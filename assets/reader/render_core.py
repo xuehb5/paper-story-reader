@@ -6,16 +6,22 @@ import html
 import json
 import textwrap
 LANGUAGE = 'zh'
+GENERAL_READER = False
+B = None
 ENGLISH_UI = json.loads((Path(__file__).parent / 'i18n.en.json').read_text('utf-8'))
 UI_REPLACEMENTS = sorted(ENGLISH_UI.items(), key=lambda item: len(item[0]), reverse=True)
 
 def _t(fragment):
     """Translate only static template fragments; authored scientific text is never passed here."""
+    if GENERAL_READER:
+        fragment = fragment.replace('材料与化学 · 离线伴读', '研究故事 · 离线伴读')
+        fragment = fragment.replace('图证索引 · 按文章脉络', '证据索引 · 按文章脉络')
+        fragment = fragment.replace('按研究问题组织的图证索引', '按研究问题组织的证据索引')
     if LANGUAGE != 'en':
         return fragment
     for original, translated in UI_REPLACEMENTS:
         fragment = fragment.replace(original, translated)
-    return fragment
+    return fragment.replace('Scientific argument', 'Research argument') if GENERAL_READER else fragment
 UI_FRAGMENTS = json.loads((Path(__file__).parent / 'template-fragments.json').read_text('utf-8'))
 def _u(index):
     return _t(UI_FRAGMENTS[index])
@@ -63,7 +69,8 @@ def scientific_flow(case):
                     spans = ''.join((f'<tspan x="{(x1 + x2) / 2}" y="{mid - 4 - (len(lines) - 1) * 4.5 + i * 9}">{esc(line)}</tspan>' for i, line in enumerate(lines)))
                     label = f'<text class="edge-label">{spans}</text>'
         kind = ' interpretation' if edge.get('kind') == 'interpretation' else ''
-        parts.append(f'''<path class="flow-edge{kind}" d="{d}" marker-end="url(#arrow)"><title>{esc(edge['label'])}</title></path>{label}''')
+        relation = edge.get('kind', 'support')
+        parts.append(f'''<path class="flow-edge{kind} relation-{esc(relation)}" data-relation="{esc(relation)}" d="{d}" marker-end="url(#arrow)"><title>{esc(edge['label'])}</title></path>{label}''')
     for n in case['nodes']:
         x, y = (n['x'], n['y'])
         name = (' ' if LANGUAGE == 'en' else '').join(n['lines'])
@@ -100,10 +107,12 @@ def figure_html(case, fid):
     return f'''<figure class="figure{si}{display}" id="figure-{fid}" tabindex="-1">\n<button class="figure-image" data-open-figure="{fid}{_u(9)}{esc(f['label'])}：{esc(f['title'])}"><img src="{data_uri(a['image'])}" alt="{esc(f['label'] + '，' + f['title'])}" width="{a['width']}" height="{a['height']}" loading="lazy" decoding="async"></button>\n<figcaption><span class="figure-label">{esc(f['label'])} · {esc(f['role'])}</span><h3 class="figure-title">{esc(f['title'])}</h3><p class="figure-caption">{esc(f['caption'])}</p>\n<div class="figure-actions"><button data-open-figure="{fid}{_u(10)}{whole}<button data-open-figure="{fid}" data-mode="page">{esc(a.get('full_view_label', _u(11)))}</button><span class="source-loc">{esc(location(a))}</span></div></figcaption></figure>'''
 
 def render(case):
-    global LANGUAGE
+    global LANGUAGE, GENERAL_READER
     LANGUAGE = case.get('language', 'zh')
+    GENERAL_READER = bool(case.get('reading_profile'))
     case_id = case['id']
-    paragraphs, used, article, md = (set(), [], [], [f"# {case['title']}", '', case['thesis'], '', f"{case['paper_title']}  ", case['citation'], f"https://doi.org/{case['doi']}", '', case['audience'], ''])
+    original_url = case.get('source_url') or ('https://doi.org/' + case['doi'] if case.get('doi') else sources[case['source_ids'][0]]['local_href'])
+    paragraphs, used, article, md = (set(), [], [], [f"# {case['title']}", '', case['thesis'], '', f"{case['paper_title']}  ", case['citation'], original_url, '', case['audience'], ''])
     walk_steps = []
     figure_entries = []
     question_branches = []
@@ -116,10 +125,47 @@ def render(case):
         if sources[assets[fid]['source']].get('format', 'pdf') == 'pdf':
             assert 1 <= assets[fid]['page'] <= sources[assets[fid]['source']]['pages']
         used.append(fid)
-        figure_entries.append({'id': fid, 'section': sec['id'], 'target': 'figure-' + fid, 'title': case['figures'][fid]['title'], 'number': len(figure_entries) + 1, 'layer': reading_layer})
+        figure_entries.append({'id': fid, 'section': sec['id'], 'target': 'figure-' + fid, 'title': case['figures'][fid]['title'], 'label': case['figures'][fid]['label'], 'type': 'figure', 'number': len(figure_entries) + 1, 'layer': reading_layer})
         f, a = (case['figures'][fid], assets[fid])
         md.extend([f"![{f['label']}：{f['title']}]({a['image']})", '', f"{f['caption']}（{location(a)}）", ''])
         return figure_html(case, fid)
+
+    def rich(block):
+        typ = B.kind(block);v = block[typ];target = 'evidence-' + v['id']
+        if target in paragraphs:raise ValueError('duplicate evidence target')
+        paragraphs.add(target)
+        figure_entries.append({'id': v['id'], 'section': sec['id'], 'target': target,
+                               'title': v['title'], 'label': v['label'], 'type': typ,
+                               'number': len(figure_entries) + 1, 'layer': reading_layer})
+        source = sources[v['source']]
+        href = source['local_href'] + ('#page=' + str(v['page']) if source.get('format') == 'pdf' else '')
+        parts = [f'<section class="evidence-block evidence-{typ}" id="{target}" tabindex="-1"><header><span class="figure-label">{esc(v["label"])}</span><h3>{esc(v["title"])}</h3></header>']
+        md.extend([f'<a id="{target}"></a>', '### ' + v['label'] + ' · ' + v['title'], ''])
+        if typ == 'table':
+            parts.append('<div class="evidence-table-scroll" tabindex="0"><table><thead><tr>' + ''.join('<th scope="col">' + esc(c) + '</th>' for c in v['columns']) + '</tr></thead><tbody>')
+            for row in v['rows']:parts.append('<tr>' + ''.join('<td>' + esc(c) + '</td>' for c in row) + '</tr>')
+            parts.append('</tbody></table></div><p class="evidence-caption">' + esc(v['caption']) + '</p>')
+            cell = lambda x: x.replace('|', '\\|').replace('\n', ' ')
+            md.extend(['| ' + ' | '.join(map(cell,v['columns'])) + ' |', '| ' + ' | '.join('---' for _ in v['columns']) + ' |'])
+            md.extend('| ' + ' | '.join(map(cell,row)) + ' |' for row in v['rows'])
+            md.extend(['',v['caption'],''])
+        elif typ == 'equation':
+            expression = B.mathml(v['mathml']) if v.get('mathml') else esc(v['expression'])
+            parts.append('<div class="equation-expression" role="math" aria-label="' + esc(v['expression']) + '">' + expression + '</div><dl class="equation-variables">')
+            for variable in v['variables']:parts.append('<dt>' + esc(variable['symbol']) + '</dt><dd>' + esc(variable['meaning']) + '</dd>')
+            parts.append('</dl><p class="evidence-caption">' + esc(v['explanation']) + '</p>')
+            md.extend(['`' + v['expression'].replace('`','') + '`',''])
+            md.extend('- ' + x['symbol'] + ': ' + x['meaning'] for x in v['variables'])
+            md.extend(['',v['explanation'],''])
+        else:
+            parts.append('<blockquote>' + esc(v['text']) + '</blockquote>')
+            md.extend(['> ' + v['text'].replace('\n','\n> '),''])
+            if v.get('explanation'):
+                parts.append('<p class="evidence-caption">' + esc(v['explanation']) + '</p>');md.extend([v['explanation'],''])
+        link_label = 'Original source' if LANGUAGE == 'en' else '查看原文'
+        parts.append('<a class="evidence-source" href="' + esc(href) + '" target="_blank" rel="noopener">' + link_label + ' · ' + esc(v['locator']) + '</a></section>')
+        md.extend(['[' + link_label + ' · ' + v['locator'] + '](' + href + ')',''])
+        return ''.join(parts)
 
     def walk(w, section_id):
         step_id = w['id']
@@ -179,6 +225,8 @@ def render(case):
                 last_main_id = pid
                 article.append(f'<p class="prose" id="{pid}" tabindex="-1">{esc(block)}</p>')
                 md.extend([f'<a id="{pid}"></a>', block, ''])
+            elif B.kind(block):
+                article.append(rich(block))
             elif 'figure' in block:
                 article.append(fig(block['figure']))
             elif 'figure_row' in block:
@@ -195,11 +243,12 @@ def render(case):
                 if detail.get('figure'):
                     evidence_ids.append(detail['figure'])
                 evidence_ids.extend(detail.get('figures', []))
-                detail_class = 'local-reading' if detail.get('kind') == 'figure-reading' else 'supplement'
+                detail_class = ('supplement' if detail.get('kind') == 'si' else 'local-reading') if GENERAL_READER else ('local-reading' if detail.get('kind') == 'figure-reading' else 'supplement')
                 side = detail.get('side') or ('left' if branch_side_counter % 2 == 0 else 'right')
                 side_counts[side] += 1
                 code = f"{section_number:02d}·{(_u(21) if side == 'left' else _u(22))}{side_counts[side]}"
-                question_branches.append({'id': branch_id, 'section': sec['id'], 'target': branch_id, 'detail_target': branch_target, 'title': detail['title'], 'evidence': '、'.join(dict.fromkeys((case['figures'][fid]['label'] for fid in evidence_ids))), 'side': side, 'code': code, 'origin': last_main_id, 'kind': 'si' if detail_class == 'supplement' else 'explanation'})
+                branch_labels = [case['figures'][fid]['label'] for fid in evidence_ids] + [inner[B.kind(inner)]['label'] for inner in detail.get('blocks',[]) if B.kind(inner)]
+                question_branches.append({'id': branch_id, 'section': sec['id'], 'target': branch_id, 'detail_target': branch_target, 'title': detail['title'], 'evidence': '、'.join(dict.fromkeys(branch_labels)), 'side': side, 'code': code, 'origin': last_main_id, 'kind': 'si' if detail_class == 'supplement' else 'explanation'})
                 branch_side_counter += 1
                 detail_start = len(article)
                 article.append(f'''<section class="{detail_class} story-detail branch-{side}" id="{branch_id}" data-graph-node="{branch_id}" data-graph-code="{esc(code)}" data-side="{side}" data-branch-id="{branch_id}" data-story-section="{sec['id']}" tabindex="-1"><h3 class="branch-heading"><small class="leaf-kind"><span class="graph-code">{esc(code)}</span> · {(_u(23) if detail_class == 'supplement' else _u(24))}</small><span class="branch-title">{esc(detail['title'])}</span></h3>''')
@@ -213,7 +262,7 @@ def render(case):
                 for fid in detail.get('figures', []):
                     article.append(fig(fid))
                 for inner in detail.get('blocks', []):
-                    article.append(walk(inner['walkthrough'], sec['id']))
+                    article.append(rich(inner) if B.kind(inner) else walk(inner['walkthrough'], sec['id']))
                 article.append(f'''<a class="return-trunk" data-story-section="{sec['id']}" href="#{esc(last_main_id)}{_u(26)}''')
                 reading_layer = _u(12)
                 md.extend(['</details>', ''])
@@ -233,7 +282,7 @@ def render(case):
     graph_nodes = []
     for index, sec in enumerate(case['sections'], 1):
         original = next((n for n in case['nodes'] if n['target'].startswith(sec['id'] + '-')), None)
-        figure_labels = list(dict.fromkeys((case['figures'][f['id']]['label'] for f in figure_entries if f['section'] == sec['id'] and f['layer'] == _u(12))))
+        figure_labels = list(dict.fromkeys((f['label'] for f in figure_entries if f['section'] == sec['id'] and f['layer'] == _u(12))))
         graph_nodes.append({'id': sec['id'], 'type': 'main', 'section': sec['id'], 'target': sec['id'], 'title': sec['title'], 'code': f'{index:02d}', 'figures': '、'.join(figure_labels), 'finding': original.get('finding', '') if original else ''})
     graph_nodes.extend(({'id': b['id'], 'type': 'branch', 'section': b['section'], 'target': b['target'], 'title': b['title'], 'code': b['code'], 'figures': b['evidence'], 'side': b['side'], 'origin': b['origin'], 'kind': b['kind']} for b in question_branches))
     main_nodes = [n for n in graph_nodes if n['type'] == 'main']
@@ -258,14 +307,14 @@ def render(case):
             assert assets[parent]['source'] == a['source'] and assets[parent]['page'] == a['page']
             config['composites'][parent] = {**case['composites'][parent], 'image': data_uri(assets[parent]['image'])}
     panel_outline = ''
-    if used:
+    if figure_entries:
         outline_steps = [{**w, 'fid': w['id']} for w in figure_entries]
         groups = []
         for sec in case['sections']:
             steps = [w for w in outline_steps if w['section'] == sec['id']]
             if not steps:
                 continue
-            links = ''.join((f'''<li><a class="outline-link" data-story-section="{esc(sec['id'])}" href="#{esc(w['target'])}"><span class="outline-number">{esc(w['layer'])}</span><span><b>{esc(case['figures'][w['fid']]['label'])}</b><small>{esc(w['title'])}</small></span></a></li>''' for w in steps))
+            links = ''.join((f'''<li><a class="outline-link" data-story-section="{esc(sec['id'])}" href="#{esc(w['target'])}"><span class="outline-number">{esc(w['layer'])}</span><span><b>{esc(w['label'])}</b><small>{esc(w['title'])}</small></span></a></li>''' for w in steps))
             groups.append(f"""<details class="panel-group"><summary>{esc(sec['title'])}</summary><ol>{links}</ol></details>""")
         outline_title = _u(33)
         hint = _u(34)
@@ -278,15 +327,15 @@ def render(case):
     draft_notice = '<p class="paper-tip" role="status">' + esc(case['draft_notice']) + '</p>' if case.get('draft_notice') else ''
     if case.get('draft_notice'):
         md[0:0] = [case['draft_notice'], '']
-    doc = f'''<!doctype html><html lang="{LANGUAGE}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(case['title'])}{_u(39)}{(SCRIPTS / 'reader.css').read_text(encoding='utf-8')}{_u(40)}{esc(case.get('home_href', 'index.html'))}{_u(41)}{tabs}{_u(42)}{route_open}><summary>{route_summary}{_u(43)}{''.join((f"""<a href="#{esc(n['target'])}">{esc(n['code'])} · {esc(n['title'])}</a>""" for n in graph_nodes))}{_u(44)}{research_map_panel(case)}</details>{panel_outline}{_u(45)}{draft_notice}<p class="kicker">{esc(case['category'])}</p><h1>{esc(case['title'])}</h1><p class="thesis">{esc(case['thesis'])}</p><p class="paper-title">{esc(case['paper_title'])}</p><p class="citation">{esc(case['citation'])} · <a href="https://doi.org/{esc(case['doi'])}{_u(46)}{esc(case['audience'])}{_u(47)}{''.join(article)}{_u(48)}{esc(case['coverage'])}</p><ul>{source_list}{_u(49)}{esc(case.get('home_href', 'index.html'))}{_u(50)}{case_id}{_u(51)}{encoded}</script><script>{(SCRIPTS / 'reader.js').read_text(encoding='utf-8')}</script></body></html>'''
+    doc = f'''<!doctype html><html lang="{LANGUAGE}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(case['title'])}{_u(39)}{(SCRIPTS / 'reader.css').read_text(encoding='utf-8')}{(SCRIPTS / 'evidence.css').read_text(encoding='utf-8')}{_u(40)}{esc(case.get('home_href', 'index.html'))}{_u(41)}{tabs}{_u(42)}{route_open}><summary>{route_summary}{_u(43)}{''.join((f"""<a href="#{esc(n['target'])}">{esc(n['code'])} · {esc(n['title'])}</a>""" for n in graph_nodes))}{_u(44)}{research_map_panel(case)}</details>{panel_outline}{_u(45)}{draft_notice}<p class="kicker">{esc(case['category'])}</p><h1>{esc(case['title'])}</h1><p class="thesis">{esc(case['thesis'])}</p><p class="paper-title">{esc(case['paper_title'])}</p><p class="citation">{esc(case['citation'])} · <a href="{esc(original_url)}{_u(46)}{esc(case['audience'])}{_u(47)}{''.join(article)}{_u(48)}{esc(case['coverage'])}</p><ul>{source_list}{_u(49)}{esc(case.get('home_href', 'index.html'))}{_u(50)}{case_id}{_u(51)}{encoded}</script><script>{(SCRIPTS / 'reader.js').read_text(encoding='utf-8')}</script></body></html>'''
     (ROOT / f'{case_id}.html').write_text(doc, encoding='utf-8', newline='')
     md.extend([_u(52), ''] + [f"- [{n['code']} · {n['title']}](#{n['target']})" for n in graph_nodes])
     md.extend(['', _u(53), ''])
     research_nodes = {n['id']: n for n in case['nodes']}
     for edge in case['edges']:
         a, b = (research_nodes[edge['from']], research_nodes[edge['to']])
-        kind = _u(54) if edge.get('kind') == 'interpretation' else _u(55)
+        kind = edge.get('kind', 'support') if GENERAL_READER else (_u(54) if edge.get('kind') == 'interpretation' else _u(55))
         md.append(f"- [{a['title']}](#{a['target']}) → {edge['label']} → [{b['title']}](#{b['target']})（{kind}）")
     md.extend(['', _u(56), ''] + [f"- [{sources[sid].get('description', sid)}]({sources[sid]['local_href']})" for sid in case['source_ids']] + ['', _u(57), '', case['coverage']])
     (ROOT / f'{case_id}.md').write_text('\n'.join(md) + '\n', encoding='utf-8')
-    return {'id': case_id, 'paragraphs': len(paragraphs), 'sections': len(case['sections']), 'figures': len(used), 'main_story_figures': sum((f['layer'] == _u(12) for f in figure_entries)), 'question_branches': len(question_branches), 'optional_panel_explanations': len(walk_steps), 'composites': len(config['composites']), 'nodes': len(case['nodes']), 'shared_reading_nodes': len(graph_nodes), 'shared_reading_edges': len(graph_edges), 'original_pages': len(config['pages']), 'html_bytes': len(doc.encode('utf-8')), 'html_sha256': hashlib.sha256(doc.encode('utf-8')).hexdigest(), 'all_navigation_targets_valid': True}
+    return {'id': case_id, 'paragraphs': len(paragraphs), 'sections': len(case['sections']), 'figures': len(used), 'main_story_figures': sum((f['type'] == 'figure' and f['layer'] == _u(12) for f in figure_entries)), 'question_branches': len(question_branches), 'optional_panel_explanations': len(walk_steps), 'composites': len(config['composites']), 'nodes': len(case['nodes']), 'shared_reading_nodes': len(graph_nodes), 'shared_reading_edges': len(graph_edges), 'original_pages': len(config['pages']), 'html_bytes': len(doc.encode('utf-8')), 'html_sha256': hashlib.sha256(doc.encode('utf-8')).hexdigest(), 'all_navigation_targets_valid': True}

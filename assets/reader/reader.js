@@ -95,7 +95,7 @@ function saveReadingPosition(){
  if(!initialized||recoveryPending)return;
  const container=document.getElementById(currentBranch||currentSection)||trunk;
  const readingY=camera.cy-viewport.clientHeight/(2*camera.scale)+Math.min(150,viewport.clientHeight*.24)/camera.scale;
- const anchors=[container,...container.querySelectorAll('[id]')].filter(e=>e.matches('.article-section,.prose,.figure,.story-detail,.panel-step')&&(currentBranch?e.closest('.story-detail')===container:!e.closest('.story-detail'))).sort((a,b)=>worldRect(a).y-worldRect(b).y);
+ const anchors=[container,...container.querySelectorAll('[id]')].filter(e=>e.matches('.article-section,.prose,.figure,.story-detail,.panel-step,.evidence-block')&&(currentBranch?e.closest('.story-detail')===container:!e.closest('.story-detail'))).sort((a,b)=>worldRect(a).y-worldRect(b).y);
  let anchor=container;for(const el of anchors){const r=worldRect(el);if(r.y<=readingY)anchor=el;else break;}
  const rect=worldRect(anchor);
  const state={schema:1,pose:copyPose(),column:paper.column,view:[viewport.clientWidth,viewport.clientHeight],section:currentSection,branch:currentBranch,hash:location.hash,anchor:anchor.id,fraction:Math.max(0,Math.min(1,(readingY-rect.y)/Math.max(1,rect.height))),wheelZoom,returnPose:returnPoint?.pose||null,returnHash:returnPoint?.hash||'',overviewReturnPose};
@@ -191,7 +191,12 @@ function layoutPaper(){
   ends[detail.dataset.side]=top+detail.offsetHeight+64;
   const r=worldRect(detail);detail.dataset.worldX=r.x;detail.dataset.worldY=r.y;
  });
- paper.height=Math.max(trunk.offsetHeight+paper.trunkY+50,ends.left+paper.trunkY,ends.right+paper.trunkY);
+ // A short final branch must still be able to reach the reading position.
+ // Without this tail space clampPose leaves it below the reading probe,
+ // so navigation arrives on the branch but the map immediately selects the trunk.
+ const lastTargets=[sections.at(-1),...branchDetails].filter(Boolean);
+ const readingTail=Math.max(0,...lastTargets.map(el=>worldRect(el).y+viewport.clientHeight-26));
+ paper.height=Math.max(trunk.offsetHeight+paper.trunkY+50,ends.left+paper.trunkY,ends.right+paper.trunkY,readingTail);
  world.style.width=paper.width+'px';world.style.height=paper.height+'px';drawConnections();drawPaperOverview();
  if(!initialized){initialized=true;Object.assign(camera,{cx:paper.trunkX+width/2,cy:viewport.clientHeight/2,scale:1});}
  else if(oldWidth!==width){cancelFlight();const target=currentBranch?document.getElementById(currentBranch):document.getElementById(currentSection)||trunk;Object.assign(camera,clampPose(poseAt(target)));returnPoint=null;document.getElementById('paper-return').disabled=!currentBranch;}
